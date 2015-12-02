@@ -1,0 +1,65 @@
+<!-- Start  Logo & Naviagtion  -->
+<div class="navbar navbar-default navbar-top">
+    <div class="container">
+        <div class="navbar-header">
+            <!-- Stat Toggle Nav Link For Mobiles -->
+
+
+            <!-- End Toggle Nav Link For Mobiles -->
+            <a class="navbar-brand" href="/">
+                <img alt="" src="images/margo.png" class="logo-top">
+            </a>
+
+        </div>
+        <div class="navbar-collapse collapse">
+
+            <!-- Start Navigation List -->
+            <ul class="nav navbar-nav navbar-right wpb-mobile-menu">
+
+                <?php if ($controller == \Application\Controller\BusinessController::class && in_array($action, ['login', 'index'])) : ?>
+
+
+                    <li>
+                        <a href="/business/login/" <?= ($controller == \Application\Controller\BusinessController::class && $action == 'login') ? ' class="active" ' : ''; ?>><?= $this->translate('Командный центр')?></a>
+                    </li>
+                    <li>
+                        <a href="/business/" <?= ($controller == \Application\Controller\BusinessController::class && $action == 'index') ? ' class="active" ' : ''; ?>><?= $this->translate('Для бизнеса')?></a>
+                    </li>
+                <?php else: ?>
+
+
+
+                    <li>
+                        <a href="/customer/sign-up/" <?= ($controller == \Application\Controller\CustomerController::class && $action == 'sign-up') ? ' class="active" ' : ''; ?>><?= $this->translate('Регистрация')?></a>
+                    </li>
+                    <li>
+                        <a href="/customer/login/" <?= ($controller == \Application\Controller\CustomerController::class && $action == 'login') ? ' class="active" ' : ''; ?>><?= $this->translate('Вход')?></a>
+                    </li>
+
+                    <li>
+                        <a href="/locations/" <?= (($controller == \Application\Controller\IndexController::class && $action == 'locations') || ($controller == \Application\Controller\MerchantController::class )) ? ' class="active" ' : ''; ?>><?= $this->translate('Карта')?></a>
+                    </li>
+                    <li>
+                        <a href="/support/" <?= ($controller == \Application\Controller\IndexController::class && $action == 'support') ? ' class="active" ' : ''; ?>><?= $this->translate('Поддержка')?></a>
+                    </li>
+
+                    <li>
+                        <a href="/business/" <?= ($controller == \Application\Controller\BusinessController::class && $action == 'index') ? ' class="active" ' : ''; ?>><?= $this->translate('Для бизнеса')?></a>
+
+                        <ul class="dropdown">
+                            <li>
+                                <a href="/business/login/" <?= ($controller == \Application\Controller\BusinessController::class && $action == 'login') ? ' class="active" ' : ''; ?>><?= $this->translate('Командный центр')?></a>
+                            </li>
+                        </ul>
+                    </li>
+
+
+                <?php endif; ?>
+            </ul>
+            <!-- End Navigation List -->
+        </div>
+    </div>
+
+</div>
+<!-- End Header Logo & Naviagtion -->
+ 

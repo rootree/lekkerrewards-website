@@ -1,0 +1,21 @@
+<?php
+/**
+ * @var \Application\Model\Entity\MerchantBranch $merchantBranch
+ * @var \Application\Model\Entity\Customer $customer
+ */
+?>
+
+<h1>
+    <?= sprintf($this->translate('Регистрация в %s'), $company['name'] )?>
+</h1>
+
+<p><?= sprintf($this->translate('Поздравляем! Вы только что стали участником цифровой системы лояльности %s.'), $company['name'] )?></p>
+
+<p><?= $this->translate('Присоеденяйтесь к нам в')?>
+    <a href="<?= $company['twitter'] ?>">Twitter</a>,
+    <a href="<?= $company['facebook'] ?>">Facebook</a>
+    <?= $this->translate('или')?>
+    <a href="<?= $company['instgram'] ?>">Instagram</a>.
+
+
+<p><?= $this->translate('Успехов!')?></p>

@@ -1,0 +1,591 @@
+<!-- Start Page Banner -->
+<div class="page-banner no-subtitle">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h2><?= $this->translate('Поддержка')?></h2>
+            </div>
+            <div class="col-md-6">
+                <ul class="breadcrumbs">
+                    <li><a href="#"><?= $this->layout()->company['name'] ?></a></li>
+                    <li><?= $this->translate('Поддержка')?></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Page Banner -->
+
+
+<div id="content">
+    <div class="container">
+
+        <div class="row">
+
+            <!-- Page Content -->
+            <div class="col-md-12 page-content">
+
+                <!-- Toggle -->
+
+                <div class="row">
+
+                    <div class="col-md-6">
+
+                        <h4 class="classic-title"><span><?= $this->translate('Общие вопросы')?></span></h4>
+
+                        <!-- Accordion -->
+                        <div class="panel-group" id="accordion">
+
+                            <!-- Start Accordion 1 -->
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#toggle" href="#collapse-4">
+                                            <i class="fa fa-angle-up control-icon"></i>
+                                            <?= sprintf($this->translate('Что такое %s?'), $this->layout()->company['name'])?>
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapse-4" class="panel-collapse collapse in">
+                                    <div class="panel-body">
+                                        <?= sprintf($this->translate('%s - это уникальная цифровая система лояльности которая позволяет получать награды в вашех любимых заведениях за посещения.'), $this->layout()->company['name'])?>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Accordion 1 -->
+
+
+                            <!-- Start Accordion 1 -->
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#toggle" href="#collapse-43">
+                                            <i class="fa fa-angle-up control-icon"></i>
+                                            <?= sprintf($this->translate('Термины'), $this->layout()->company['name'])?>
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapse-43" class="panel-collapse collapse in">
+                                    <div class="panel-body">
+                                        <?= $this->translate('Чтобы не было путаницы, мы решили определить термины, которыем мы используем.')?><br/><br/>
+                                            <b><?= $this->translate('Посещения')?></b> <?= sprintf($this->translate('- это другими словами ваш визиты в конкретном заведении.'), $this->layout()->company['name'])?>
+                                        <br/><br/>
+                                            <b><?= $this->translate('Доступные посещения')?></b> <?= $this->translate('- это те посещения которые вы можете потратить на награду.')?>
+                                        <br/><br/>
+                                            <b><?= $this->translate('Награда')?></b> <?= $this->translate('- это как правило товар или сервис в заведении, который вы можете получить за доступные посещения.')?>
+                                        <br/><br/>
+                                            <b><?= $this->translate('Отметка')?></b> <?= sprintf($this->translate(' или check-in (чекин) - это процедура, которая позволяет нам понять чтобы были в заведении.'), $this->layout()->company['name'])?>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <!-- Start Accordion 2 -->
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#toggle" href="#collapse-5" class="collapsed">
+                                            <i class="fa fa-angle-down control-icon"></i>
+                                            <?= sprintf($this->translate('Как можно стать участником %s?'), $this->layout()->company['name'])?>
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapse-5" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <?= sprintf($this->translate('Возмите %s в любом месте где мы расположены. Нажмите на "Начать" на планшете, отсканируйте QR-код с карты и укажите ваш e-mail. Не хотети носить с собой карту? Тогда просто зарегистрируйтесь на нашем сайте.'), $this->layout()->company['card'])?>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Accordion 2 -->
+
+                            <!-- Start Accordion 3 -->
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#toggle" href="#collapse-6" class="collapsed">
+                                            <i class="fa fa-angle-down control-icon"></i>
+                                            <?= sprintf($this->translate('Как работает %s?'), $this->layout()->company['name'])?>
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapse-6" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <?= sprintf($this->translate('Накапливайте посещения сканируя на планшете QR-код с вашей %s или с вашего аккаунта. Получайте награды за доступные посещения просто выбрав их на планшете и показав кассиру подтвержение об этом.'), $this->layout()->company['card'])?>
+                                        <br/>
+                                        <br/>
+                                        <?= sprintf($this->translate(' Примечание: накопленные посищения вы можете тратить только в том заведении, где вы их накопили.'), $this->layout()->company['card'])?>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Accordion 3 -->
+
+
+                            <!-- Start Accordion 3 -->
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#toggle" href="#collapse-63" class="collapsed">
+                                            <i class="fa fa-angle-down control-icon"></i>
+                                            <?= sprintf($this->translate('Как я могу найти места где есть %s?'), $this->layout()->company['name'])?>
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapse-63" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <?= sprintf($this->translate('Перейдите на эту страницу %s. На ней будет карта, где собраны заведения с %s. Выбрав одно из заведений, вы сможете узнать его адрес и телефон, а также о наградах которые есть в этом заведении.'), '<a href="http://'.$this->layout()->company['baseHost'].'locations/">'.$this->layout()->company['baseHost'].'locations/</a>', $this->layout()->company['name'])?>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#toggle" href="#collapse-632" class="collapsed">
+                                            <i class="fa fa-angle-down control-icon"></i>
+                                            <?= sprintf($this->translate('Я забыл отметиться. Могу ли я засчитать это посещение?'), $this->layout()->company['name'])?>
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapse-632" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <?= sprintf($this->translate('Да. Сфотографируйте ваш чек и отправьте его к нам по электронной почте на %s.'),  $this->layout()->company['email'])?>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- End Accordion -->
+
+                    </div>
+
+                    <div class="col-md-6">
+
+                        <!-- Classic Heading -->
+                        <h4 class="classic-title"><span>
+                                <?= sprintf($this->translate('%s карта'), $this->layout()->company['card'])?>
+                            </span></h4>
+
+                        <!-- Toggle -->
+                        <div class="panel-group">
+
+                            <!-- Start Toggle 1 -->
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#toggle" href="#collapse-3000">
+                                            <i class="fa fa-angle-up control-icon"></i>
+                                            <?= sprintf($this->translate('Что такое карта %s?'), $this->layout()->company['card'])?>
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapse-3000" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <?= sprintf($this->translate('Карта %s это карта с уникальным QR-кодом. Эту карту вы можете использовать для накопления посещений в заведениях где работает %s.'), $this->layout()->company['card'], $this->layout()->company['name'])?>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Toggle 1 -->
+
+
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#toggle" href="#collapse-3001" class="collapsed">
+                                            <i class="fa fa-angle-down control-icon"></i>
+                                            <?= sprintf($this->translate('Я потерял %s могу ли я получить новую без потери накопленых посещений?'), $this->layout()->company['card'])?>
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapse-3001" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <?= sprintf($this->translate('Да. Вы можете прийти в любое место где есть %s, взять новую карту и при регистрации указать ваш e-mail, которые был привязан к потерянной карте.'),  $this->layout()->company['name'] )?>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <!-- End Toggle -->
+
+                    </div>
+
+
+
+
+
+
+
+
+
+
+                    <div class="col-md-6">
+
+                        <!-- Classic Heading -->
+                        <h4 class="classic-title"><span>
+                                <?= $this->translate('Посещения') ?>
+                            </span></h4>
+
+                        <!-- Toggle -->
+                        <div class="panel-group">
+
+                            <!-- Start Toggle 1 -->
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#toggle" href="#collapse-7">
+                                            <i class="fa fa-angle-up control-icon"></i>
+                                            <?= sprintf($this->translate('Как можно накапливать посещения?'), $this->layout()->company['card'])?>
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapse-7" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <?= sprintf($this->translate('Накапливать посещения можно отсканировав QR-код с %s карты, или QR-код из личного кабинета с сайта, на планшете установленном в заведениях где есть %s.'), $this->layout()->company['card'], $this->layout()->company['name'])?>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Toggle 1 -->
+
+
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#toggle" href="#collapse-1006" class="collapsed">
+                                            <i class="fa fa-angle-down control-icon"></i>
+                                            <?= sprintf($this->translate('Если у меня нет %s карты с собой, могу ли я отметиться без неё?'), $this->layout()->company['card'])?>
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapse-1006" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <?= sprintf($this->translate('Да. Вы можете отметиться в любом месте где есть %s с помошью вашего e-mail, но по соображениям безопасности, получить награды за посещения без QR-кода вы не сможете.'),  $this->layout()->company['name'] )?>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#toggle" href="#collapse-1005" class="collapsed">
+                                            <i class="fa fa-angle-down control-icon"></i>
+                                            <?= sprintf($this->translate('Планшет был отключён от Интернета. Могу ли накапливать посещения?'), $this->layout()->company['card'])?>
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapse-1005" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <?= sprintf($this->translate('Если в заведении где вы пытаетесь отметиться планшет отелючён от Интернета, вы все равно можете отметиться, информация будет сохранена на планшете. Как только планшет будет подлючен к Интернету, вы сможете увидить ваши посещения в личном кабинете через наз сайт.'),  $this->layout()->company['name'] )?>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+
+
+
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#toggle" href="#collapse-1003" class="collapsed">
+                                            <i class="fa fa-angle-down control-icon"></i>
+                                            <?= sprintf($this->translate('Как я могу увидить все посещения которые у меня были?'), $this->layout()->company['card'])?>
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapse-1003" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <?= sprintf($this->translate('Вы можете увидеть все заведения в которых вы отмечались, посмотреть историю их посещений и историю получения наград в вашем личном кабинете на нашем сайте.'),  $this->layout()->company['name'] )?>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#toggle" href="#collapse-1002" class="collapsed">
+                                            <i class="fa fa-angle-down control-icon"></i>
+                                            <?= sprintf($this->translate('Нужно ли мне что-то купить чтобы накапливать посещения?'), $this->layout()->company['card'])?>
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapse-1002" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <?= sprintf($this->translate('Это зависит от заведения где вы хотите отметиться, но как правило владельцы просят чтобы участники %s сделали покупку перед тем как отметиться.'),  $this->layout()->company['name'] )?>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#toggle" href="#collapse-1001" class="collapsed">
+                                            <i class="fa fa-angle-down control-icon"></i>
+                                            <?= sprintf($this->translate('Есть ли ограничение использования по времени для накопленных посещений?'), $this->layout()->company['card'])?>
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapse-1001" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <?= sprintf($this->translate('Посещения не имеют ограничения по времени, вы можете получить награду за посещения в любое время пока программа лояльности работает в заведении.'),  $this->layout()->company['name'] )?>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#toggle" href="#collapse-1000" class="collapsed">
+                                            <i class="fa fa-angle-down control-icon"></i>
+                                            <?= sprintf($this->translate('В моём любимом заведении убрали %s. Что будет с моими накопленными посещениями?'), $this->layout()->company['name'])?>
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapse-1000" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <?= sprintf($this->translate('К сожалению, если владельц вашего любимого заведения решил прекратить использовать программу лояльности, мы ничего с этим поделать не можем.'),  $this->layout()->company['name'] )?>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <!-- End Toggle -->
+
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="col-md-6">
+
+                        <!-- Classic Heading -->
+                        <h4 class="classic-title"><span>
+                                <?= sprintf($this->translate('Награды'), $this->layout()->company['card'])?>
+                            </span></h4>
+
+                        <!-- Toggle -->
+                        <div class="panel-group">
+
+                            <!-- Start Toggle 1 -->
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#toggle" href="#collapse-2002">
+                                            <i class="fa fa-angle-up control-icon"></i>
+                                            <?= sprintf($this->translate('Как я могу получить награду за посещения?'), $this->layout()->company['card'])?>
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapse-2002" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <?= sprintf($this->translate('Отсканировав на планшете QR-код с карты %s или из личного кабинета на нашем сайте, вам будет показан список наград. Если у вас достаточно посещений чтобы получить награду, появиться кнопка "Получить награду", или будет показано сколько еще посещений требуется для получения конкретной награды.'), $this->layout()->company['card'], $this->layout()->company['name'])?>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Toggle 1 -->
+
+
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#toggle" href="#collapse-2001" class="collapsed">
+                                            <i class="fa fa-angle-down control-icon"></i>
+                                            <?= sprintf($this->translate('Почему я не могу получить награду используя e-mail?'), $this->layout()->company['card'])?>
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapse-2001" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <?= sprintf($this->translate('Вы можете получить награду только при налиции %s или войдя в свой личный кабинет на нашем сайте. Мы не хотим чтобы кто-то посторонний зная ваш e-mail мог получить ваши награды.'),  $this->layout()->company['card'] )?>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#toggle" href="#collapse-2000" class="collapsed">
+                                            <i class="fa fa-angle-down control-icon"></i>
+                                            <?= sprintf($this->translate('Что произойдет когда я получу награду?'), $this->layout()->company['card'])?>
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapse-2000" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <?= sprintf($this->translate('Количество доступных посещений будет уменьшено ровно на то количество, сколько нужно для получения награды.'),  $this->layout()->company['card'] )?>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <!-- End Toggle -->
+
+                    </div>
+
+
+
+                </div>
+
+            </div>
+            <!-- End Page Content-->
+
+
+        </div>
+
+        <!-- Divider -->
+        <div class="hr5" style="margin-top:45px;margin-bottom:45px;" id="contant-form"></div>
+
+        <div class="row">
+
+
+
+            <?php if ($this->userType == \Application\Controller\AbstractApplicationController::USER_TYPE_GUEST): ?>
+
+            <div class="col-md-4">
+
+
+
+                <!-- Classic Heading -->
+                <h4 class="classic-title"><span><?= $this->translate('Хотите получать награды?')?></span></h4>
+
+                <!-- Some Info -->
+                <p><?= $this->translate('Зарегестрируйтесь, и вы тут же сможете накапливать визиты у наших партнеров.')?></p>
+
+                <p style="margin-top:15px;">
+                    <a href="/customer/sign-up/" class="btn-system btn-large"><?= $this->translate('Регистрация')?></a>
+                </p>
+
+                <div class="hr1" style="margin-bottom:15px;"></div>
+
+            </div>
+
+            <?php endif ?>
+
+            <div class="col-md-8">
+
+                <!-- Classic Heading -->
+                <h4 class="classic-title"><span><?= $this->translate('Связаться с нами')?></span></h4>
+
+                <div id="feedbackFormSent" class="alert alert-success" style="display:none;">
+
+                    <strong><?= $this->translate('Отлично!')?></strong>
+                    <br/><?= $this->translate('Ваш запрос успешно отправлен! Спасибо! Мы скоро ответим.')?>
+
+                </div>
+                <div id="feedbackFormProblem" class="alert alert-danger" style="display:none;">
+
+                    <strong><?= $this->translate('Ошибка!')?></strong>
+                    <br/><?= sprintf($this->translate('К сожалению не получается отправить ваш запрос. Но вы можете позвонить нам на %s.'), $this->layout()->company['phone'])?>
+
+                </div>
+                <div id="feedbackForm">
+
+                    <!-- Start Contact Form -->
+                    <form role="form" class="contact-form" id="contact-form" method="post" action="/ajax/feedback/">
+                        <input type="hidden" name="subject" value="feedback">
+                        <div class="form-group">
+                            <div class="controls">
+                                <input required="required" type="text" placeholder="<?= $this->translate('Ваше имя')?>" name="name">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="controls">
+                                <input required="required" type="email" class="email" placeholder="<?= $this->translate('Email')?>" name="email">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="controls">
+                                <input type="text" class="phone" placeholder="<?= $this->translate('Номер телефона')?>" name="phone">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="controls">
+                                <input type="text" class="requiredField" placeholder="<?= $this->translate('Тема')?>" name="subject">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+
+                            <div class="controls">
+                                <textarea rows="3" placeholder="<?= $this->translate('Сообщение')?>" name="message"></textarea>
+                            </div>
+                        </div>
+                        <button type="submit" id="submit-feedback" class="btn-system btn-large"><?= $this->translate('Отправить')?></button>
+                        <div id="success" style="color:#34495e;"></div>
+                    </form>
+                    <!-- End Contact Form -->
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- End Content -->
+
+<script>
+
+    $(document).ready(function ($) {
+        $("#contact-form").submit(function(e)
+        {
+            $('#submit-feedback').prop('disable', true);
+            $('#feedbackFormProblem').hide();
+            var postData = $(this).serializeArray();
+            var formURL = $(this).attr("action");
+            $.ajax(
+                {
+                    url : formURL,
+                    type: "POST",
+                    data : postData,
+                    success:function(data, textStatus, jqXHR)
+                    {
+                        if (data.successUpdate) {
+                            $('#submit-feedback').prop('disable', false);
+                            $('#feedbackForm').hide();
+                            $('#feedbackFormSent').show();
+                        } else {
+                            $('#feedbackFormProblem').show();
+                            $('#submit-feedback').prop('disable', false);
+                        }
+                        $('#loader').fadeOut();
+                    },
+                    error: function(jqXHR, textStatus, errorThrown)
+                    {
+                        $('#feedbackFormProblem').show();
+                        $('#submit-feedback').prop('disable', false);
+                        $('#loader').fadeOut();
+                    }
+                });
+            e.preventDefault(); //STOP default action
+            //e.unbind(); //unbind. to stop multiple form submit.
+            return false;
+        });
+    });
+
+
+</script>

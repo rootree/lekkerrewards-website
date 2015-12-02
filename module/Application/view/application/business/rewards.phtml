@@ -1,0 +1,167 @@
+
+<!-- Start Page Banner -->
+<div class="page-banner no-subtitle">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h2><?= $this->translate('Награды')?></h2>
+            </div>
+            <div class="col-md-6">
+                <ul class="breadcrumbs">
+                    <li><a href="/"><?= $this->layout()->company['name'] ?></a></li>
+                    <li><?= $this->translate('Награды')?></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Page Banner -->
+
+
+
+<div id="content">
+    <div class="container">
+
+
+        <div class="row">
+
+
+            <div class="col-md-9">
+
+                <h4 class="classic-title"><span><?= $this->translate('Награды в вашем заведении')?></span></h4>
+
+                <div class=" ">
+                    <table class="table table-reward">
+                        <thead>
+                        <tr>
+                            <th class="text-center visits-th"><?= $this->translate('Посещения')?></th>
+                            <th><?= $this->translate('Награда')?></th>
+       <!--                     <th class="text-center">Used</th>
+                            <th class="text-center">Frequency</th>-->
+                            <th class="text-center"><?= $this->translate('Действия')?></th>
+                        </tr>
+                        </thead>
+                        <tbody>
+
+                        <?php
+                        /** @var \Application\Model\Entity\Reward $reward */
+                        foreach ($rewards as $reward): ?>
+                            <tr>
+                                <td class="text-center"><span class="badge badge-reward"><?= $reward->getPoints() ?></span></td>
+                                <td><a href="/business/reward/<?= $reward->getId() ?>/"><?= $reward->getName() ?></a></td>
+                                <!--<td class="text-center">1</td>
+                                <td class="text-center">2 <span class="help-tip itl-tooltip" data-placement="top" title="1 customer redeemed 2 times"></span></td>-->
+                                <td class="text-center reward-actions" >
+                                    <a href="/business/reward/<?= $reward->getId() ?>/#change-reward" class="btn-system btn-mini  reward-btn"><?= $this->translate('Изменить')?></a>
+                                    <a href="#" onclick="return false;" class="btn-system btn-mini btn-gray" data-toggle="modal" data-href="/business/archive-reward/<?= $reward->getId() ?>/" data-target="#confirm-delete"><?= $this->translate('В архив')?></a>
+                                </td>
+                            </tr>
+                        <?php endforeach; ?>
+
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+
+
+
+            <div class="col-md-3"  style="  margin-bottom:25px;">
+
+
+                <?php if ($errorMessage): ?>
+                    <div class="alert alert-danger">
+                        <strong><?= $this->translate('Ошибка!')?></strong>
+                        <br/><?= $errorMessage ?>
+                    </div>
+                <?php endif?>
+
+
+                <?php if ($successUpdate): ?>
+                    <div class="alert alert-success">
+                        <strong><?= $this->translate('Отлично!')?></strong>
+                        <br/><?= $this->translate('Новая награда добавлена!')?>
+                    </div>
+                <?php endif?>
+
+
+                <!--Redeems-->
+
+                <h4 class="classic-title"><span><?= $this->translate('Добавить новую награду')?></span></h4>
+
+                <!-- Start Contact Form -->
+                <form role="form" class="contact-form  " id="contact-form" method="post">
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <div class="controls">
+                                    <input required="required" type="text" class="requiredField" placeholder="<?= $this->translate('Награда')?>" value="<?= @$_POST['name'] ?>"  name="name">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xs-12 col-sm-6">
+                            <div class="form-group   ">
+                                <div class="controls">
+                                    <input required="required" type="text" class="requiredField " value="<?= @$_POST['points'] ?>"  placeholder="<?= $this->translate('Посещения')?>" name="points">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Contact Form -->
+                    <button type="submit" id="submit" class="btn-system btn-large"><?= $this->translate('Добавить награду')?></button>
+                    <div id="success" style="color:#34495e;"></div>
+
+
+                </form>
+
+
+
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+<!-- End Content -->
+
+
+<div class="modal fade" id="confirm-delete" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="z-index: 1000000000;">
+    <div class="modal-dialog"  style="z-index: 1000000000;">
+        <div class="modal-content"  style="z-index: 1000000000;">
+
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="myModalLabel"><?= $this->translate('Подтвердите архивацию')?></h4>
+            </div>
+
+            <div class="modal-body">
+                <p><?= $this->translate('После перенесения в архив, ваши посетители не смогут воспользоваться данной наградой.')?></p>
+                <br/>
+                <p><?= $this->translate('Вы хотите продолжить?')?></p>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn-system btn-small border-btn" data-dismiss="modal"><?= $this->translate('Отмена')?></button>
+                <a class="btn-system btn-small btn-gray btn-ok" ><?= $this->translate('Архивировать')?></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    $('#confirm-delete').on('show.bs.modal', function(e) {
+        $(this).find('.btn-ok').attr('href', $(e.relatedTarget).data('href'));
+
+        //$('.debug-url').html('Delete URL: <strong>' + $(this).find('.btn-ok').attr('href') + '</strong>');
+    });
+
+
+
+
+
+</script>
+
+

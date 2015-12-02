@@ -1,0 +1,37 @@
+<?php
+/**
+ * @var \Application\Model\Entity\MerchantBranch $merchantBranch
+ * @var \Application\Model\Entity\Customer $customer
+ */
+?>
+
+
+<h1>
+    <?= sprintf($this->translate('Первая отметка в %s'), $merchantBranch->getFkMerchant()->getName() )?>
+</h1>
+
+<p><?= sprintf($this->translate('Отлично! Вы только что отметились в %s и стали на один шаг ближе к получению бесплатных наград в этом месте.'), $merchantBranch->getFkMerchant()->getName() )?></p>
+
+<p><a href="<?= $company['baseHost'] . 'merchant/' . $merchantBranch->getPermalinkPath() ?>/" class="btn-primary"><?= sprintf($this->translate('Посмотреть награды'), $company['name'] )?></a></p>
+
+<?php if ($openPassword): ?>
+
+    <h1>
+        <?= sprintf($this->translate('Регистрация в %s'), $company['name'] )?>
+    </h1>
+
+    <p><?= sprintf($this->translate('Вы только что стали участником цифровой системы лояльности %s.'), $company['name'] )?></p>
+
+    <p><?= sprintf($this->translate('Изменить настройти вашего профиля вы всегда можете в личном кабинете.'), $company['name'] )?></p>
+
+    <p><?= sprintf($this->translate('Для входа используйте ваш e-mail и этот пароль: %s'), '<b>' . $openPassword . '</b>')?></p>
+
+    <p><?= $this->translate('Присоеденяйтесь к нам в')?>
+        <a href="<?= $company['twitter'] ?>">Twitter</a>,
+        <a href="<?= $company['facebook'] ?>">Facebook</a>
+        <?= $this->translate('или')?>
+        <a href="<?= $company['instgram'] ?>">Instagram</a>.
+
+<?php endif ?>
+
+<p><?= $this->translate('Удачи!')?></p>

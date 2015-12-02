@@ -1,0 +1,55 @@
+<!-- Start  Logo & Naviagtion  -->
+<div class="navbar navbar-default navbar-top">
+    <div class="container">
+        <div class="navbar-header">
+            <!-- Stat Toggle Nav Link For Mobiles -->
+
+            <!-- End Toggle Nav Link For Mobiles -->
+            <a class="navbar-brand" href="/">
+                <img alt="" src="images/margo.png" class="logo-top">
+            </a>
+
+        </div>
+        <div class="navbar-collapse collapse">
+
+            <!-- Start Navigation List -->
+            <ul class="nav navbar-nav navbar-right wpb-mobile-menu">
+
+                <li>
+                    <a href="/locations/" <?= (($controller == \Application\Controller\IndexController::class && $action == 'locations') || ($controller == \Application\Controller\MerchantController::class )) ? ' class="active" ' : ''; ?>><?= $this->translate('Карта')?></a>
+                </li>
+                <li>
+                    <a href="/support/" <?= ($controller == \Application\Controller\IndexController::class && $action == 'support') ? ' class="active" ' : ''; ?>><?= $this->translate('Поддержка')?></a>
+                </li>
+                <li>
+                    <a data-toggle="nope" href="/business/dashboard/" <?= ($controller == \Application\Controller\BusinessController::class) ? ' class="active" ' : ''; ?>><?= $this->translate('Командный центр')?></a>
+                    <ul class="dropdown">
+                        <li>
+                            <a href="/business/dashboard/" <?= ($controller == \Application\Controller\BusinessController::class && $action == 'dashboard') ? ' class="active" ' : ''; ?>><?= $this->translate('Сводка')?></a>
+                        </li>
+                        <li>
+                            <a href="/business/rewards/" <?= ($controller == \Application\Controller\BusinessController::class && in_array($action, ['rewards', 'reward'])) ? ' class="active" ' : ''; ?>><?= $this->translate('Награды')?></a>
+                        </li>
+                        <li>
+                            <a href="/business/clients/" <?= ($controller == \Application\Controller\BusinessController::class && in_array($action, ['clients', 'client'])) ? ' class="active" ' : ''; ?>><?= $this->translate('Клиенты')?></a>
+                        </li>
+                        <li>
+                            <a href="/business/company/" <?= ($controller == \Application\Controller\BusinessController::class && $action == 'company') ? ' class="active" ' : ''; ?>><?= $this->translate('Компания')?></a>
+                        </li>
+                        <li>
+                            <a href="/business/settings/" <?= ($controller == \Application\Controller\BusinessController::class && $action == 'settings') ? ' class="active" ' : ''; ?>><?= $this->translate('Профиль')?></a>
+                        </li>
+                        <li>
+                            <a href="/business/logout/" <?= ($controller == \Application\Controller\BusinessController::class && $action == 'logout') ? ' class="active" ' : ''; ?>><?= $this->translate('Выход')?></a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <!-- End Navigation List -->
+        </div>
+    </div>
+
+
+</div>
+<!-- End Header Logo & Naviagtion -->
+ 

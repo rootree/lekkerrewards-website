@@ -1,0 +1,162 @@
+<!-- Start Page Banner -->
+<div class="page-banner no-subtitle">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h2><?= $this->translate('Настройки')?></h2>
+            </div>
+            <div class="col-md-6">
+                <ul class="breadcrumbs">
+                    <li><a href="/"><?= $this->layout()->company['name'] ?></a></li>
+                    <li><?= $this->translate('Профиль')?></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Page Banner -->
+
+<div id="content">
+    <div class="container">
+
+        <div class="row">
+
+            <?php if ($errorMessage): ?>
+                <div class="alert alert-danger">
+                    <strong><?= $this->translate('Ошибка!')?></strong>
+                    <br/><?= $errorMessage ?>
+                </div>
+            <?php endif?>
+
+
+            <?php if ($successUpdate): ?>
+                <div class="alert alert-success">
+                    <strong><?= $this->translate('Отлично!')?></strong>
+                    <br/><?= $this->translate('Данные успешно обновлены!')?>
+                </div>
+            <?php endif?>
+
+            <!-- Start Contact Form -->
+            <form role="form" class="contact-form" id="contact-form" method="post">
+
+                <div class="col-md-6">
+
+                    <!-- Classic Heading -->
+                    <h4 class="classic-title"><span><?= $this->translate('Персональная информация')?></span></h4>
+
+                    <div class="form-group">
+                        <div class="controls">
+                            <input required="required" type="text" placeholder="<?= $this->translate('Имя')?>" name="name" value="<?= $customer->getName()?>">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="controls">
+                            <input required="required" type="email" class="email" placeholder="<?= $this->translate('Email')?>" name="eMail" value="<?= $customer->getEMail()?>">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="controls">
+                            <input type="text" class="phone" placeholder="<?= $this->translate('Номер телефона')?>" name="phoneNumber" value="<?= $customer->getPhoneNumber()?>">
+                        </div>
+                    </div>
+
+                    <!-- Classic Heading -->
+                    <h4 class="classic-title"><span><?= $this->translate('Пол')?></span></h4>
+
+                    <div class="form-group">
+                        <div class="controls">
+                            <label>
+                                <input type='radio'  name='gender' value='<?= \Application\Model\Entity\Customer::GENDER_MAN ?> ' <?= ($customer->getGender() == \Application\Model\Entity\Customer::GENDER_MAN) ? 'checked="checked"' : '' ?>> <?= $this->translate('Мужчина')?>
+                            </label>
+                            &nbsp;&nbsp;
+                            <label>
+                                <input type='radio' name='gender' value='<?= \Application\Model\Entity\Customer::GENDER_WOMAN ?>' <?= ($customer->getGender() == \Application\Model\Entity\Customer::GENDER_WOMAN) ? 'checked="checked"' : '' ?>> <?= $this->translate('Женщина')?>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Classic Heading -->
+                    <h4 class="classic-title"><span><?= $this->translate('Дата рождения')?></span></h4>
+
+                    <div class="form-group">
+                        <div class="controls">
+
+                            <select name="day">
+                                <option value='0'><?= $this->translate('День')?></option>
+                                <?php
+                                for($i=1;$i<=31;$i++)
+                                {
+                                    echo '<option value="'.$i.'" '.($customer->getBirthday() && $customer->getBirthday()->format('d') == $i ? 'selected="selected" ' : '').'>'.$i.'</option>';
+                                }?>
+                            </select>
+
+                            <select name="month">
+                                <option <?= (!$customer->getBirthday() ? 'selected="selected" ' : '')?> value="na"><?= $this->translate('Месяц')?></option>
+                                <option <?= ($customer->getBirthday() && $customer->getBirthday()->format('m') == 1 ? 'selected="selected" ' : '')?> value="1"><?= $this->translate('Январь')?></option>
+                                <option <?= ($customer->getBirthday() && $customer->getBirthday()->format('m') == 2 ? 'selected="selected" ' : '')?> value="2"><?= $this->translate('Февраль')?></option>
+                                <option <?= ($customer->getBirthday() && $customer->getBirthday()->format('m') == 3 ? 'selected="selected" ' : '')?> value="3"><?= $this->translate('Март')?></option>
+                                <option <?= ($customer->getBirthday() && $customer->getBirthday()->format('m') == 4 ? 'selected="selected" ' : '')?> value="4"><?= $this->translate('Апрель')?></option>
+                                <option <?= ($customer->getBirthday() && $customer->getBirthday()->format('m') == 5 ? 'selected="selected" ' : '')?> value="5"><?= $this->translate('Май')?></option>
+                                <option <?= ($customer->getBirthday() && $customer->getBirthday()->format('m') == 6 ? 'selected="selected" ' : '')?> value="6"><?= $this->translate('Июнь')?></option>
+                                <option <?= ($customer->getBirthday() && $customer->getBirthday()->format('m') == 7 ? 'selected="selected" ' : '')?> value="7"><?= $this->translate('Июль')?></option>
+                                <option <?= ($customer->getBirthday() && $customer->getBirthday()->format('m') == 8 ? 'selected="selected" ' : '')?> value="8"><?= $this->translate('Август')?></option>
+                                <option <?= ($customer->getBirthday() && $customer->getBirthday()->format('m') == 9 ? 'selected="selected" ' : '')?> value="9"><?= $this->translate('Сентябрь')?></option>
+                                <option <?= ($customer->getBirthday() && $customer->getBirthday()->format('m') == 10 ? 'selected="selected" ' : '')?> value="10"><?= $this->translate('Октябрь')?></option>
+                                <option <?= ($customer->getBirthday() && $customer->getBirthday()->format('m') == 11 ? 'selected="selected" ' : '')?> value="11"><?= $this->translate('Ноябрь')?></option>
+                                <option <?= ($customer->getBirthday() && $customer->getBirthday()->format('m') == 12 ? 'selected="selected" ' : '')?> value="12"><?= $this->translate('Декабрь')?></option>
+                            </select>
+
+                            <select name="year">
+                                <option value='0'><?= $this->translate('Год')?></option>
+                                <?php
+                                for($i=(date('Y') - 10);$i>1937;$i--)
+                                {
+                                    echo '<option value="'.$i.'" '.($customer->getBirthday() &&  $customer->getBirthday()->format('Y') == $i ? 'selected="selected" ' : '').'>'.$i.'</option>';
+                                }
+
+                                ?>
+                            </select>
+
+
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="col-md-6">
+
+                    <!-- Classic Heading -->
+                    <h4 class="classic-title"><span><?= $this->translate('Безопасность')?></span></h4>
+
+
+                        <div class="form-group">
+                            <div class="controls">
+                                <input   type="password" class="requiredField" placeholder="<?= $this->translate('Новый пароль')?>" name="password-new">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="controls">
+                                <input  type="password" class="requiredField" placeholder="<?= $this->translate('Новый пароль еще раз')?>" name="password-rep">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="controls">
+                                <input   type="password" class="requiredField" placeholder="<?= $this->translate('Текуший пароль, если вы хотите установать новый')?>" name="password-old">
+                            </div>
+                        </div>
+
+
+                        <!-- End Contact Form -->
+                        <button type="submit" id="submit" class="btn-system btn-large"><?= $this->translate('Сохранить')?></button>
+                        <div id="success" style="color:#34495e;"></div>
+                </div>
+
+
+            </form>
+        </div>
+
+
+    </div>
+</div>
+<!-- End Content -->

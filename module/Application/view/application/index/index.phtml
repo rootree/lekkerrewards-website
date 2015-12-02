@@ -1,0 +1,141 @@
+
+
+<!-- Start Home Page Slider -->
+<section id="home">
+    <!-- Carousel -->
+    <div   id="main-slide" class="carousel slide" data-ride="carousel" >
+
+
+
+        <div class="carousel-inner business-landing-bg">
+            <div class="item active  ">
+
+                <div class=" "   >
+                    <div class="col-md-12 text-center business-landing"  >
+
+                        <h1 class="animated2 business-words business-main-phrase " style="text-align: center;">
+                            <?= $this->translate('Станте участником цифровой системы лояльности') ?>
+                        </h1>
+
+                        <h1 class="animated3 business-words business-second-phrase " style="text-align: center;">
+                            <?= $this->translate('И получайте награды за посещения в ваших любимых заведениях') ?>
+                        </h1>
+
+                        <h3 class="animated3  " style="margin-top: 15px;">
+
+                            <a style="text-transform: capitalize" href="/customer/sign-up/"   class="btn-system  btn-lg" >
+                                <?= $this->translate('Зарегестрироваться') ?>
+                            </a>
+                        </h3>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+    <!-- /carousel -->
+</section>
+<!-- End Home Page Slider -->
+
+
+<!-- Start Services Section -->
+<div class="section service">
+    <div class="container">
+
+        <div class="row  "  >
+
+            <!-- Start Big Heading -->
+            <div class="big-title text-center">
+                <h1><?= sprintf($this->translate('Как работает %s'), $this->layout()->company['name']) ?></h1>
+
+            </div>
+            <!-- End Big Heading -->
+
+            <!-- Divider -->
+            <div class="hr5" style="margin-bottom:40px;"></div>
+
+            <!-- End Service Icon 4 -->
+
+        </div>
+
+
+        <div class="row">
+
+            <!-- Start Service Icon 1 -->
+            <div class="col-md-4 col-sm-12 service-box service-center"  >
+                <div class="service-icon  service-center" >
+                    <div class="numberCircle">1</div>
+                </div>
+                <div class="service-content"  >
+                    <h4><?= sprintf($this->translate('Возмите карту с QR-кодом на %s стенде или зарегестрируйтесь на нашем сайте'), $this->layout()->company['name']) ?></h4>
+
+
+                </div>
+                <div class="service-content service-image service-image-gg"  >
+                    <img class="img-circle" src="images/temp/DSC_4986.jpg">
+                </div>
+            </div>
+            <!-- End Service Icon 1 -->
+
+            <!-- Start Service Icon 2 -->
+            <div class="col-md-4 col-sm-12 service-box service-center" >
+                <div class="service-icon  service-center"  >
+                    <div class="numberCircle">2</div>
+                </div>
+                <div class="service-content " >
+                    <h4 ><?= sprintf($this->translate('Накапливайте посещения сканируя QR-код с вашей карты или QR-код из личного кабинета на планшете в заведениях где есть %s'), $this->layout()->company['name']) ?></h4>
+                </div>
+                <div class="service-content service-image" style="  " >
+                    <img class="img-circle" src="images/temp/DSC_4997.jpg">
+                </div>
+            </div>
+            <!-- End Service Icon 2 -->
+
+            <!-- Start Service Icon 3 -->
+            <div class="col-md-4 col-sm-12 service-box service-center" >
+                <div class="service-icon  service-center"   >
+                    <div class="numberCircle">3</div>
+                </div>
+                <div class="service-content"  >
+                    <h4><?= sprintf($this->translate('Получайте награды за посещения в ваших любимых заведениях с %s'), $this->layout()->company['name']) ?></h4>
+                </div>
+                <div class="service-content service-image service-image-ggg"  >
+                    <img class="img-circle" src="images/temp/DSC_5008.jpg">
+                </div>
+            </div>
+            <!-- End Service Icon 3 -->
+
+        </div>
+
+        <!-- Divider -->
+        <div class="hr5" style="margin-bottom:40px;margin-top:40px;"></div>
+
+
+
+        <div class="slider-content">
+            <div class="col-md-12 text-center " >
+
+
+
+                <div>
+                <a href="/locations/" class="slider btn btn-system btn-large"><?= sprintf($this->translate('Открыть карту'), $this->layout()->company['name']) ?></a>
+                </div>
+
+                <p class="  big-title" style="margin-top: 20px;">
+                    <?= sprintf($this->translate('Найдите заведения в которых работает %s'), $this->layout()->company['name'])?>
+                </p>
+
+            </div>
+        </div>
+
+
+
+        <!-- .row -->
+    </div>
+    <!-- .container -->
+</div>
+<!-- End Services Section -->
+

@@ -1,0 +1,332 @@
+<?php
+
+function timeAgo($timestamp, $thiser){
+    $datetime1=new DateTime("now");
+     $datetime2=date_create($timestamp);
+    $diff=date_diff($datetime1, $datetime2);
+    $timemsg='';
+    if($diff->y > 0){
+        $timemsg = $diff->y .' ' . $thiser->translate('г.') ;
+
+    }
+    else if($diff->m > 0){
+        $timemsg = $diff->m .' ' . $thiser->translate('мес.') ;
+    }
+    else if($diff->d > 0){
+        $timemsg = $diff->d .' ' . $thiser->translate('д.') ;
+    }
+    else if($diff->h > 0){
+        $timemsg = $diff->h .' ' . $thiser->translate('ч.') ;
+    }
+    else if($diff->i > 0){
+        $timemsg = $diff->i .' ' . $thiser->translate('мин.') ;
+    }
+    else if($diff->s > 0){
+        $timemsg = $diff->s .' ' . $thiser->translate('сек.') ;
+    }
+
+    $timemsg = $timemsg.' ' . $thiser->translate('назад') ;
+    return $timemsg;
+}
+
+?>
+
+<script src="/js/Chart.min.js"></script>
+<script src="/js/Chart.StackedBar.js"></script>
+<script src="http://code.jquery.com/ui/1.11.3/jquery-ui.min.js"></script>
+
+<!-- Start Page Banner -->
+<div class="page-banner no-subtitle">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h2><?= $this->translate('Клиенты')?></h2>
+            </div>
+            <div class="col-md-6">
+                <ul class="breadcrumbs">
+                    <li><a href="/"><?= $this->layout()->company['name'] ?></a></li>
+                    <li><?= $this->translate('Клиенты')?></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Page Banner -->
+
+
+
+<div id="content">
+    <div class="container">
+
+
+        <div class="row">
+
+
+            <div class="col-md-6 col-xs-12" style="margin-bottom: 25px;">
+
+
+
+                <h4 class="classic-title"><span><?= $this->translate('Поиск клиентов')?></span></h4>
+
+                <!-- Search Widget -->
+                <div class="widget widget-search" style="margin-bottom: 25px;">
+                    <form action="#" >
+                        <input type="search" id="autocomplete" placeholder="<?= $this->translate('Укажите email или имя')?>" />
+                        <button onclick="return false;" class="search-btn" type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+
+
+                <h4 class="classic-title"><span><?= $this->translate('Новые и вернувшиеся клиенты')?></span></h4>
+
+                <div class="text-center">
+                    <canvas id="bar-customers"  height="250"  style="height: 250px; width: 96%;"></canvas>
+                </div>
+                <!--<div id="bar-customers"  style="height: 250px;"></div>-->
+
+            </div>
+
+            <div class="col-md-6 col-xs-12">
+
+                <h4 class="classic-title"><span><?= $this->translate('Последние посетители')?></span></h4>
+
+                <?php if (!$lastVisitors): ?>
+
+                    <div class="col-md-12">
+                        <!-- Start Big Heading -->
+                        <div class="big-title text-center" style=" margin-top:25px;">
+                            <h1><?= $this->translate('У вас еще никто не был')?></h1>
+                        </div>
+                        <!-- End Big Heading -->
+
+                        <!-- Divider -->
+                        <div class="hr5" style=" margin-bottom:25px;"></div>
+
+                        <!-- Text -->
+                        <p class="text-center" style="margin-bottom:20px;"><?= $this->translate('Последение посетители будут показаны тут')?></p>
+                    </div>
+
+                <?php else: ?>
+
+                    <div class="table-responsive">
+                        <table class="table table-reward">
+                            <thead>
+                            <tr>
+                                <th><?= $this->translate('Клиент')?></th>
+                                <th></th>
+                                <th class="text-center"><?= $this->translate('Посещений')?></th>
+                                <th class="text-center"><?= $this->translate('Наград')?></th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <?php
+                            /** @var \Application\Model\Entity\Visit $visit */
+                            foreach ($lastVisitors as $visit): ?>
+                                <tr>
+                                    <td>
+                                        <a href="/business/client/<?= $visit['id'] ?>/">
+                                            <?= $visit['name'] ?>
+                                        </a>
+                                        <?php if ($visit['first_visit']): ?>
+                                            <span class="badge badge-first-time">
+                                                <?= $this->translate('Первый раз')?>
+                                            </span>
+                                        <?php endif ?>
+                                    </td>
+                                    <td><?= timeAgo($visit['created_at'], $this)?></td>
+                                    <td class="text-center"><?= $visit['visits'] ?></td>
+                                    <td class="text-center"><?= $visit['redeems'] ?></td>
+                                </tr>
+                            <?php endforeach; ?>
+                            </tbody>
+                        </table>
+                    </div>
+
+                <?php endif ?>
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+
+                <h4 class="classic-title"><span><?= $this->translate('Последение награжденные')?></span></h4>
+
+                <?php if (!$lastRedeems): ?>
+
+                    <div class="col-md-12">
+                        <!-- Start Big Heading -->
+                        <div class="big-title text-center" style=" margin-top:25px;">
+                            <h1><?= $this->translate('У вас еще ни кто не получал ваших наград')?></h1>
+                        </div>
+                        <!-- End Big Heading -->
+
+                        <!-- Divider -->
+                        <div class="hr5" style=" margin-bottom:25px;"></div>
+
+                        <!-- Text -->
+                        <p class="text-center" style="margin-bottom:20px;"><?= $this->translate('Последние полученные награды будут показына тут')?></p>
+                    </div>
+
+                <?php else: ?>
+
+                    <div class="table-responsive">
+                        <table class="table table-reward">
+                            <thead>
+                            <tr>
+                                <th class="date-th"><?= $this->translate('Дата')?></th>
+                                <th><?= $this->translate('Клиент')?></th>
+                                <th><?= $this->translate('Награда')?></th>
+                                <th class="text-center"><?= $this->translate('Потраченные посещения')?></th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <?php
+                            /** @var \Application\Model\Entity\Redeem $redeem */
+                            foreach ($lastRedeems as $redeem): ?>
+                                <tr>
+                                    <td class="reward-date"><?= $redeem->getCreatedAt()->format($this->translate('d M Y в H:i')) ?></td>
+                                    <td>
+                                        <a href="/business/client/<?= $redeem->getFkCustomer()->getId() ?>/">
+                                            <?= $redeem->getFkCustomer()->getName() ?>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="/business/reward/<?= $redeem->getFkReward()->getId() ?>/">
+                                            <?= $redeem->getFkReward()->getName() ?>
+                                        </a>
+                                    </td>
+                                    <td class="text-center">
+                                        <?= $redeem->getSpent() ?>
+                                        <small class="spent-rewards"><?= sprintf($this->translate('из %s'), $redeem->getTotal())?></small>
+                                    </td>
+                                </tr>
+
+                            <?php endforeach; ?>
+                            </tbody>
+                        </table>
+                    </div>
+
+                <?php endif ?>
+
+            </div>
+
+        </div>
+
+
+    </div>
+</div>
+<!-- End Content -->
+
+
+
+<script>
+
+
+    var data = {
+        labels: [
+            <?php foreach ($newAndReturned as $dates => $data): ?>
+            "<?= $dates ?>",
+            <?php endforeach; ?>
+            ""],
+        datasets: [
+            {
+                label: "<?= $this->translate('Новые')?>",
+                fillColor: '#24CBE5',
+                /*                strokeColor: "rgba(151,187,205,0.8)",
+                 highlightFill: "rgba(151,187,205,0.75)",
+                 highlightStroke: "rgba(151,187,205,1)",*/
+                data: [
+                    <?php foreach ($newAndReturned as list($new, $returned)): ?>
+                    <?= $new ?>,
+                    <?php endforeach; ?>
+                    0]
+            },
+            {
+                label: "<?= $this->translate('Вернувшиеся')?>",
+                fillColor: '#058DC7',
+                data: [
+                    <?php foreach ($newAndReturned as list($new, $returned)): ?>
+                    <?= $returned ?>,
+                    <?php endforeach; ?>
+                    0]
+            }
+        ]
+    };
+
+
+
+
+
+    $(function() {
+
+        Chart.defaults.global.responsive = true;
+        Chart.defaults.global.animation = false;
+        Chart.defaults.global.multiTooltipTemplate  = "<%if (datasetLabel){%><%=datasetLabel%>: <%}%><%= value %>"  ;
+
+
+        var ctx = document.getElementById("bar-customers").getContext("2d");
+
+        var myBarChart = new Chart(ctx).StackedBar(data, {
+            //Boolean - Whether the scale should start at zero, or an order of magnitude down from the lowest value
+            scaleBeginAtZero : true,
+
+            //Boolean - Whether grid lines are shown across the chart
+            scaleShowGridLines : true,
+
+            //String - Colour of the grid lines
+            scaleGridLineColor : "rgba(0,0,0,.05)",
+
+            //Number - Width of the grid lines
+            scaleGridLineWidth : 1,
+
+            //Boolean - Whether to show horizontal lines (except X axis)
+            scaleShowHorizontalLines: true,
+
+            //Boolean - Whether to show vertical lines (except Y axis)
+            scaleShowVerticalLines: true,
+
+            //Boolean - If there is a stroke on each bar
+            barShowStroke : true,
+
+            //Number - Pixel width of the bar stroke
+            barStrokeWidth : 2,
+
+            //Number - Spacing between each of the X value sets
+            barValueSpacing : 5,
+
+            //Number - Spacing between data sets within X values
+            barDatasetSpacing : 1,
+
+            //String - A legend template
+            legendTemplate : "<ul class=\"<%=name.toLowerCase()%>-legend\"><% for (var i=0; i<datasets.length; i++){%><li><span style=\"background-color:<%=datasets[i].fillColor%>\"></span><%if(datasets[i].label){%><%=datasets[i].label%><%}%></li><%}%></ul>"
+
+        });
+
+
+
+
+        $('#autocomplete').autocomplete({
+           source: "/business/search-client/",
+            minLength: 3,
+            //source: countries,
+            select: function(event, ui) {
+                doSearch(ui.item.value, ui.item.data);
+            }
+        })
+            .data( "ui-autocomplete" )._renderItem = function( ul, item ) {
+            return $( "<li>" )
+                .append( "<a href='#'>" + item.data.name + " (" + item.data.e_mail + ")</a>" )
+                .appendTo( ul );
+        };
+
+    });
+
+
+    function doSearch(value, data) {
+        window.location.href = '/business/client/' + data.id + '/';
+    }
+
+
+
+</script>

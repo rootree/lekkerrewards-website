@@ -1,0 +1,182 @@
+<?php
+/** @var \Application\Model\Entity\MerchantBranch $merchantBranch */
+?>
+
+<!-- Start Page Banner -->
+<div class="page-banner no-subtitle">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h2><?= $this->translate('Компания')?></h2>
+            </div>
+            <div class="col-md-6">
+                <ul class="breadcrumbs">
+                    <li><a href="/"><?= $this->layout()->company['name'] ?></a></li>
+                    <li><?= $this->translate('Компания')?></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Page Banner -->
+
+
+
+<div id="content">
+    <div class="container">
+
+
+        <div class="row">
+
+
+            <?php if ($errorMessage): ?>
+                <div class="alert alert-danger">
+                    <strong><?= $this->translate('Ошибка!')?></strong>
+                    <br/><?= $errorMessage ?>
+                </div>
+            <?php endif?>
+
+
+            <?php if ($successUpdate): ?>
+                <div class="alert alert-success">
+                    <strong><?= $this->translate('Отлично!')?></strong>
+                    <br/><?= $this->translate('Данные успешно обновлены!')?>
+                </div>
+            <?php endif?>
+
+
+            <!-- Start Contact Form -->
+            <form role="form" class="contact-form" id="contact-form" method="post">
+
+                <div class="col-md-6">
+
+                    <!-- Classic Heading -->
+                    <h4 class="classic-title"><span><?= $this->translate('Общая информация')?></span></h4>
+
+                    <div class="form-group settings-locked">
+                        <?= $merchantBranch->getFkMerchant()->getName() ?>
+                    </div>
+
+
+
+                    <!-- Classic Heading -->
+                    <h4 class="classic-title"><span><?= $this->translate('Логотип')?></span></h4>
+
+                    <div class="form-group">
+                            <div class="team-member text-center">
+                                <!-- Memebr Photo, Name & Position -->
+                                <div class="member-photo settings-logo" >
+                                    <img alt="" src="/merchant/logo/<?= $merchantBranch->getFkMerchant()->getId() ?>/" />
+                                </div>
+                            </div>
+
+                    </div>
+
+                    <!-- Classic Heading -->
+                    <h4 class="classic-title"><span><?= $this->translate('Страна')?></span></h4>
+
+                    <div class="form-group">
+                        <div class="controls settings-locked">
+                            <?= $merchantBranch->getFkCountry()->getNicename() ?>
+                        </div>
+                    </div>
+
+
+
+                    <!-- Classic Heading -->
+                    <h4 class="classic-title"><span><?= $this->translate('Место расположения')?></span></h4>
+
+                    <div class="form-group">
+                        <div class="controls settings-locked">
+                                <?= $merchantBranch->getAddress() ?>, <?= $merchantBranch->getZipcode() ?>, <?= $merchantBranch->getFkCity()->getName() ?>
+                        </div>
+                    </div>
+
+
+                    <!-- Classic Heading -->
+                    <h4 class="classic-title"><span><?= $this->translate('Категория бизнеса')?></span></h4>
+
+                    <div class="form-group">
+                        <div class="controls settings-locked">
+                            <?= $merchantBranch->getFkMerchant()->getFkCategory()->getName() ?>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="col-md-6">
+
+                    <!-- Classic Heading -->
+                    <h4 class="classic-title"><span><?= $this->translate('Контакты')?></span></h4>
+
+                    <div class="form-group">
+                        <div class="controls">
+                            <input type="text" class="phone" placeholder="<?= $this->translate('Веб сайт')?>" value="<?= $merchantBranch->getFkMerchant()->getWebsite() ?>" name="website">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="controls">
+                            <input type="text" class="phone" placeholder="<?= $this->translate('Номер телефона')?>" value="<?= $merchantBranch->getPhoneNumber() ?>" name="phoneNumber">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="controls">
+                            <input type="email" class="email" placeholder="<?= $this->translate('Email')?>" value="<?= $merchantBranch->getEMail() ?>" name="email">
+                        </div>
+                    </div>
+
+                    <!-- Classic Heading -->
+                    <h4 class="classic-title"><span><?= $this->translate('Социальность')?></span></h4>
+
+                    <div class="form-group">
+                        <div class="controls">
+                            <input type="text" class="phone" placeholder="<?= $this->translate('Страница в Facebook')?>" value="<?= $merchantBranch->getFkMerchant()->getFacebook() ?>" name="facebook">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="controls">
+                            <input type="text" class="phone" placeholder="Twitter" value="<?= $merchantBranch->getFkMerchant()->getTwitter() ?>" name="twitter">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="controls">
+                            <input type="text" class="phone" placeholder="Yelp" value="<?= $merchantBranch->getFkMerchant()->getYelpId() ?>" name="yelpId">
+                        </div>
+                    </div>
+
+                    <!-- Classic Heading -->
+                    <!--<h4 class="classic-title"><span>Working hours</span></h4>
+
+                    <div class="form-group">
+                        <div class="controls">
+                            <select name="category">
+                                <?php
+/*                                for($i=1;$i<=31;$i++)
+                                {
+                                    echo '<option value='.$i.'>'.$i.'</option>';
+                                }*/?>
+                            </select>
+                        </div>
+                    </div>-->
+
+                    <!-- End Contact Form -->
+                    <button type="submit" id="submit" class="btn-system btn-large"><?= $this->translate('Обновить')?></button>
+                    <div id="success" style="color:#34495e;"></div>
+                </div>
+
+
+            </form>
+        </div>
+
+
+    </div>
+</div>
+<!-- End Content -->
+
+<script>
+    document.getElementById("uploadBtn").onchange = function () {
+        document.getElementById("uploadFile").value = this.value;
+        $('#fileName').show();
+    };
+</script>

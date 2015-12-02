@@ -1,0 +1,374 @@
+<!doctype html>
+<!--[if IE 8 ]>
+<html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]>
+<html lang="en" class="no-js"> <![endif]-->
+<html lang="en">
+
+<head>
+
+    <base href="<?= $this->company['baseHost'] ?>">
+
+    <!-- Basic -->
+    <title><?php echo ($this->pageTitle ? $this->pageTitle . ' | ' : '') . $this->company['name'] ?></title>
+
+    <!-- Define Charset -->
+    <meta charset="utf-8">
+
+    <!-- Responsive Metatag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- Page Description and Author -->
+    <meta name="description" content="<?= $this->translate('Бестлатная система лояльности')?>">
+    <meta name="author" content="iThemesLab">
+
+    <!-- Bootstrap CSS  -->
+    <link rel="stylesheet" href="asset/css/bootstrap.min.css" type="text/css" media="screen">
+
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" media="screen">
+
+    <!-- Slicknav -->
+    <link rel="stylesheet" type="text/css" href="css/slicknav.css" media="screen">
+
+    <!-- Margo CSS Styles  -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="css/colors/blue.css" title="blue" media="screen"/>
+
+    <!-- Responsive CSS Styles  -->
+    <link rel="stylesheet" type="text/css" href="css/responsive.css" media="screen">
+
+    <!-- Css3 Transitions Styles  -->
+<!--    <link rel="stylesheet" type="text/css" href="css/animate.css" media="screen">
+-->
+    <!-- Color CSS Styles  -->
+<!--    <link rel="stylesheet" type="text/css" href="css/colors/blue.css" title="blue" media="screen"/>
+-->
+
+    <!-- Margo JS  -->
+    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="js/jquery.migrate.js"></script>
+    <script type="text/javascript" src="js/modernizrr.js"></script>
+    <script type="text/javascript" src="asset/js/bootstrap.min.js"></script>
+    <!--<script type="text/javascript" src="js/jquery.fitvids.js"></script>
+    <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="js/nivo-lightbox.min.js"></script>
+    <script type="text/javascript" src="js/jquery.isotope.min.js"></script>
+    <script type="text/javascript" src="js/jquery.appear.js"></script>
+    <script type="text/javascript" src="js/count-to.js"></script>
+    <script type="text/javascript" src="js/jquery.textillate.js"></script>
+    <script type="text/javascript" src="js/jquery.lettering.js"></script>
+    <script type="text/javascript" src="js/jquery.easypiechart.min.js"></script>
+    <script type="text/javascript" src="js/jquery.nicescroll.min.js"></script>
+    <script type="text/javascript" src="js/jquery.parallax.js"></script>
+    <script type="text/javascript" src="js/mediaelement-and-player.js"></script>-->
+    <script type="text/javascript" src="js/jquery.slicknav.js"></script>
+
+
+    <!--[if IE 8]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+</head>
+
+<body>
+
+<!-- Full Body Container -->
+<div id="container"  >
+
+
+    <!-- Start Header Section -->
+    <div class="hidden-header"></div>
+    <header class="clearfix">
+
+        <!-- Start Top Bar -->
+        <div class="top-bar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7">
+                        <!-- Start Contact Info -->
+                        <ul class="contact-details">
+                            <li><a data-toggle="" href="mailto:<?=$this->company['email']?>"><i class="fa fa-envelope-o"></i> <?=$this->company['email']?></a>
+                            </li>
+                            <li><a data-toggle="" href="tel:<?=$this->company['phone']?>"><i class="fa fa-phone"></i> <?=$this->company['phone']?></a>
+                            </li>
+                        </ul>
+                        <!-- End Contact Info -->
+                    </div>
+                    <!-- .col-md-6 -->
+                    <div class="col-md-5">
+                        <!-- Start Social Links -->
+                        <ul class="social-list">
+                            <li>
+                                <?php if ($language != 'nl'): ?>
+                                <a data-toggle="" class="flag-choose" data-placement="bottom" href="/change-language/nl/"  >
+                                    <img src="/images/flags/flags_iso/48/nl.png" alt="NL"  class="fa">
+                                </a>
+                                <?php endif; ?>
+                                <?php if ($language != 'en'): ?>
+                                <a data-toggle="" class="flag-choose" data-placement="bottom" href="/change-language/en/"  >
+                                    <img src="/images/flags/flags_iso/48/us.png" alt="EN" class="fa">
+                                </a>
+                                <?php endif; ?>
+                            </li>
+                            <!--<li>
+                                <a data-toggle="" class="facebook itl-tooltip" data-placement="bottom" title="<?/*=$this->company['facebook']*/?>" href="<?/*=$this->company['facebook']*/?>" target="_blank"><i
+                                        class="fa fa-facebook"></i></a>
+                            </li>
+                            <li>
+                                <a data-toggle="" class="twitter itl-tooltip" target="_blank" data-placement="bottom" title="<?/*=$this->company['twitter']*/?>" href="<?/*=$this->company['twitter']*/?>"><i
+                                        class="fa fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a data-toggle="" class="instgram itl-tooltip" target="_blank" data-placement="bottom" title="<?/*= $this->company['instgram']*/?>" href="<?/*= $this->company['instgram']*/?>"><i
+                                        class="fa fa-instagram"></i></a>
+                            </li>-->
+
+                        </ul>
+                        <!-- End Social Links -->
+                    </div>
+                    <!-- .col-md-6 -->
+                </div>
+                <!-- .row -->
+            </div>
+            <!-- .container -->
+        </div>
+        <!-- .top-bar -->
+        <!-- End Top Bar -->
+
+        <?php
+/*var_export($this->selectedController );
+var_export($this->selectedAction);
+var_export(\Application\Controller\IndexController::class );
+        exit();*/
+        switch($this->userType) {
+            case \Application\Controller\AbstractApplicationController::USER_TYPE_CUSTOMER:
+                echo $this->partial('layout/menu/customer.phtml', array('controller' => $this->selectedController, 'action' => $this->selectedAction));
+                break;
+            case \Application\Controller\AbstractApplicationController::USER_TYPE_OWNER:
+                echo $this->partial('layout/menu/owner.phtml', array('controller' => $this->selectedController, 'action' => $this->selectedAction));
+                break;
+            default:
+                echo $this->partial('layout/menu/guest.phtml', array('controller' => $this->selectedController, 'action' => $this->selectedAction));
+                break;
+        } ?>
+
+    </header>
+    <!-- End Header Section -->
+
+
+    <!-- Main Content -->
+    <?php echo $this->content; ?>
+    <!-- End Main Content -->
+
+    <!-- Start Footer Section -->
+    <footer>
+        <div class="container">
+            <div class="row footer-widgets">
+
+
+                <!-- Start Subscribe & Social Links Widget -->
+                <div class="col-md-4 col-xs-12 col-sm-4">
+                    <div class="footer-widget mail-subscribe-widget">
+                        <h4><?= $this->translate('Будте с нами')?><span class="head-line"></span></h4>
+
+                        <p><?= $this->translate('Подпишитесь на нашу рассылку и будте в курсе того что мы делаем')?></p>
+
+
+                        <?php if (!empty($_COOKIE['subscribed'])): ?>
+
+                            <div  >
+<br/>
+                                <p><?= $this->translate('Подписка оформлена. Спасибо!')?></p>
+
+                            </div>
+
+                        <?php else: ?>
+
+                            <div id="subscribeFormSent"  style="display:none;">
+                                <br/>
+                                <p>
+                                    <?= $this->translate('Подписка успешно оформлена. Спасибо!')?>
+                                </p>
+                            </div>
+                            <div id="subscribeFormProblem" style="display:none;">
+                                <br/>
+                                <p>
+                                    <?= sprintf($this->translate('К сожалению не получается отправить ваш запрос. Но вы можете позвонить нам на %s.'), $this->layout()->company['phone'])?>
+                                </p>
+                            </div>
+                            <div id="subscribeForm">
+
+
+                                <form class="subscribe" id="subscribe-form" method="post" action="/ajax/feedback/">
+                                    <input type="hidden" name="subject" value="subscribe">
+                                    <input type="text" required="required" name="email" placeholder="mail@example.com">
+                                    <input type="submit" id="subscribe-form-btn" class="btn-system" value="<?= $this->translate('Подписаться')?>">
+                                </form>
+                            </div>
+                        <?php endif ?>
+
+                    </div>
+                </div>
+                <!-- .col-md-3 -->
+                <!-- End Subscribe & Social Links Widget -->
+
+
+                <!-- Start Twitter Widget -->
+                <div class="col-md-4 col-xs-12  col-sm-4">
+
+                    <div class="footer-widget social-widget">
+                        <h4><?= $this->translate('Присоединяйтесь к нам')?><span class="head-line"></span></h4>
+                        <ul class="social-icons">
+                            <li>
+                                <a target="_blank" data-toggle="" class="facebook" href="<?=$this->company['facebook']?>"><i class="fa fa-facebook"></i></a>
+                            </li>
+                            <li>
+                                <a target="_blank" data-toggle="" class="twitter" href="<?=$this->company['twitter']?>"><i class="fa fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a target="_blank" data-toggle="" class="instgram" href="<?=$this->company['instgram']?>"><i class="fa fa-instagram"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- .col-md-3 -->
+                <!-- End Twitter Widget -->
+
+                <!-- Start Contact Widget -->
+                <div class="col-md-4 col-xs-12  col-sm-4">
+                    <div class="footer-widget contact-widget">
+                        <h4><img src="images/footer-margo.png" class="img-responsive" alt="Footer Logo"/></h4>
+
+                        <ul>
+                            <li><span><?= $this->translate('Наш номер')?>:</span> <?=$this->company['phone']?></li>
+                            <li><span><?= $this->translate('Email')?>:</span> <?=$this->company['email']?></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- .col-md-3 -->
+                <!-- End Contact Widget -->
+
+
+            </div>
+            <!-- .row -->
+
+            <!-- Start Copyright -->
+            <div class="copyright-section">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p>&copy; 2015 <a href="/"><?=$this->company['name']?></a></p>
+                    </div>
+                    <!-- .col-md-6 -->
+                    <div class="col-md-6">
+                        <ul class="footer-nav">
+                            <li>
+                                <a href="/support/"><?= $this->translate('Поддержка')?></a>
+                            </li>
+                             <li>
+                                <a href="/terms-of-use/"><?= $this->translate('Условия использования')?></a>
+                            </li>
+                            <li>
+                                <a href="/privacy-policy/"><?= $this->translate('Политика конфеденциальности')?></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- .col-md-6 -->
+                </div>
+                <!-- .row -->
+            </div>
+            <!-- End Copyright -->
+
+        </div>
+    </footer>
+    <!-- End Footer Section -->
+
+
+</div>
+<!-- End Full Body Container -->
+
+<!-- Go To Top Link -->
+<a href="#" class="back-to-top" data-toggle=""><i class="fa fa-angle-up"></i></a>
+
+<div id="loader">
+    <div class="spinner">
+        <div class="dot1"></div>
+        <div class="dot2"></div>
+    </div>
+</div>
+
+<?php if ($this->userType == \Application\Controller\AbstractApplicationController::USER_TYPE_CUSTOMER): ?>
+    <div class="modal fade" id="qr-block" tabindex="-1" role="dialog" aria-labelledby="QR" aria-hidden="true" style="z-index: 1000000000;">
+        <div class="modal-dialog  "  style="z-index: 1000000000;">
+            <div class="modal-content col-md-7 col-md-offset-2 col-xs-12 col-sm-7  col-sm-offset-2"  style="z-index: 1000000000;">
+
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" id="myModalLabel"><?= $this->translate('Ваш QR-код')?></h4>
+                </div>
+
+                <div class="modal-body text-center" style="margin-bottom: 0px;">
+                    <p>
+                        <img src="/customer/qr/" class="qr-code-img">
+                    </p>
+                    <h3>
+                        <?= $this->qrCode ?>
+                    </h3>
+                    <p>
+                        <?= $this->translate('Осканируйте QR-код на планшете')?>
+                    </p>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn-system btn-small border-btn" data-dismiss="modal"><?= $this->translate('Закрыть')?></button>
+                </div>
+            </div>
+        </div>
+    </div>
+<?php endif; ?>
+
+
+<script type="text/javascript" src="js/script.js"></script>
+<!-- Hotjar Tracking Code for lekkerrewards.nl -->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:84428,hjsv:5};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'//static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter33938514 = new Ya.Metrika({
+                    id:33938514,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/33938514" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+</body>
+
+</html>

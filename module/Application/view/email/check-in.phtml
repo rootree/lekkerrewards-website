@@ -1,0 +1,23 @@
+<?php
+/**
+ * @var \Application\Model\Entity\MerchantBranch $merchantBranch
+ */
+?>
+<?php if ($isFirstTime): ?>
+    <h1>
+        <?= sprintf($this->translate('Первая отметка в %s'), $merchantBranch->getFkMerchant()->getName() )?>
+    </h1>
+<?php else: ?>
+    <h1>
+        <?= sprintf($this->translate('Новая отметка в %s'), $merchantBranch->getFkMerchant()->getName() )?>
+    </h1>
+<?php endif ?>
+
+<p><?= sprintf($this->translate('Отлично! Вы только что отметились в %s и стали еще на один шаг ближе к получению бесплатной награды в этом заведении.'), $merchantBranch->getFkMerchant()->getName() )?></p>
+
+<h4><?= sprintf($this->translate('У вас есть %s доступных посешений, которые вы можете обменять на награды.'), $points )?></h4>
+
+
+<p>
+    <a href="<?= sprintf('%smerchant/%s/', $company['baseHost'], $merchantBranch->getPermalinkPath()) ?>" class="btn-primary"><?= sprintf($this->translate('Посмотреть награды в %s'), $merchantBranch->getFkMerchant()->getName() )?></a>
+</p>

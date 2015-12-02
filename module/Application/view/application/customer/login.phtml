@@ -1,0 +1,57 @@
+<!-- Start Content -->
+<div id="content " class=" big-form" style="background: url(/images/patterns/1.png) fixed repeat;">
+    <div class="container ">
+        <div class="row ">
+
+            <div class="just-form col-md-4 col-md-offset-4 big-form-in  col-sm-6 col-sm-offset-3">
+
+                <!-- Classic Heading -->
+               <h4 class="classic-title"><span><?= $this->translate('Авторицация')?></span></h4>
+
+                <?php if ($errorMessage): ?>
+                    <div class="alert alert-danger">
+                        <strong><?= $this->translate('Ошибка!')?></strong>
+                        <br/><?= $errorMessage ?>
+                    </div>
+                <?php endif?>
+
+                <?php if ($unauthorized): ?>
+                    <div class="alert alert-info">
+                        <strong><?= $this->translate('Доступ!')?></strong>
+                        <br/><?= $this->translate('Для получения доступа к запрошенной странице, пройдите авторизацию.')?>
+                    </div>
+                <?php endif?>
+
+                <!-- Start Contact Form -->
+                <form role="form" class="contact-form" id="contact-form" method="post">
+                    <div class="form-group">
+                        <div class="controls">
+                            <input required="required" type="email" class="email requiredField" placeholder="<?= $this->translate('Email')?>" name="eMail" <?= htmlspecialchars(@$_POST['eMail']) ?>>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="controls">
+                            <input required="required" type="password" class="requiredField" placeholder="<?= $this->translate('Пароль')?>" name="password">
+                        </div>
+                    </div>
+                    <button type="submit" id="submit" class="btn-system btn-large"><?= $this->translate('Вход')?></button>
+                    <div id="success" style="color:#34495e;"></div>
+                </form>
+                <!-- End Contact Form -->
+
+
+                <!-- Divider -->
+                <div class="hr5" style="margin-top:15px;margin-bottom:15px;"></div>
+
+                <p>
+                    <a href="/customer/sign-up/"><?= $this->translate('Впервые у нас? Создать аккаунт') ?></a>
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<!-- End content -->

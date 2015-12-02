@@ -1,0 +1,23 @@
+<?php
+/**
+ * @var \Application\Model\Entity\MerchantBranch $merchantBranch
+ * @var \Application\Model\Entity\Customer $customer
+ */
+?>
+
+<h1>
+    <?= sprintf($this->translate('Новая награда!'), $this->layout()->company['name'] )?>
+</h1>
+
+<h2>
+    <?= $reward ?>
+</h2>
+
+<p><?= sprintf($this->translate('Поздравлем! Вы получили "%s" в %s за %s посещений! Так держать!'), $reward, $this->layout()->company['name'], $visits)?></p>
+
+<p>
+     <a href="<?= $this->layout()->company['baseHost'] . 'merchant/' . $merchantBranch->getPermalinkPath() ?>/" class="btn-primary"><?= sprintf($this->translate('Посмотреть другие награды в %s'), $merchantBranch->getFkMerchant()->getName() )?></a>
+</p>
+
+
+<p><?= $this->translate('Удачи!')?></p>

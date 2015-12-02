@@ -1,0 +1,227 @@
+<?php
+/** @var \Application\Model\Entity\MerchantBranch $merchantBranch */
+/** @var \Application\Model\Entity\MerchantsCustomers $merchantCustomerRelation */
+
+?>
+
+<?= $this->partial('application/common/calendar.phtml', array( )); ?>
+
+<!-- Start Page Banner -->
+<div class="page-banner  " style="height: 200px;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h2><?= $this->translate('Моя активность')?>
+                    <small class="visible-lg visible-md visible-sm "><?= sprintf($this->translate('В %s'), $merchantBranch->getFkMerchant()->getName()) ?></small>
+                </h2>
+            </div>
+            <div class="col-md-6">
+                <ul class="breadcrumbs">
+                    <li><a href="/"><?= $this->layout()->company['name'] ?></a></li>
+                    <li><a href="/merchant/<?= $merchantBranch->getPermalinkPath() ?>/"><?= $merchantBranch->getFkMerchant()->getName() ?></a></li>
+                    <li><?= $this->translate('Моя активность')?></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Page Banner -->
+
+
+<div id="content">
+    <div class="container">
+
+        <div class="row blog-page merchant-page">
+
+            <!--Sidebar-->
+            <div class="col-md-3 sidebar left-sidebar sidebar-map">
+
+                <?= $this->partial('application/merchant/partials/overview.phtml', array(
+                    'merchantBranch' => $merchantBranch,
+                    'merchantURL' => $merchantURL,
+                )); ?>
+
+            </div>
+            <!--End sidebar-->
+
+            <!-- Start Blog Posts -->
+            <div class="col-md-9 blog-box  " style="margin-top: 25px;">
+
+                <?php if ($merchantCustomerRelation): ?>
+
+                    <!-- Start Services Icons -->
+                    <div class="row">
+
+                        <!-- Start Service Icon 1 -->
+                        <div class="col-md-4 col-sm-4  ">
+                            <div class="panel status panel-success">
+                                <div class="panel-heading">
+                                    <h1 class="panel-title text-center"><?= $merchantCustomerRelation->getVisits() ?></h1>
+                                </div>
+                                <div class="panel-body text-center">
+                                    <strong><?= $this->translate('Посещения')?></strong>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Service Icon 1 -->
+
+                        <!-- Start Service Icon 2 -->
+                        <div class="col-md-4 col-sm-4  ">
+                            <div class="panel status panel-primary">
+                                <div class="panel-heading">
+                                    <h1 class="panel-title text-center"><?= $merchantCustomerRelation->getRedeems() ?></h1>
+                                </div>
+                                <div class="panel-body text-center">
+                                    <strong><?= $this->translate('Награды')?></strong>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Service Icon 2 -->
+
+                        <!-- Start Service Icon 4 -->
+                        <div class="col-md-4  col-sm-4  ">
+
+                            <div class="panel status panel-warning">
+                                <div class="panel-heading">
+                                    <h1 class="panel-title text-center"><?= $merchantCustomerRelation->getPoints() ?></h1>
+                                </div>
+                                <div class="panel-body text-center">
+                                    <strong><?= $this->translate('Доступные посещения')?></strong>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- End Service Icon 3 -->
+
+                    </div>
+                    <!-- End Services Icons -->
+
+
+
+                    <!--Visits-->
+
+                    <h4 class="classic-title"><span><?= $this->translate('Последние посещения')?></span></h4>
+
+                    <?php if (!$visitsList): ?>
+
+                        <div class="col-md-12">
+                            <!-- Start Big Heading -->
+                            <div class="big-title text-center" style=" margin-top:25px;">
+                                <h1><?= $this->translate('Вы еще не были в этом заведении')?></h1>
+                            </div>
+                            <!-- End Big Heading -->
+
+                            <!-- Divider -->
+                            <div class="hr5" style=" margin-bottom:25px;"></div>
+
+                            <!-- Text -->
+                            <p class="text-center" style="margin-bottom:20px;"><?= $this->translate('Ваши последние посещения будут отображаться тут.')?></p>
+                        </div>
+
+                    <?php else: ?>
+
+                        <div class="row">
+
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <?php
+                                $timestamp = strtotime( '-1 month' );
+                                echo build_calendar(date('m', $timestamp), date('Y', $timestamp), $visitsList); ?>
+                            </div>
+
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <?php echo build_calendar(date('m'), date('Y'), $visitsList); ?>
+                            </div>
+                        </div>
+
+                    <?php endif ?>
+
+                    <!--Redeems-->
+
+                    <h4 class="classic-title"><span><?= $this->translate('Последние награды')?></span></h4>
+
+                    <?php if (!$redeemsList): ?>
+
+                        <div class="col-md-12">
+                            <!-- Start Big Heading -->
+                            <div class="big-title text-center" style=" margin-top:25px;">
+                                <h1><?= $this->translate('У вас еще нет наград')?></h1>
+                            </div>
+                            <!-- End Big Heading -->
+
+                            <!-- Divider -->
+                            <div class="hr5" style=" margin-bottom:25px;"></div>
+
+                            <!-- Text -->
+                            <p class="text-center" style="margin-bottom:20px;"><?= $this->translate('Ваши награды будут отображены в этой части страницы.')?></p>
+                        </div>
+
+                    <?php else: ?>
+
+                        <div class="row">
+                            <div class="col-md-12">
+
+                                <table class="table table-reward">
+                                    <thead>
+                                    <tr>
+                                        <th class="date-th">
+                                            <?= $this->translate('Дата')?>
+                                        </th>
+                                        <th class="text-center reward-row visits-th">
+                                            <?= $this->translate('Посещения')?>
+                                        </th>
+                                        <th class="reward-row"><?= $this->translate('Награда')?></th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <?php
+                                    /** @var \Application\Model\Entity\Redeem $redeem */
+                                    foreach ($redeemsList as $redeem): ?>
+                                        <tr>
+                                            <td class="reward-date">
+                                                <?= $redeem->getCreatedAt()->format('Y-m-d H:m') ?>
+                                            </td>
+                                            <td class="text-center reward-row">
+                                                <span class="badge badge-reward">
+                                                    <?= $redeem->getFkReward()->getPoints() ?>
+                                                </span>
+                                            </td>
+                                            <td class="reward-name reward-row reward-row-history">
+                                                <?= $redeem->getFkReward()->getName() ?>
+                                            </td>
+                                        </tr>
+                                    <?php endforeach ?>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                    <?php endif ?>
+
+
+
+
+                <?php else: ?>
+
+                    <div class="big-title text-center" style=" margin-top:25px;">
+                        <h1><?= $this->translate('Это только начало') ?></h1>
+                    </div>
+
+                    <!-- Divider -->
+                    <div class="hr5" style=" margin-bottom:25px;"></div>
+
+                    <!-- End Big Heading -->
+                    <p class="text-center"
+                       style="margin-bottom:20px;"><?= $this->translate('У вас еще нет визитов и наград в этом месте.') ?></p>
+
+                    <p class="text-center" style="margin-bottom:20px;">
+                        <a href="/merchant/<?= $merchantBranch->getPermalinkPath() ?>/" class="btn-system btn-large"><?= $this->translate('Вернуться к наградам')?></a>
+                    </p>
+
+                <?php endif ?>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Content -->
+

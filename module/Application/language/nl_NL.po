@@ -1,0 +1,2287 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-12-02 10:29+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../view/layout/layout.phtml:6 ../view/layout/layout.phtml:33 567 loco:#:
+#: 5625eff714d725cc668b4567
+msgid "Skeleton Application"
+msgstr "Skeleton Application"
+
+#: module/Application/view/error/index.phtml:1 loco:5625eff714d725cc668b4576
+msgid "An error occurred"
+msgstr "Er is een fout opgetreden"
+
+#: module/Application/view/error/404.phtml:65
+#: module/Application/view/error/index.phtml:8 loco:5625eff714d725cc668b4577
+msgid "Additional information"
+msgstr "Extra informatie"
+
+#: module/Application/view/error/404.phtml:68
+#: module/Application/view/error/404.phtml:92
+#: module/Application/view/error/index.phtml:11
+#: module/Application/view/error/index.phtml:35 loco:5625eff714d725cc668b4578
+msgid "File"
+msgstr "Bestand"
+
+#: module/Application/view/error/404.phtml:72
+#: module/Application/view/error/404.phtml:96
+#: module/Application/view/error/index.phtml:15
+#: module/Application/view/error/index.phtml:39 loco:5625eff714d725cc668b4579
+msgid "Message"
+msgstr "Bericht"
+
+#: module/Application/view/error/404.phtml:76
+#: module/Application/view/error/404.phtml:100
+#: module/Application/view/error/index.phtml:19
+#: module/Application/view/error/index.phtml:43 loco:5625eff714d725cc668b457a
+msgid "Stack trace"
+msgstr "?"
+
+#: module/Application/view/error/404.phtml:86
+#: module/Application/view/error/index.phtml:29 loco:5625eff714d725cc668b457b
+msgid "Previous exceptions"
+msgstr "Eerdere uitzonderingen"
+
+#: module/Application/view/error/404.phtml:115
+#: module/Application/view/error/index.phtml:58 loco:5625eff714d725cc668b457c
+msgid "No Exception available"
+msgstr "Uitzondering niet beschikbaar"
+
+#: module/Application/view/error/404.phtml:22 loco:5625eff714d725cc668b457e
+msgid "The requested controller was unable to dispatch the request."
+msgstr "De verzochte controller was niet in staat om het verzoek te verzenden."
+
+#: module/Application/view/error/404.phtml:25 loco:5625eff714d725cc668b457f
+msgid ""
+"The requested controller could not be mapped to an existing controller class."
+msgstr ""
+"De verzochte controller kon niet in kaart worden gebracht met een bestaande "
+"controller klasse."
+
+#: module/Application/view/error/404.phtml:28 loco:5625eff714d725cc668b4580
+msgid "The requested controller was not dispatchable."
+msgstr "De verzochte controller was niet uitschakelbaar."
+
+#: module/Application/view/error/404.phtml:31 loco:5625eff714d725cc668b4581
+msgid "The requested URL could not be matched by routing."
+msgstr "De gevraagde URL kon niet worden afgestemd door routing."
+
+#: module/Application/view/error/404.phtml:34 loco:5625eff714d725cc668b4582
+msgid "We cannot determine at this time why a 404 was generated."
+msgstr ""
+"We kunnen op dit moment niet achterhalen waarom er een 404 is gegenereerd."
+
+#: module/Application/view/error/404.phtml:46 loco:5625eff714d725cc668b4583
+msgid "Controller"
+msgstr "Controller"
+
+#: module/Application/view/error/404.phtml:53 loco:5625eff714d725cc668b4584
+#, php-format
+msgid "resolves to %s"
+msgstr "?"
+
+#: module/Application/src/Application/Controller/AjaxController.php:19
+#: module/Application/src/Application/Controller/AjaxController.php:24
+#: module/Application/src/Application/Controller/BusinessController.php:222
+#: module/Application/src/Application/Controller/BusinessController.php:349
+#: module/Application/src/Application/Controller/BusinessController.php:401
+#: module/Application/src/Application/Controller/BusinessController.php:471
+#: module/Application/src/Application/Controller/CustomerController.php:148
+#: module/Application/src/Application/Controller/CustomerController.php:219
+#: 586 loco:5625eff714d725cc668b4586
+#: module/Application/src/Application/Controller/BusinessController.php:238
+#: module/Application/src/Application/Controller/BusinessController.php:365
+#: module/Application/src/Application/Controller/BusinessController.php:417
+#: module/Application/src/Application/Controller/BusinessController.php:487
+#: module/Application/src/Application/Controller/BusinessController.php:239
+#: module/Application/src/Application/Controller/BusinessController.php:366
+#: module/Application/src/Application/Controller/BusinessController.php:418
+#: module/Application/src/Application/Controller/BusinessController.php:488
+#: module/Application/src/Application/Controller/CustomerController.php:149
+#: module/Application/src/Application/Controller/CustomerController.php:220
+msgid "Ошибка при вводе."
+msgstr "Invoer fout."
+
+#: module/Application/src/Application/Controller/BusinessController.php:87
+#: module/Application/src/Application/Controller/CustomerController.php:308
+#: 587 loco:5625eff714d725cc668b4587
+#: module/Application/src/Application/Controller/BusinessController.php:89
+#: module/Application/src/Application/Controller/CustomerController.php:313
+#: module/Application/src/Application/Controller/CustomerController.php:314
+msgid "Пустой запрос."
+msgstr "Leeg verzoek."
+
+#: module/Application/src/Application/Controller/BusinessController.php:100
+#: module/Application/src/Application/Controller/BusinessController.php:233
+#: module/Application/src/Application/Controller/CustomerController.php:316
+#: 588 loco:5625eff714d725cc668b4588
+#: module/Application/src/Application/Controller/BusinessController.php:102
+#: module/Application/src/Application/Controller/BusinessController.php:249
+#: module/Application/src/Application/Controller/CustomerController.php:321
+#: module/Application/src/Application/Controller/BusinessController.php:250
+#: module/Application/src/Application/Controller/CustomerController.php:324
+msgid "Неправельные аргументы."
+msgstr "Wrong arguments."
+
+#: module/Application/src/Application/Controller/BusinessController.php:120
+#: module/Application/src/Application/Controller/CustomerController.php:356
+#: 589
+#: module/Application/src/Application/Controller/CustomerController.php:363
+#: loco:#: 5625eff714d725cc668b4589
+#: module/Application/src/Application/Controller/BusinessController.php:136
+#: module/Application/src/Application/Controller/CustomerController.php:368
+#: module/Application/src/Application/Controller/CustomerController.php:371
+#, php-format
+msgid "Внутрянная ошибка сервиса. (%s)"
+msgstr "Interne fout (%s)"
+
+#: module/Application/src/Application/Controller/BusinessController.php:419
+#: module/Application/src/Application/Controller/BusinessController.php:479
+#: module/Application/src/Application/Controller/CustomerController.php:166
+#: module/Application/src/Application/Controller/CustomerController.php:227
+#: 58a loco:5625eff714d725cc668b458a
+#: module/Application/src/Application/Controller/BusinessController.php:435
+#: module/Application/src/Application/Controller/BusinessController.php:495
+#: module/Application/src/Application/Controller/BusinessController.php:436
+#: module/Application/src/Application/Controller/BusinessController.php:496
+#: module/Application/src/Application/Controller/CustomerController.php:167
+#: module/Application/src/Application/Controller/CustomerController.php:228
+msgid "Переданы невалидные параметры."
+msgstr "Ongeldige parameters."
+
+#: module/Application/src/Application/Controller/BusinessController.php:423
+#: module/Application/src/Application/Controller/CustomerController.php:171
+#: module/Application/src/Application/Controller/CustomerController.php:327
+#: 58b loco:5625eff714d725cc668b458b
+#: module/Application/src/Application/Controller/BusinessController.php:439
+#: module/Application/src/Application/Controller/CustomerController.php:332
+#: module/Application/src/Application/Controller/BusinessController.php:440
+#: module/Application/src/Application/Controller/CustomerController.php:172
+#: module/Application/src/Application/Controller/CustomerController.php:335
+msgid "Будте внимательны при вводе пароля."
+msgstr "Voer het wachtwoord zorgvuldig in."
+
+#: module/Application/src/Application/Controller/BusinessController.php:426
+#: module/Application/src/Application/Controller/CustomerController.php:174
+#: 58c loco:5625eff714d725cc668b458c
+#: module/Application/src/Application/Controller/BusinessController.php:442
+#: module/Application/src/Application/Controller/BusinessController.php:443
+#: module/Application/src/Application/Controller/CustomerController.php:175
+msgid "Текуший пароль указан с ошибкой."
+msgstr "Het huidige wachtwoord is incorrect"
+
+#: module/Application/src/Application/Controller/BusinessController.php:485
+#: module/Application/src/Application/Controller/CustomerController.php:233
+#: 58d loco:5625eff714d725cc668b458d
+#: module/Application/src/Application/Controller/BusinessController.php:501
+#: module/Application/src/Application/Controller/BusinessController.php:502
+#: module/Application/src/Application/Controller/CustomerController.php:234
+msgid "Email или пароль неправельный."
+msgstr "E-mail of wachtwoord is onjuist."
+
+#: module/Application/src/Application/Controller/CustomerController.php:323
+#: 58e loco:5625eff714d725cc668b458e
+#: module/Application/src/Application/Controller/CustomerController.php:328
+#: module/Application/src/Application/Controller/CustomerController.php:331
+msgid "Указанный email уже зарегестрирован."
+msgstr "Opgegeven e-mail bestaat al."
+
+#: module/Application/src/Application/Controller/CustomerController.php:345
+#: 58f loco:5625eff714d725cc668b458f
+#: module/Application/src/Application/Controller/CustomerController.php:350
+#: module/Application/src/Application/Controller/CustomerController.php:353
+msgid "Проблема в сервисе авторизации."
+msgstr "Er is een probleem met de authenticatie service."
+
+#: module/Application/view/application/business/client.phtml:19
+#: module/Application/view/application/business/clients.phtml:43
+#: module/Application/view/application/business/clients.phtml:48
+#: module/Application/view/layout/menu/owner.phtml:34 590 loco:#:
+#: 5625eff714d725cc668b4590
+msgid "Клиенты"
+msgstr "Klanten"
+
+#: module/Application/view/application/business/client.phtml:62
+#: module/Application/view/application/business/dashboard.phtml:46 591 loco:#:
+#: 5625eff714d725cc668b4591
+msgid "Возраст"
+msgstr "Leeftijd"
+
+#: module/Application/view/application/business/client.phtml:63 592 loco:#:
+#: 5625eff714d725cc668b4592
+msgid "лет"
+msgstr "?"
+
+#: module/Application/view/application/business/client.phtml:67
+#: module/Application/view/application/business/client.phtml:72
+#: module/Application/view/application/business/client.phtml:77
+#: module/Application/view/application/business/dashboard.phtml:142
+#: module/Application/view/application/business/settings.phtml:64
+#: module/Application/view/application/customer/settings.phtml:64 593 loco:#:
+#: 5625eff714d725cc668b4593
+msgid "Пол"
+msgstr "Geslacht"
+
+#: module/Application/view/application/business/client.phtml:68 594 loco:#:
+#: 5625eff714d725cc668b4594
+msgid "Мужской"
+msgstr "Man"
+
+#: module/Application/view/application/business/client.phtml:73 595 loco:#:
+#: 5625eff714d725cc668b4595
+msgid "Женский"
+msgstr "Vrouw"
+
+#: module/Application/view/application/business/client.phtml:78 596 loco:#:
+#: 5625eff714d725cc668b4596
+msgid "Не указан"
+msgstr "Niet beschikbaar"
+
+#: module/Application/view/application/business/client.phtml:89 597 loco:#:
+#: 5625eff714d725cc668b4597
+msgid "Первое визит"
+msgstr "Eerste bezoek"
+
+#: module/Application/view/application/business/client.phtml:91 598 loco:#:
+#: 5625eff714d725cc668b4598
+msgid "Последний"
+msgstr "Laatste bezoek"
+
+#: module/Application/view/application/business/client.phtml:105
+#: module/Application/view/application/business/dashboard.phtml:11
+#: module/Application/view/application/business/dashboard.phtml:16
+#: module/Application/view/application/business/reward.phtml:32
+#: module/Application/view/application/customer/index.phtml:6
+#: module/Application/view/application/customer/index.phtml:13
+#: module/Application/view/layout/menu/customer.phtml:35
+#: module/Application/view/layout/menu/owner.phtml:28 599 loco:#:
+#: 5625eff714d725cc668b4599
+msgid "Сводка"
+msgstr "Overzicht"
+
+#: module/Application/view/application/business/client.phtml:117 59a loco:#:
+#: 5625eff714d725cc668b459a
+msgid "Всего посещений"
+msgstr "Totaal aantal bezoeken"
+
+#: module/Application/view/application/business/client.phtml:130 59b loco:#:
+#: 5625eff714d725cc668b459b
+msgid "Получено наград"
+msgstr "?"
+
+#: module/Application/view/application/business/client.phtml:144
+#: module/Application/view/application/customer/activity.phtml:89
+#: module/Application/view/application/index/support.phtml:73 59c loco:#:
+#: 5625eff714d725cc668b459c
+msgid "Доступные посещения"
+msgstr "Beschikbare bezoeken"
+
+#: module/Application/view/application/business/client.phtml:158
+#: module/Application/view/application/business/reward.phtml:171
+#: module/Application/view/application/business/reward.phtml:214
+#: module/Application/view/application/business/rewards.phtml:37
+#: module/Application/view/application/business/rewards.phtml:106
+#: module/Application/view/application/customer/activity.phtml:62
+#: module/Application/view/application/customer/activity.phtml:170
+#: module/Application/view/application/index/support.phtml:71
+#: module/Application/view/application/index/support.phtml:227
+#: module/Application/view/application/merchant/index.phtml:69 59d loco:#:
+#: 5625eff714d725cc668b459d
+msgid "Посещения"
+msgstr "Bezoeken"
+
+#: module/Application/view/application/business/client.phtml:200
+#: module/Application/view/application/customer/activity.phtml:140
+#: module/Application/view/application/customer/index.phtml:110 59e loco:#:
+#: 5625eff714d725cc668b459e
+msgid "Последние награды"
+msgstr "Laatste beloningen"
+
+#: module/Application/view/application/business/client.phtml:228
+#: module/Application/view/application/business/clients.phtml:177
+#: module/Application/view/application/business/reward.phtml:103
+#: module/Application/view/application/business/reward.phtml:212
+#: module/Application/view/application/customer/activity.phtml:167 59f loco:#:
+#: 5625eff714d725cc668b459f
+msgid "Дата"
+msgstr "Datum"
+
+#: module/Application/view/application/business/client.phtml:229
+#: module/Application/view/application/business/clients.phtml:179
+#: module/Application/view/application/business/reward.phtml:162
+#: module/Application/view/application/business/reward.phtml:213
+#: module/Application/view/application/business/rewards.phtml:38
+#: module/Application/view/application/business/rewards.phtml:99
+#: module/Application/view/application/customer/activity.phtml:172
+#: module/Application/view/application/index/support.phtml:75
+#: module/Application/view/application/merchant/index.phtml:72 5a0 loco:#:
+#: 5625eff714d725cc668b45a0
+msgid "Награда"
+msgstr "Beloning"
+
+#: module/Application/view/application/business/client.phtml:230 5a1 loco:#:
+#: 5625eff714d725cc668b45a1
+msgid "Потрачего посещений"
+msgstr "Doorgebrachte bezoeken"
+
+#: module/Application/view/application/business/client.phtml:240
+#: module/Application/view/application/business/clients.phtml:188
+#: module/Application/view/application/business/reward.phtml:113
+#: module/Application/view/application/business/reward.phtml:223 5a2 loco:#:
+#: 5625eff714d725cc668b45a2
+msgid "d M Y в H:i"
+msgstr "d M Y H:i"
+
+#: module/Application/view/application/business/client.phtml:249
+#: module/Application/view/application/business/clients.phtml:201
+#: module/Application/view/application/business/reward.phtml:116 5a3 loco:#:
+#: 5625eff714d725cc668b45a3
+#, php-format
+msgid "из %s"
+msgstr "of %s"
+
+#: module/Application/view/application/business/clients.phtml:9 5a4 loco:#:
+#: 5625eff714d725cc668b45a4
+msgid "г."
+msgstr "jaar (j)"
+
+#: module/Application/view/application/business/clients.phtml:13 5a5 loco:#:
+#: 5625eff714d725cc668b45a5
+msgid "мес."
+msgstr "maand (m)"
+
+#: module/Application/view/application/business/clients.phtml:16 5a6 loco:#:
+#: 5625eff714d725cc668b45a6
+msgid "д."
+msgstr "dag (d)"
+
+#: module/Application/view/application/business/clients.phtml:19 5a7 loco:#:
+#: 5625eff714d725cc668b45a7
+msgid "ч."
+msgstr "uur"
+
+#: module/Application/view/application/business/clients.phtml:22 5a8 loco:#:
+#: 5625eff714d725cc668b45a8
+msgid "мин."
+msgstr "min."
+
+#: module/Application/view/application/business/clients.phtml:25 5a9 loco:#:
+#: 5625eff714d725cc668b45a9
+msgid "сек."
+msgstr "sec."
+
+#: module/Application/view/application/business/clients.phtml:28 5aa loco:#:
+#: 5625eff714d725cc668b45aa
+msgid "назад"
+msgstr "terug"
+
+#: module/Application/view/application/business/clients.phtml:69 5ab loco:#:
+#: 5625eff714d725cc668b45ab
+msgid "Поиск клиентов"
+msgstr "Klanten zoeken"
+
+#: module/Application/view/application/business/clients.phtml:74 5ac loco:#:
+#: 5625eff714d725cc668b45ac
+msgid "Укажите email или имя"
+msgstr "Vult u hier a.u.b. uw e-mail en naam in"
+
+#: module/Application/view/application/business/clients.phtml:80 5ad loco:#:
+#: 5625eff714d725cc668b45ad
+msgid "Новые и вернувшиеся клиенты"
+msgstr "Nieuwe en Teruggekeerde Klanten"
+
+#: module/Application/view/application/business/clients.phtml:91 5ae loco:#:
+#: 5625eff714d725cc668b45ae
+msgid "Последние посетители"
+msgstr "Laatste bezoekers"
+
+#: module/Application/view/application/business/clients.phtml:98 5af loco:#:
+#: 5625eff714d725cc668b45af
+msgid "У вас еще никто не был"
+msgstr "Niemand heeft tot nu toe uw zaak bezocht"
+
+#: module/Application/view/application/business/clients.phtml:106 5b0 loco:#:
+#: 5625eff714d725cc668b45b0
+msgid "Последение посетители будут показаны тут"
+msgstr "De laatste bezoekers worden hier weergegeven"
+
+#: module/Application/view/application/business/clients.phtml:115
+#: module/Application/view/application/business/clients.phtml:178
+#: module/Application/view/application/business/reward.phtml:104 5b1 loco:#:
+#: 5625eff714d725cc668b45b1
+msgid "Клиент"
+msgstr "Klant"
+
+#: module/Application/view/application/business/clients.phtml:117 5b2 loco:#:
+#: 5625eff714d725cc668b45b2
+msgid "Посещений"
+msgstr "Bezoeken"
+
+#: module/Application/view/application/business/clients.phtml:118 5b3 loco:#:
+#: 5625eff714d725cc668b45b3
+msgid "Наград"
+msgstr "Beloningen"
+
+#: module/Application/view/application/business/clients.phtml:132 5b4 loco:#:
+#: 5625eff714d725cc668b45b4
+msgid "Первый раз"
+msgstr "Eerste keer"
+
+#: module/Application/view/application/business/clients.phtml:160 5b5 loco:#:
+#: 5625eff714d725cc668b45b5
+msgid "У вас еще ни кто не получал ваших наград"
+msgstr "Niemand heeft tot nu toe uw beloningen geïncasseerd"
+
+#: module/Application/view/application/business/clients.phtml:168 5b6 loco:#:
+#: 5625eff714d725cc668b45b6
+msgid "Последние полученные награды будут показына тут"
+msgstr "De laatste incasseringen van beloningen worden hier weergegeven"
+
+#: module/Application/view/application/business/clients.phtml:180 5b7 loco:#:
+#: 5625eff714d725cc668b45b7
+msgid "Потраченные посещения"
+msgstr "Doorgebrachte bezoeken"
+
+#: module/Application/view/application/business/clients.phtml:234
+#: module/Application/view/application/business/dashboard.phtml:102 5b8
+#: loco:#: 5625eff714d725cc668b45b8
+msgid "Новые"
+msgstr "Nieuw"
+
+#: module/Application/view/application/business/clients.phtml:246
+#: module/Application/view/application/business/dashboard.phtml:114 5b9
+#: loco:#: 5625eff714d725cc668b45b9
+msgid "Вернувшиеся"
+msgstr "Teruggekeerd"
+
+#: module/Application/view/application/business/company.phtml:10
+#: module/Application/view/application/business/company.phtml:15
+#: module/Application/view/application/business/index.phtml:408
+#: module/Application/view/layout/menu/owner.phtml:37 5ba
+#: module/Application/view/application/business/index.phtml:397 loco:#:
+#: 5625eff714d725cc668b45ba
+#: module/Application/view/application/business/index.phtml:394
+#: module/Application/view/application/business/index.phtml:398
+msgid "Компания"
+msgstr "Bedrijf"
+
+#: module/Application/view/application/business/company.phtml:34
+#: module/Application/view/application/business/login.phtml:13
+#: module/Application/view/application/business/reward.phtml:142
+#: module/Application/view/application/business/rewards.phtml:74
+#: module/Application/view/application/business/settings.phtml:26
+#: module/Application/view/application/customer/login.phtml:13
+#: module/Application/view/application/customer/settings.phtml:26
+#: module/Application/view/application/customer/sign-up.phtml:13
+#: module/Application/view/application/index/support.phtml:501 5bb loco:#:
+#: 5625eff714d725cc668b45bb
+msgid "Ошибка!"
+msgstr "Fout!"
+
+#: module/Application/view/application/business/company.phtml:42
+#: module/Application/view/application/business/reward.phtml:150
+#: module/Application/view/application/business/rewards.phtml:82
+#: module/Application/view/application/business/settings.phtml:34
+#: module/Application/view/application/customer/settings.phtml:34
+#: module/Application/view/application/index/support.phtml:495 5bc loco:#:
+#: 5625eff714d725cc668b45bc
+msgid "Отлично!"
+msgstr "Mooi!"
+
+#: module/Application/view/application/business/company.phtml:43
+#: module/Application/view/application/business/settings.phtml:35
+#: module/Application/view/application/customer/settings.phtml:35 5bd loco:#:
+#: 5625eff714d725cc668b45bd
+msgid "Данные успешно обновлены!"
+msgstr "De informatie is ge-update!"
+
+#: module/Application/view/application/business/company.phtml:54 5be loco:#:
+#: 5625eff714d725cc668b45be
+msgid "Общая информация"
+msgstr "Algemene informatie"
+
+#: module/Application/view/application/business/company.phtml:63 5bf loco:#:
+#: 5625eff714d725cc668b45bf
+msgid "Логотип"
+msgstr "Logo"
+
+#: module/Application/view/application/business/company.phtml:76 5c0 loco:#:
+#: 5625eff714d725cc668b45c0
+msgid "Страна"
+msgstr "Land"
+
+#: module/Application/view/application/business/company.phtml:87 5c1 loco:#:
+#: 5625eff714d725cc668b45c1
+msgid "Место расположения"
+msgstr "Locatie"
+
+#: module/Application/view/application/business/company.phtml:97 5c2 loco:#:
+#: 5625eff714d725cc668b45c2
+msgid "Категория бизнеса"
+msgstr "Bedrijfscategorie"
+
+#: module/Application/view/application/business/company.phtml:111 5c3 loco:#:
+#: 5625eff714d725cc668b45c3
+msgid "Контакты"
+msgstr "Contacten"
+
+#: module/Application/view/application/business/company.phtml:115 5c4 loco:#:
+#: 5625eff714d725cc668b45c4
+msgid "Веб сайт"
+msgstr "Website"
+
+#: module/Application/view/application/business/company.phtml:120
+#: module/Application/view/application/business/index.phtml:423
+#: module/Application/view/application/business/settings.phtml:59
+#: module/Application/view/application/customer/settings.phtml:59
+#: module/Application/view/application/index/support.phtml:522 5c5
+#: module/Application/view/application/business/index.phtml:412 loco:#:
+#: 5625eff714d725cc668b45c5
+#: module/Application/view/application/business/index.phtml:409
+#: module/Application/view/application/business/index.phtml:413
+msgid "Номер телефона"
+msgstr "Telefoon"
+
+#: module/Application/view/application/business/company.phtml:125
+#: module/Application/view/application/business/index.phtml:415
+#: module/Application/view/application/business/login.phtml:23
+#: module/Application/view/application/business/settings.phtml:54
+#: module/Application/view/application/customer/login.phtml:29
+#: module/Application/view/application/customer/settings.phtml:54
+#: module/Application/view/application/customer/sign-up.phtml:28
+#: module/Application/view/application/index/support.phtml:517
+#: module/Application/view/layout/layout.phtml:246
+#: module/Application/view/application/business/index.phtml:404 loco:#:
+#: 5625eff714d725cc668b45c6
+#: module/Application/view/application/business/index.phtml:401
+#: module/Application/view/application/business/index.phtml:405
+msgid "Email"
+msgstr "E-mail"
+
+#: module/Application/view/application/business/company.phtml:130 5c7 loco:#:
+#: 5625eff714d725cc668b45c7
+msgid "Социальность"
+msgstr "Sociaal"
+
+#: module/Application/view/application/business/company.phtml:134 5c8 loco:#:
+#: 5625eff714d725cc668b45c8
+msgid "Страница в Facebook"
+msgstr "Facebook pagina"
+
+#: module/Application/view/application/business/company.phtml:164
+#: module/Application/view/application/business/reward.phtml:177 5c9 loco:#:
+#: 5625eff714d725cc668b45c9
+msgid "Обновить"
+msgstr "Update"
+
+#: module/Application/view/application/business/dashboard.phtml:35 5ca loco:#:
+#: 5625eff714d725cc668b45ca
+msgid "Новые и Вернувшиеся клиенты"
+msgstr "Nieuwe en Teruggekeerde klanten"
+
+#: module/Application/view/application/business/dashboard.phtml:56 5cb loco:#:
+#: 5625eff714d725cc668b45cb
+msgid "Род"
+msgstr "Geslacht"
+
+#: module/Application/view/application/business/dashboard.phtml:72 5cc loco:#:
+#: 5625eff714d725cc668b45cc
+msgid "Клиенты по дням"
+msgstr "Klanten per dag"
+
+#: module/Application/view/application/business/dashboard.phtml:134 5cd
+#: loco:#: 5625eff714d725cc668b45cd
+#, php-format
+msgid "%s лет"
+msgstr "%s y.o."
+
+#: module/Application/view/application/business/dashboard.phtml:145 5ce
+#: loco:#: 5625eff714d725cc668b45ce
+msgid "Мужчины"
+msgstr "Mannen"
+
+#: module/Application/view/application/business/dashboard.phtml:151 5cf
+#: loco:#: 5625eff714d725cc668b45cf
+msgid "Женщины"
+msgstr "Vrouwen"
+
+#: module/Application/view/application/business/dashboard.phtml:157 5d0
+#: loco:#: 5625eff714d725cc668b45d0
+msgid "Не указано"
+msgstr "Niet beschikbaar"
+
+#: module/Application/view/application/business/dashboard.phtml:179 5d1
+#: loco:#: 5625eff714d725cc668b45d1
+msgid "/"
+msgstr "/"
+
+#: module/Application/view/application/business/index.phtml:14 5d2 loco:#:
+#: 5625eff714d725cc668b45d2
+msgid "Посторойте отношения с клиентами"
+msgstr "Bouw een relatie op met uw klanten"
+
+#: module/Application/view/application/business/index.phtml:19 5d3 loco:#:
+#: 5625eff714d725cc668b45d3
+msgid "Вместе с современной цифровой системой лояльности"
+msgstr "Samen met het digitale loyaliteit systeem"
+
+#: module/Application/view/application/business/index.phtml:58 5d4 loco:#:
+#: 5625eff714d725cc668b45d4
+#, php-format
+msgid "%sЦИФРОВЫЕ%s системы лояльности"
+msgstr "%sDigitale%s loyaliteit systemen"
+
+#: module/Application/view/application/business/index.phtml:60 5d5 loco:#:
+#: 5625eff714d725cc668b45d5
+msgid "Какие приимушества?"
+msgstr "Voordelen"
+
+#: module/Application/view/application/business/index.phtml:78 5d6 loco:#:
+#: 5625eff714d725cc668b45d6
+#: module/Application/view/application/business/index.phtml:80
+msgid "Клиенты ждут их"
+msgstr "Klanten wachten er op"
+
+#: module/Application/view/application/business/index.phtml:80 5d7 loco:#:
+#: 5625eff714d725cc668b45d7
+#: module/Application/view/application/business/index.phtml:82
+msgid ""
+"Клиенты четко смогут видеть какие награды у вас есть и что нужно чтобы "
+"получить их"
+msgstr ""
+"Klanten zullen duidelijk zien welke beloningen u aanbiedt en hoeveel "
+"bezoeken er benodigd zijn om deze te ontvangen"
+
+#: module/Application/view/application/business/index.phtml:92 5d8 loco:#:
+#: 5625eff714d725cc668b45d8
+#: module/Application/view/application/business/index.phtml:94
+msgid "Они интерактивны"
+msgstr "Zij zijn interactief"
+
+#: module/Application/view/application/business/index.phtml:94 5d9 loco:#:
+#: 5625eff714d725cc668b45d9
+#: module/Application/view/application/business/index.phtml:96
+msgid "Вы всегда сможете понять какое предложентие пользуется больше спросом"
+msgstr ""
+"U zult altijd in staat zijn om te begrijpen welke beloning een grotere vraag "
+"heeft"
+
+#: module/Application/view/application/business/index.phtml:105 5da loco:#:
+#: 5625eff714d725cc668b45da
+#: module/Application/view/application/business/index.phtml:107
+msgid "Спосопствуют общению"
+msgstr "Faciliteert communicatie"
+
+#: module/Application/view/application/business/index.phtml:107 5db loco:#:
+#: 5625eff714d725cc668b45db
+#: module/Application/view/application/business/index.phtml:109
+msgid "Клиенты больше смогут узнать о вашем бизнесе, а вы о клиентах"
+msgstr ""
+"De klanten hebben de mogelijkheid om meer te leren over uw bedrijf, en u "
+"kunt meer leren over uw klanten"
+
+#: module/Application/view/application/business/index.phtml:118 5dc loco:#:
+#: 5625eff714d725cc668b45dc
+#: module/Application/view/application/business/index.phtml:120
+msgid "Подчеркивают значимость клиента"
+msgstr "Het benadrukt het belang van de klant"
+
+#: module/Application/view/application/business/index.phtml:120 5dd loco:#:
+#: 5625eff714d725cc668b45dd
+#: module/Application/view/application/business/index.phtml:122
+msgid "Это способ показать на сколько клиенты важны для вас"
+msgstr ""
+"Het is een manier om uw klant te laten zien hoe belangrijk hij is voor uw "
+"bedrijf"
+
+#: module/Application/view/application/business/index.phtml:131 5de loco:#:
+#: 5625eff714d725cc668b45de
+#: module/Application/view/application/business/index.phtml:135
+msgid "Метрики"
+msgstr "Metriek"
+
+#: module/Application/view/application/business/index.phtml:133 5df loco:#:
+#: 5625eff714d725cc668b45df
+#: module/Application/view/application/business/index.phtml:137
+msgid "Цифры смогут показать в каком направлении двигается ваш бизнес"
+msgstr "De cijfers tonen de prestaties van uw bedrijf"
+
+#: module/Application/view/application/business/index.phtml:144 5e0 loco:#:
+#: 5625eff714d725cc668b45e0
+#: module/Application/view/application/business/index.phtml:148
+msgid "Автоматические данные"
+msgstr "Automatische gegevens"
+
+#: module/Application/view/application/business/index.phtml:146 5e1 loco:#:
+#: 5625eff714d725cc668b45e1
+#: module/Application/view/application/business/index.phtml:150
+msgid "Все данные собираються автоматически и доступны в любой момент"
+msgstr ""
+"Alle gegevens worden automatisch verzameld en is op ieder moment beschikbaar"
+
+#: module/Application/view/application/business/index.phtml:157 5e2 loco:#:
+#: 5625eff714d725cc668b45e2
+#: module/Application/view/application/business/index.phtml:161
+msgid "Способ для продвижения"
+msgstr "Promotie methode"
+
+#: module/Application/view/application/business/index.phtml:159 5e3 loco:#:
+#: 5625eff714d725cc668b45e3
+#: module/Application/view/application/business/index.phtml:163
+msgid ""
+"Ваши клинеты смогут рассказывать друзьям, какие награды были получены именно "
+"у вас"
+msgstr ""
+"Uw klanten kunnen hun vrienden vertellen over de beloningen die zij van u "
+"hebben ontvangen"
+
+#: module/Application/view/application/business/index.phtml:170 5e4 loco:#:
+#: 5625eff714d725cc668b45e4
+#: module/Application/view/application/business/index.phtml:174
+msgid "Приимущество перед конкурентами"
+msgstr "Concurerend voordeel"
+
+#: module/Application/view/application/business/index.phtml:172 5e5 loco:#:
+#: 5625eff714d725cc668b45e5
+#: module/Application/view/application/business/index.phtml:176
+msgid "Будте на шаг впереди ваших конкурентов вместе с нами"
+msgstr "Blijf uw concurrentie een stap voor met ons"
+
+#: module/Application/view/application/business/index.phtml:205 5e6 loco:#:
+#: 5625eff714d725cc668b45e6
+msgid ""
+"Сейчас тот самый момент когда использование систем лояльности через "
+"мобильные платформы стало неверо..."
+msgstr ""
+"Dit is het moment dat gebruik maken van loyaliteit op het mobiele platform "
+"een onvergelijkbare waarde wordt"
+
+#: module/Application/view/application/business/index.phtml:212 5e7
+#: module/Application/view/application/business/index.phtml:201 loco:#:
+#: 5625eff714d725cc668b45e7
+#: module/Application/view/application/business/index.phtml:205
+#, php-format
+msgid ""
+"Если вы не используете их, ваши конкуренты будут. %sОни превратят ваших "
+"клиентов в своих фанатов."
+msgstr ""
+"Als u niet deelneemt, bedenk dan dat uw concurrenten dit wel doen, en zij "
+"zijn degenen die van uw klanten hun fans maken  ."
+
+#: module/Application/view/application/business/index.phtml:219 5e8
+#: module/Application/view/application/business/index.phtml:208 loco:#:
+#: 5625eff714d725cc668b45e8
+#: module/Application/view/application/business/index.phtml:212
+msgid "Журнал Forbes"
+msgstr "Forbes magazine"
+
+#: module/Application/view/application/business/index.phtml:223 5e9
+#: module/Application/view/application/business/index.phtml:212 loco:#:
+#: 5625eff714d725cc668b45e9
+#: module/Application/view/application/business/index.phtml:216
+msgid "Ссылка на статью"
+msgstr "Link"
+
+#: module/Application/view/application/business/index.phtml:253 5ea
+#: module/Application/view/application/business/index.phtml:242 loco:#:
+#: 5625eff714d725cc668b45ea
+#: module/Application/view/application/business/index.phtml:239
+#: module/Application/view/application/business/index.phtml:243
+#, php-format
+msgid "Почему именно %s"
+msgstr "Waarom %s"
+
+#: module/Application/view/application/business/index.phtml:273 5eb
+#: module/Application/view/application/business/index.phtml:262 loco:#:
+#: 5625eff714d725cc668b45eb
+#: module/Application/view/application/business/index.phtml:259
+#: module/Application/view/application/business/index.phtml:263
+msgid "Полностью настраеваемая система лояльности"
+msgstr "Een volledig aanpasbaar loyaliteits systeem"
+
+#: module/Application/view/application/business/index.phtml:284 5ec
+#: module/Application/view/application/business/index.phtml:273 loco:#:
+#: 5625eff714d725cc668b45ec
+#: module/Application/view/application/business/index.phtml:270
+#: module/Application/view/application/business/index.phtml:274
+msgid "Лёгкое управление и понятный интерфейс"
+msgstr "Simpele bediening en intuïtieve interface"
+
+#: module/Application/view/application/business/index.phtml:295 5ed
+#: module/Application/view/application/business/index.phtml:284 loco:#:
+#: 5625eff714d725cc668b45ed
+#: module/Application/view/application/business/index.phtml:281
+#: module/Application/view/application/business/index.phtml:285
+msgid "Доступ с любого компьютера или телефона"
+msgstr "Toegang vanaf elke computer of telefoon"
+
+#: module/Application/view/application/business/index.phtml:306 5ee
+#: module/Application/view/application/business/index.phtml:295 loco:#:
+#: 5625eff714d725cc668b45ee
+#: module/Application/view/application/business/index.phtml:292
+#: module/Application/view/application/business/index.phtml:296
+msgid "Иструмент слежения активности клиентов"
+msgstr "Hulpmiddel voor het volgen van activiteiten van de klant"
+
+#: module/Application/view/application/business/index.phtml:317 5ef
+#: module/Application/view/application/business/index.phtml:306 loco:#:
+#: 5625eff714d725cc668b45ef
+#: module/Application/view/application/business/index.phtml:303
+#: module/Application/view/application/business/index.phtml:307
+msgid "Еще одна причина клиентам возврашаться к вам"
+msgstr "Een extra reden waarom klanten bij u terugkomen"
+
+#: module/Application/view/application/business/index.phtml:328 5f0
+#: module/Application/view/application/business/index.phtml:317 loco:#:
+#: 5625eff714d725cc668b45f0
+#: module/Application/view/application/business/index.phtml:314
+#: module/Application/view/application/business/index.phtml:318
+msgid "Минимальные затраты на установку и поддержание системы"
+msgstr "De minimum kosten voor het installeren en onderhouden van het systeem"
+
+#: module/Application/view/application/business/index.phtml:359 5f1
+#: module/Application/view/application/business/index.phtml:348 loco:#:
+#: 5625eff714d725cc668b45f1
+#: module/Application/view/application/business/index.phtml:345
+#: module/Application/view/application/business/index.phtml:349
+msgid "Создайте свою программу лояльности!"
+msgstr "Creëer uw loyaliteit programma"
+
+#: module/Application/view/application/business/index.phtml:361 5f2
+#: module/Application/view/application/business/index.phtml:350 loco:#:
+#: 5625eff714d725cc668b45f2
+#: module/Application/view/application/business/index.phtml:347
+#: module/Application/view/application/business/index.phtml:351
+msgid "Ваши клиенты это лучшее что у вас есть."
+msgstr "Uw klanten zijn de beste klanten die u heeft."
+
+#: module/Application/view/application/business/index.phtml:370
+#: module/Application/view/application/business/index.phtml:380 5f3
+#: module/Application/view/application/business/index.phtml:359
+#: module/Application/view/application/business/index.phtml:369 loco:#:
+#: 5625eff714d725cc668b45f3
+#: module/Application/view/application/business/index.phtml:356
+#: module/Application/view/application/business/index.phtml:366
+#: module/Application/view/application/business/index.phtml:360
+msgid "Ваш запрос успешно отправлен! Спасибо! Мы скоро свяжемся с вами."
+msgstr ""
+"Uw verzoek is met succes verzonden! Dank u! We zullen contact met u opnemen."
+
+#: module/Application/view/application/business/index.phtml:386
+#: module/Application/view/application/index/support.phtml:502
+#: module/Application/view/layout/layout.phtml:198
+#: module/Application/view/application/business/index.phtml:375 loco:#:
+#: 5625eff714d725cc668b45f4
+#: module/Application/view/application/business/index.phtml:372
+#: module/Application/view/application/business/index.phtml:376
+#, php-format
+msgid ""
+"К сожалению не получается отправить ваш запрос. Но вы можете позвонить нам "
+"на %s."
+msgstr ""
+"Helaas is het niet mogelijk om u verzoek te verzenden. Maar u kunt ons "
+"bellen naar %s"
+
+#: module/Application/view/application/business/index.phtml:400 5f5
+#: module/Application/view/application/business/index.phtml:389 loco:#:
+#: 5625eff714d725cc668b45f5
+#: module/Application/view/application/business/index.phtml:386
+#: module/Application/view/application/business/index.phtml:390
+msgid "Полное имя"
+msgstr "Volledige naam"
+
+#: module/Application/view/application/business/index.phtml:432 5f6
+#: module/Application/view/application/business/index.phtml:421 loco:#:
+#: 5625eff714d725cc668b45f6
+#: module/Application/view/application/business/index.phtml:418
+#: module/Application/view/application/business/index.phtml:422
+msgid "Заказать обратный звонок"
+msgstr "Verzoek om een demo"
+
+#: module/Application/view/application/business/index.phtml:437 5f7
+#: module/Application/view/application/business/index.phtml:426 loco:#:
+#: 5625eff714d725cc668b45f7
+#: module/Application/view/application/business/index.phtml:423
+#: module/Application/view/application/business/index.phtml:427
+#, php-format
+msgid "Вопросы? Позвоните нам %s"
+msgstr "Vragen? Bel ons bij %s"
+
+#: module/Application/view/application/business/login.phtml:9 5f8 loco:#:
+#: 5625eff714d725cc668b45f8
+msgid "Вход в Командый Центр"
+msgstr "Inloggen op het commando centrum"
+
+#: module/Application/view/application/business/login.phtml:28
+#: module/Application/view/application/customer/login.phtml:34
+#: module/Application/view/application/customer/sign-up.phtml:33 5f9 loco:#:
+#: 5625eff714d725cc668b45f9
+msgid "Пароль"
+msgstr "Wachtwoord"
+
+#: module/Application/view/application/business/login.phtml:31
+#: module/Application/view/application/customer/login.phtml:37
+#: module/Application/view/layout/menu/guest.phtml:36 5fa loco:#:
+#: 5625eff714d725cc668b45fa
+msgid "Вход"
+msgstr "Inloggen"
+
+#: module/Application/view/application/business/reward.phtml:47 5fb loco:#:
+#: 5625eff714d725cc668b45fb
+msgid "Требуеться посещений"
+msgstr "Benodigde bezoeken"
+
+#: module/Application/view/application/business/reward.phtml:61 5fc loco:#:
+#: 5625eff714d725cc668b45fc
+msgid "Использована"
+msgstr "Geïncasseerd"
+
+#: module/Application/view/application/business/reward.phtml:76 5fd loco:#:
+#: 5625eff714d725cc668b45fd
+msgid "Награждения"
+msgstr "Beloningen"
+
+#: module/Application/view/application/business/reward.phtml:83 5fe loco:#:
+#: 5625eff714d725cc668b45fe
+msgid "Награду еще ни кто не получил"
+msgstr "Er is nog niemand die een beloning heeft geïncasseerd"
+
+#: module/Application/view/application/business/reward.phtml:91 5ff loco:#:
+#: 5625eff714d725cc668b45ff
+msgid "Полученые награды ваших посетителей будут показаны тут"
+msgstr "Geïncasseerde beloningen van klanten worden hier weergegeven"
+
+#: module/Application/view/application/business/reward.phtml:105 600 loco:#:
+#: 5625eff714d725cc668b4600
+msgid "Потраченые посещения"
+msgstr "Doorgebrachte bezoeken"
+
+#: module/Application/view/application/business/reward.phtml:138 601 loco:#:
+#: 5625eff714d725cc668b4601
+msgid "Изменить награду"
+msgstr "Verander beloning"
+
+#: module/Application/view/application/business/reward.phtml:151 602 loco:#:
+#: 5625eff714d725cc668b4602
+msgid "Награда обновлена!"
+msgstr "Beloning is ge-update"
+
+#: module/Application/view/application/business/reward.phtml:185 603 loco:#:
+#: 5625eff714d725cc668b4603
+msgid "История изменений"
+msgstr "Historie van wijzigingen"
+
+#: module/Application/view/application/business/reward.phtml:192 604 loco:#:
+#: 5625eff714d725cc668b4604
+msgid "Вы не меняли награду"
+msgstr "U heeft de beloning niet veranderd"
+
+#: module/Application/view/application/business/reward.phtml:200 605 loco:#:
+#: 5625eff714d725cc668b4605
+msgid "Все изменения награды будут показываться тут"
+msgstr "Alle wijzigingen in de beloning zullen hier worden weergegeven"
+
+#: module/Application/view/application/business/rewards.phtml:7
+#: module/Application/view/application/business/rewards.phtml:12
+#: module/Application/view/application/customer/activity.phtml:75
+#: module/Application/view/application/index/locations.phtml:71
+#: module/Application/view/application/index/support.phtml:385
+#: module/Application/view/layout/menu/owner.phtml:31 606 loco:#:
+#: 5625eff714d725cc668b4606
+msgid "Награды"
+msgstr "Beloningen"
+
+#: module/Application/view/application/business/rewards.phtml:31 607 loco:#:
+#: 5625eff714d725cc668b4607
+msgid "Награды в вашем заведении"
+msgstr "Beloningen in uw bedrijf"
+
+#: module/Application/view/application/business/rewards.phtml:41 608 loco:#:
+#: 5625eff714d725cc668b4608
+msgid "Действия"
+msgstr "Acties"
+
+#: module/Application/view/application/business/rewards.phtml:55 609 loco:#:
+#: 5625eff714d725cc668b4609
+msgid "Изменить"
+msgstr "Wijzigen"
+
+#: module/Application/view/application/business/rewards.phtml:56 60a loco:#:
+#: 5625eff714d725cc668b460a
+msgid "В архив"
+msgstr "Archiveren"
+
+#: module/Application/view/application/business/rewards.phtml:83 60b loco:#:
+#: 5625eff714d725cc668b460b
+msgid "Новая награда добавлена!"
+msgstr "Een nieuwe beloning is toegevoegd!"
+
+#: module/Application/view/application/business/rewards.phtml:90 60c loco:#:
+#: 5625eff714d725cc668b460c
+msgid "Добавить новую награду"
+msgstr "Voeg een nieuwe beloning toe"
+
+#: module/Application/view/application/business/rewards.phtml:112 60d loco:#:
+#: 5625eff714d725cc668b460d
+msgid "Добавить награду"
+msgstr "Voeg beloning toe"
+
+#: module/Application/view/application/business/rewards.phtml:136 60e loco:#:
+#: 5625eff714d725cc668b460e
+msgid "Подтвердите архивацию"
+msgstr "Bevestigt a.u.b. het verplaatsen naar het archief"
+
+#: module/Application/view/application/business/rewards.phtml:140 60f loco:#:
+#: 5625eff714d725cc668b460f
+msgid ""
+"После перенесения в архив, ваши посетители не смогут воспользоваться данной "
+"наградой."
+msgstr ""
+"Na het verplaatsen naar het archief, zullen de klanten niet meer in staat "
+"zijn om de beloning te gebruiken."
+
+#: module/Application/view/application/business/rewards.phtml:142 610 loco:#:
+#: 5625eff714d725cc668b4610
+msgid "Вы хотите продолжить?"
+msgstr "Wilt u doorgaan?"
+
+#: module/Application/view/application/business/rewards.phtml:146 611 loco:#:
+#: 5625eff714d725cc668b4611
+msgid "Отмена"
+msgstr "Annuleren"
+
+#: module/Application/view/application/business/rewards.phtml:147 612 loco:#:
+#: 5625eff714d725cc668b4612
+msgid "Архивировать"
+msgstr "Archiveren"
+
+#: module/Application/view/application/business/settings.phtml:6
+#: module/Application/view/application/customer/settings.phtml:6 613 loco:#:
+#: 5625eff714d725cc668b4613
+msgid "Настройки"
+msgstr "Instellingen"
+
+#: module/Application/view/application/business/settings.phtml:11
+#: module/Application/view/application/customer/settings.phtml:11
+#: module/Application/view/layout/menu/customer.phtml:38
+#: module/Application/view/layout/menu/owner.phtml:40 614 loco:#:
+#: 5625eff714d725cc668b4614
+msgid "Профиль"
+msgstr "Profiel"
+
+#: module/Application/view/application/business/settings.phtml:45
+#: module/Application/view/application/customer/settings.phtml:45 615 loco:#:
+#: 5625eff714d725cc668b4615
+msgid "Персональная информация"
+msgstr "Persoonlijke informatie"
+
+#: module/Application/view/application/business/settings.phtml:49
+#: module/Application/view/application/customer/settings.phtml:49 616 loco:#:
+#: 5625eff714d725cc668b4616
+msgid "Имя"
+msgstr "Naam"
+
+#: module/Application/view/application/business/settings.phtml:69
+#: module/Application/view/application/customer/settings.phtml:69 617 loco:#:
+#: 5625eff714d725cc668b4617
+msgid "Мужчина"
+msgstr "Man"
+
+#: module/Application/view/application/business/settings.phtml:73
+#: module/Application/view/application/customer/settings.phtml:73 618 loco:#:
+#: 5625eff714d725cc668b4618
+msgid "Женщина"
+msgstr "Vrouw"
+
+#: module/Application/view/application/business/settings.phtml:79
+#: module/Application/view/application/customer/settings.phtml:79 619 loco:#:
+#: 5625eff714d725cc668b4619
+msgid "Дата рождения"
+msgstr "Geboortedatum"
+
+#: module/Application/view/application/business/settings.phtml:85
+#: module/Application/view/application/customer/settings.phtml:85 61a loco:#:
+#: 5625eff714d725cc668b461a
+msgid "День"
+msgstr "Dag"
+
+#: module/Application/view/application/business/settings.phtml:94
+#: module/Application/view/application/customer/settings.phtml:94 61b loco:#:
+#: 5625eff714d725cc668b461b
+msgid "Месяц"
+msgstr "Maand"
+
+#: module/Application/view/application/business/settings.phtml:95
+#: module/Application/view/application/common/calendar.phtml:14
+#: module/Application/view/application/customer/settings.phtml:95 61c loco:#:
+#: 5625eff714d725cc668b461c
+msgid "Январь"
+msgstr "Januari"
+
+#: module/Application/view/application/business/settings.phtml:96
+#: module/Application/view/application/common/calendar.phtml:14
+#: module/Application/view/application/customer/settings.phtml:96 61d loco:#:
+#: 5625eff714d725cc668b461d
+msgid "Февраль"
+msgstr "Februari"
+
+#: module/Application/view/application/business/settings.phtml:97
+#: module/Application/view/application/common/calendar.phtml:14
+#: module/Application/view/application/customer/settings.phtml:97 61e loco:#:
+#: 5625eff714d725cc668b461e
+msgid "Март"
+msgstr "Maart"
+
+#: module/Application/view/application/business/settings.phtml:98
+#: module/Application/view/application/common/calendar.phtml:14
+#: module/Application/view/application/customer/settings.phtml:98 61f loco:#:
+#: 5625eff714d725cc668b461f
+msgid "Апрель"
+msgstr "April"
+
+#: module/Application/view/application/business/settings.phtml:99
+#: module/Application/view/application/common/calendar.phtml:14
+#: module/Application/view/application/customer/settings.phtml:99 620 loco:#:
+#: 5625eff714d725cc668b4620
+msgid "Май"
+msgstr "Mei"
+
+#: module/Application/view/application/business/settings.phtml:100
+#: module/Application/view/application/common/calendar.phtml:14
+#: module/Application/view/application/customer/settings.phtml:100 621 loco:#:
+#: 5625eff714d725cc668b4621
+msgid "Июнь"
+msgstr "Juni"
+
+#: module/Application/view/application/business/settings.phtml:101
+#: module/Application/view/application/common/calendar.phtml:14
+#: module/Application/view/application/customer/settings.phtml:101 622 loco:#:
+#: 5625eff714d725cc668b4622
+msgid "Июль"
+msgstr "Juli"
+
+#: module/Application/view/application/business/settings.phtml:102
+#: module/Application/view/application/common/calendar.phtml:14
+#: module/Application/view/application/customer/settings.phtml:102 623 loco:#:
+#: 5625eff714d725cc668b4623
+msgid "Август"
+msgstr "Augustus"
+
+#: module/Application/view/application/business/settings.phtml:103
+#: module/Application/view/application/common/calendar.phtml:14
+#: module/Application/view/application/customer/settings.phtml:103 624 loco:#:
+#: 5625eff714d725cc668b4624
+msgid "Сентябрь"
+msgstr "September"
+
+#: module/Application/view/application/business/settings.phtml:104
+#: module/Application/view/application/common/calendar.phtml:14
+#: module/Application/view/application/customer/settings.phtml:104 625 loco:#:
+#: 5625eff714d725cc668b4625
+msgid "Октябрь"
+msgstr "Oktober"
+
+#: module/Application/view/application/business/settings.phtml:105
+#: module/Application/view/application/common/calendar.phtml:14
+#: module/Application/view/application/customer/settings.phtml:105 626 loco:#:
+#: 5625eff714d725cc668b4626
+msgid "Ноябрь"
+msgstr "November"
+
+#: module/Application/view/application/business/settings.phtml:106
+#: module/Application/view/application/common/calendar.phtml:14
+#: module/Application/view/application/customer/settings.phtml:106 627 loco:#:
+#: 5625eff714d725cc668b4627
+msgid "Декабрь"
+msgstr "December"
+
+#: module/Application/view/application/business/settings.phtml:110
+#: module/Application/view/application/customer/settings.phtml:110 628 loco:#:
+#: 5625eff714d725cc668b4628
+msgid "Год"
+msgstr "Jaar"
+
+#: module/Application/view/application/business/settings.phtml:130
+#: module/Application/view/application/customer/settings.phtml:130 629 loco:#:
+#: 5625eff714d725cc668b4629
+msgid "Безопасность"
+msgstr "Veiligheid"
+
+#: module/Application/view/application/business/settings.phtml:135
+#: module/Application/view/application/customer/settings.phtml:135 62a loco:#:
+#: 5625eff714d725cc668b462a
+msgid "Новый пароль"
+msgstr "Nieuw wachtwoord"
+
+#: module/Application/view/application/business/settings.phtml:140
+#: module/Application/view/application/customer/settings.phtml:140 62b loco:#:
+#: 5625eff714d725cc668b462b
+msgid "Новый пароль еще раз"
+msgstr "Herhaal nieuwe wachtwoord"
+
+#: module/Application/view/application/business/settings.phtml:145
+#: module/Application/view/application/customer/settings.phtml:145 62c loco:#:
+#: 5625eff714d725cc668b462c
+msgid "Текуший пароль, если вы хотите установать новый"
+msgstr "Huidige wachtwoord, in geval u een nieuw wachtwoord wilt instellen"
+
+#: module/Application/view/application/business/settings.phtml:151
+#: module/Application/view/application/customer/settings.phtml:151 62d loco:#:
+#: 5625eff714d725cc668b462d
+msgid "Сохранить"
+msgstr "Update"
+
+#: module/Application/view/application/common/calendar.phtml:5 62e loco:#:
+#: 5625eff714d725cc668b462e
+msgid "Пн"
+msgstr "Mo"
+
+#: module/Application/view/application/common/calendar.phtml:6 62f loco:#:
+#: 5625eff714d725cc668b462f
+msgid "Вт"
+msgstr "Tu"
+
+#: module/Application/view/application/common/calendar.phtml:7 630 loco:#:
+#: 5625eff714d725cc668b4630
+msgid "Ср"
+msgstr "We"
+
+#: module/Application/view/application/common/calendar.phtml:8 631 loco:#:
+#: 5625eff714d725cc668b4631
+msgid "Чт"
+msgstr "Th"
+
+#: module/Application/view/application/common/calendar.phtml:9 632 loco:#:
+#: 5625eff714d725cc668b4632
+msgid "Пт"
+msgstr "Fr"
+
+#: module/Application/view/application/common/calendar.phtml:10 633 loco:#:
+#: 5625eff714d725cc668b4633
+msgid "Сб"
+msgstr "Sa"
+
+#: module/Application/view/application/common/calendar.phtml:11 634 loco:#:
+#: 5625eff714d725cc668b4634
+msgid "Вс"
+msgstr "Su"
+
+#: module/Application/view/application/customer/activity.phtml:14
+#: module/Application/view/application/customer/activity.phtml:22
+#: module/Application/view/application/merchant/index.phtml:139 635 loco:#:
+#: 5625eff714d725cc668b4635
+msgid "Моя активность"
+msgstr "Mijn activiteit"
+
+#: module/Application/view/application/customer/activity.phtml:15
+#: module/Application/view/application/customer/index.phtml:150 636 loco:#:
+#: 5625eff714d725cc668b4636
+#, php-format
+msgid "В %s"
+msgstr "Bij %s"
+
+#: module/Application/view/application/customer/activity.phtml:103
+#: module/Application/view/application/customer/index.phtml:54 637 loco:#:
+#: 5625eff714d725cc668b4637
+msgid "Последние посещения"
+msgstr "Laatste bezoeken"
+
+#: module/Application/view/application/customer/activity.phtml:110 638 loco:#:
+#: 5625eff714d725cc668b4638
+msgid "Вы еще не были в этом заведении"
+msgstr "U heeft dit bedrijf niet bezocht"
+
+#: module/Application/view/application/customer/activity.phtml:118 639 loco:#:
+#: 5625eff714d725cc668b4639
+msgid "Ваши последние посещения будут отображаться тут."
+msgstr "Uw laatste bezoeken worden hier weergegeven"
+
+#: module/Application/view/application/customer/activity.phtml:147 63a loco:#:
+#: 5625eff714d725cc668b463a
+msgid "У вас еще нет наград"
+msgstr "U heeft nog geen beloningen"
+
+#: module/Application/view/application/customer/activity.phtml:155 63b loco:#:
+#: 5625eff714d725cc668b463b
+msgid "Ваши награды будут отображены в этой части страницы."
+msgstr "Uw beloningen worden hier weergegeven"
+
+#: module/Application/view/application/customer/activity.phtml:206 63c loco:#:
+#: 5625eff714d725cc668b463c
+msgid "Это только начало"
+msgstr "Dit is pas het begin"
+
+#: module/Application/view/application/customer/activity.phtml:214 63d loco:#:
+#: 5625eff714d725cc668b463d
+msgid "У вас еще нет визитов и наград в этом месте."
+msgstr "U heeft geen bezoeken noch beloningen"
+
+#: module/Application/view/application/customer/activity.phtml:217 63e loco:#:
+#: 5625eff714d725cc668b463e
+msgid "Вернуться к наградам"
+msgstr "Ga terug naar beloningen"
+
+#: module/Application/view/application/customer/index.phtml:28 63f loco:#:
+#: 5625eff714d725cc668b463f
+msgid "Ваша активность"
+msgstr "Uw activiteit"
+
+#: module/Application/view/application/customer/index.phtml:33 640 loco:#:
+#: 5625eff714d725cc668b4640
+msgid "Всё по нулям"
+msgstr "Alles is leeg"
+
+#: module/Application/view/application/customer/index.phtml:41 641 loco:#:
+#: 5625eff714d725cc668b4641
+msgid "Попробуйте найти заведения где вы можете получить награду за посещения."
+msgstr "Probeer een bedrijf te vinden waar ik beloningen ontvang voor bezoeken"
+
+#: module/Application/view/application/customer/index.phtml:44 642 loco:#:
+#: 5625eff714d725cc668b4642
+msgid "Найти заведения"
+msgstr "Vind bedrijven"
+
+#: module/Application/view/application/customer/index.phtml:60
+#: module/Application/view/application/customer/index.phtml:117
+#: module/Application/view/application/customer/index.phtml:179 643 loco:#:
+#: 5625eff714d725cc668b4643
+msgid "Пусто"
+msgstr "Leeg"
+
+#: module/Application/view/application/customer/index.phtml:69 644 loco:#:
+#: 5625eff714d725cc668b4644
+msgid "Ваши последние посещения будут отображаться в этой части страницы."
+msgstr "Uw laatste bezoeken worden weergegeven in dit deel van de pagina"
+
+#: module/Application/view/application/customer/index.phtml:126 645 loco:#:
+#: 5625eff714d725cc668b4645
+msgid "Ваши последние награды будут отображаться в этой части страницы."
+msgstr "Uw recente beloningen worden weergegeven in dit deel van de pagina"
+
+#: module/Application/view/application/customer/index.phtml:152 646 loco:#:
+#: 5625eff714d725cc668b4646
+#, php-format
+msgid "за %d посещений"
+msgstr "voor bezoeken aan %s"
+
+#: module/Application/view/application/customer/index.phtml:172 647 loco:#:
+#: 5625eff714d725cc668b4647
+msgid "Ваши заведения"
+msgstr "Uw bedrijven"
+
+#: module/Application/view/application/customer/index.phtml:187 648 loco:#:
+#: 5625eff714d725cc668b4648
+msgid "Вы не были ни в одном из заведений где вы можно получить награду."
+msgstr ""
+"U heeft nog geen van de bedrijven, waar u een beloning kunt krijgen, bezocht"
+
+#: module/Application/view/application/customer/index.phtml:191 649 loco:#:
+#: 5625eff714d725cc668b4649
+msgid "Найти новые заведения"
+msgstr "Vindt nieuwe bedrijven"
+
+#: module/Application/view/application/customer/index.phtml:214 64a loco:#:
+#: 5625eff714d725cc668b464a
+#, php-format
+msgid "%s"
+msgstr "%s"
+
+#: module/Application/view/application/customer/index.phtml:238 64b loco:#:
+#: 5625eff714d725cc668b464b
+msgid "Ваш уникальный QR-код!"
+msgstr "Uw unieke QR-code"
+
+#: module/Application/view/application/customer/login.phtml:9 64c loco:#:
+#: 5625eff714d725cc668b464c
+msgid "Авторицация"
+msgstr "Aanmelden"
+
+#: module/Application/view/application/customer/login.phtml:20 64d loco:#:
+#: 5625eff714d725cc668b464d
+msgid "Доступ!"
+msgstr "Toegang!"
+
+#: module/Application/view/application/customer/login.phtml:21 64e loco:#:
+#: 5625eff714d725cc668b464e
+msgid "Для получения доступа к запрошенной странице, пройдите авторизацию."
+msgstr "Om toegang te krijgen tot de opgevraagde pagina, is toestemming nodig"
+
+#: module/Application/view/application/customer/login.phtml:47 64f loco:#:
+#: 5625eff714d725cc668b464f
+msgid "Впервые у нас? Создать аккаунт"
+msgstr "Eerste keer hier? Creëer een account"
+
+#: module/Application/view/application/customer/sign-up.phtml:9
+#: module/Application/view/application/index/support.phtml:479
+#: module/Application/view/layout/menu/guest.phtml:33 650 loco:#:
+#: 5625eff714d725cc668b4650
+msgid "Регистрация"
+msgstr "Inschrijven"
+
+#: module/Application/view/application/customer/sign-up.phtml:23
+#: module/Application/view/application/index/support.phtml:512 651 loco:#:
+#: 5625eff714d725cc668b4651
+msgid "Ваше имя"
+msgstr "Uw naam"
+
+#: module/Application/view/application/customer/sign-up.phtml:38 652 loco:#:
+#: 5625eff714d725cc668b4652
+msgid "Пароль еще раз"
+msgstr "Herhaal het wachtwoord"
+
+#: module/Application/view/application/customer/sign-up.phtml:41
+#: module/Application/view/application/index/index.phtml:27 653 loco:#:
+#: 5625eff714d725cc668b4653
+msgid "Зарегестрироваться"
+msgstr "Creëer een account"
+
+#: module/Application/view/application/customer/sign-up.phtml:50 654 loco:#:
+#: 5625eff714d725cc668b4654
+msgid "У вас уже есть аккаунт?"
+msgstr "Heeft u een account?"
+
+#: module/Application/view/application/index/index.phtml:17 655 loco:#:
+#: 5625eff714d725cc668b4655
+msgid "Станте участником цифровой системы лояльности"
+msgstr "Wordt lid van het digitale loyaliteit systeem"
+
+#: module/Application/view/application/index/index.phtml:21 656 loco:#:
+#: 5625eff714d725cc668b4656
+msgid "И получайте награды за посещения в ваших любимых заведениях"
+msgstr "En ontvang beloningen voor het bezoeken van uw favoriete bedrijven"
+
+#: module/Application/view/application/index/index.phtml:52 657 loco:#:
+#: 5625eff714d725cc668b4657
+#, php-format
+msgid "Как работает %s"
+msgstr "Hoe %s werkt"
+
+#: module/Application/view/application/index/index.phtml:73 658 loco:#:
+#: 5625eff714d725cc668b4658
+#, php-format
+msgid ""
+"Возмите карту с QR-кодом на %s стенде или зарегестрируйтесь на нашем сайте"
+msgstr ""
+"Pak de kaart met QR-code uit het %s rek en schrijf u in op onze website"
+
+#: module/Application/view/application/index/index.phtml:89 loco:#:
+#: 5625eff714d725cc668b4659
+#, php-format
+msgid ""
+"Накапливайте посещения сканируя QR-код с вашей карты или QR-код из личного "
+"кабинета на планшете в заведениях где есть %s"
+msgstr ""
+"Accumuleer bezoeken door het scannen van de QR-code op uw kaart of de QR-"
+"code in uw persoonlijke account op de tablet bij de bedrijven waar %s is."
+
+#: module/Application/view/application/index/index.phtml:103 65a loco:#:
+#: 5625eff714d725cc668b465a
+#, php-format
+msgid "Получайте награды за посещения в ваших любимых заведениях с %s"
+msgstr "Ontvang beloningen voor het bezoeken aan uw favoriete bedrijven met %s"
+
+#: module/Application/view/application/index/index.phtml:124 65b loco:#:
+#: 5625eff714d725cc668b465b
+msgid "Открыть карту"
+msgstr "Open de kaart"
+
+#: module/Application/view/application/index/index.phtml:128 65c loco:#:
+#: 5625eff714d725cc668b465c
+#, php-format
+msgid "Найдите заведения в которых работает %s"
+msgstr "Vind bedrijven met %s"
+
+#: module/Application/view/application/index/support.phtml:6
+#: module/Application/view/application/index/support.phtml:11
+#: module/Application/view/layout/layout.phtml:267
+#: module/Application/view/layout/menu/customer.phtml:29
+#: module/Application/view/layout/menu/guest.phtml:43
+#: module/Application/view/layout/menu/owner.phtml:22 65d loco:#:
+#: 5625eff714d725cc668b465d
+msgid "Поддержка"
+msgstr "Ondersteuning"
+
+#: module/Application/view/application/index/support.phtml:34 65e loco:#:
+#: 5625eff714d725cc668b465e
+msgid "Общие вопросы"
+msgstr "Algemene vraag"
+
+#: module/Application/view/application/index/support.phtml:45 65f loco:#:
+#: 5625eff714d725cc668b465f
+#, php-format
+msgid "Что такое %s?"
+msgstr "Wat is %s?"
+
+#: module/Application/view/application/index/support.phtml:51 loco:#:
+#: 5625eff714d725cc668b4660
+#, php-format
+msgid ""
+"%s - это уникальная цифровая система лояльности которая позволяет получать "
+"награды в вашех любимых заведениях за посещения."
+msgstr ""
+"%s is een digitaal loyaliteit system waar u beloningen kunt verdienen voor "
+"bezoeken bij uw favoriete bedrijven."
+
+#: module/Application/view/application/index/support.phtml:64 661 loco:#:
+#: 5625eff714d725cc668b4661
+msgid "Термины"
+msgstr "Definities"
+
+#: module/Application/view/application/index/support.phtml:70 662 loco:#:
+#: 5625eff714d725cc668b4662
+msgid ""
+"Чтобы не было путаницы, мы решили определить термины, которыем мы используем."
+msgstr ""
+"Om verwarring te voorkomen, hebben wij besloten de voorwaarden te bepalen "
+"die wij gebruiken."
+
+#: module/Application/view/application/index/support.phtml:71 663 loco:#:
+#: 5625eff714d725cc668b4663
+msgid "- это другими словами ваш визиты в конкретном заведении."
+msgstr "zijn uw bezoeken aan een bepaald bedrijf."
+
+#: module/Application/view/application/index/support.phtml:73 664 loco:#:
+#: 5625eff714d725cc668b4664
+msgid "- это те посещения которые вы можете потратить на награду."
+msgstr "zijn die bezoeken die u kunt inwisselen voor een beloning."
+
+#: module/Application/view/application/index/support.phtml:75 665 loco:#:
+#: 5625eff714d725cc668b4665
+msgid ""
+"- это как правило товар или сервис в заведении, который вы можете получить "
+"за доступные посещения."
+msgstr ""
+"is doorgaans een product of service die een bepaald bedrijf u kan aanbieden "
+"in ruil voor de beschikbare bezoeken"
+
+#: module/Application/view/application/index/support.phtml:77 666 loco:#:
+#: 5625eff714d725cc668b4666
+msgid "Отметка"
+msgstr "Check-in"
+
+#: module/Application/view/application/index/support.phtml:77 667 loco:#:
+#: 5625eff714d725cc668b4667
+msgid ""
+"или check-in (чекин) - это процедура, которая позволяет нам понять чтобы "
+"были в заведении."
+msgstr ""
+"is een procedure die ons in staat stelt om inzicht te verkrijgen of het "
+"bedrijf heeft bezocht"
+
+#: module/Application/view/application/index/support.phtml:89 668 loco:#:
+#: 5625eff714d725cc668b4668
+#, php-format
+msgid "Как можно стать участником %s?"
+msgstr "Hoe word ik lid van %s?"
+
+#: module/Application/view/application/index/support.phtml:95 loco:#:
+#: 5625eff714d725cc668b4669
+#, php-format
+msgid ""
+"Возмите %s в любом месте где мы расположены. Нажмите на \"Начать\" на "
+"планшете, отсканируйте QR-код с карты и укажите ваш e-mail. Не хотети носить "
+"с собой карту? Тогда просто зарегистрируйтесь на нашем сайте."
+msgstr ""
+"Gebruik %s bij ieder van onze partners. Klik op \"Start\" op de tablet, scan "
+"de QR-code op de kaart en voer uw e-mail in. Wilt u de kaart niet constant "
+"meenemen? Schrijf u dan in op onze website."
+
+#: module/Application/view/application/index/support.phtml:107 66a loco:#:
+#: 5625eff714d725cc668b466a
+#, php-format
+msgid "Как работает %s?"
+msgstr "Hoe werkt %s?"
+
+#: module/Application/view/application/index/support.phtml:113 loco:#:
+#: 5625eff714d725cc668b466b
+#, php-format
+msgid ""
+"Накапливайте посещения сканируя на планшете QR-код с вашей %s или с вашего "
+"аккаунта. Получайте награды за доступные посещения просто выбрав их на "
+"планшете и показав кассиру подтвержение об этом."
+msgstr ""
+"Verzamel bezoeken door het scannen van de QR-code op uw %s of QR-code in uw "
+"account op de tablet in het bedrijf. Ontvang beloningen voor de beschikbaar "
+"bezoeken door deze te incasseren op de tablet en toon dan het bevestiging "
+"bericht aan de kassier."
+
+#: module/Application/view/application/index/support.phtml:116 66c loco:#:
+#: 5625eff714d725cc668b466c
+msgid ""
+"Примечание: накопленные посищения вы можете тратить только в том заведении, "
+"где вы их накопили."
+msgstr ""
+"Let op: verzamelde bezoeken kunnen alleen worden ingewisseld bij het bedrijf "
+"waar u deze ontvangen heeft."
+
+#: module/Application/view/application/index/support.phtml:129 66d loco:#:
+#: 5625eff714d725cc668b466d
+#, php-format
+msgid "Как я могу найти места где есть %s?"
+msgstr "Hoe vind ik bedrijven van %s?"
+
+#: module/Application/view/application/index/support.phtml:135 loco:#:
+#: 5625eff714d725cc668b466e
+#, php-format
+msgid ""
+"Перейдите на эту страницу %s. На ней будет карта, где собраны заведения с "
+"%s. Выбрав одно из заведений, вы сможете узнать его адрес и телефон, а также "
+"о наградах которые есть в этом заведении."
+msgstr ""
+"Ga hiernaartoe: %s. Op deze pagina vindt u een kaart met bedrijven van %s. "
+"Nadat u een bedrijf heeft geselecteerd, kunt u het adres en het "
+"telefoonnummer vinden, maar ook de beloningen van dit bedrijf."
+
+#: module/Application/view/application/index/support.phtml:147 66f loco:#:
+#: 5625eff714d725cc668b466f
+msgid "Я забыл отметиться. Могу ли я засчитать это посещение?"
+msgstr "Ik ben vergeten in te checken. Kan ik dit bezoek nog mee laten tellen?"
+
+#: module/Application/view/application/index/support.phtml:153 670 loco:#:
+#: 5625eff714d725cc668b4670
+#, php-format
+msgid ""
+"Да. Сфотографируйте ваш чек и отправьте его к нам по электронной почте на %s."
+msgstr "Ja. Maak een foto van uw kassabon en stuur deze per e-mail naar %s."
+
+#: module/Application/view/application/index/support.phtml:167 671 loco:#:
+#: 5625eff714d725cc668b4671
+#, php-format
+msgid "%s карта"
+msgstr "%s kaart"
+
+#: module/Application/view/application/index/support.phtml:179 672 loco:#:
+#: 5625eff714d725cc668b4672
+#, php-format
+msgid "Что такое карта %s?"
+msgstr "Wat is %s?"
+
+#: module/Application/view/application/index/support.phtml:185 loco:#:
+#: 5625eff714d725cc668b4673
+#, php-format
+msgid ""
+"Карта %s это карта с уникальным QR-кодом. Эту карту вы можете использовать "
+"для накопления посещений в заведениях где работает %s."
+msgstr ""
+"%s is een kaart met een unieke QR-code. Deze kaart kan gebruikt worden voor "
+"het verzamelen van bezoeken aan bedrijven van %s."
+
+#: module/Application/view/application/index/support.phtml:197 674 loco:#:
+#: 5625eff714d725cc668b4674
+#, php-format
+msgid "Я потерял %s могу ли я получить новую без потери накопленых посещений?"
+msgstr ""
+"Ik ben mijn %s kaart kwijt. Kan ik een nieuwe kaart krijgen zonder mijn "
+"verzamelde bezoeken te verliezen?"
+
+#: module/Application/view/application/index/support.phtml:203 loco:#:
+#: 5625eff714d725cc668b4675
+#, php-format
+msgid ""
+"Да. Вы можете прийти в любое место где есть %s, взять новую карту и при "
+"регистрации указать ваш e-mail, которые был привязан к потерянной карте."
+msgstr ""
+"Ja! U kunt overal naartoe komen waar er %s is. U kunt een nieuwe kaart "
+"vragen. Scan deze op de tablet en voer uw e-mail in, welke is verbonden met "
+"de verloren kaart."
+
+#: module/Application/view/application/index/support.phtml:239 676 loco:#:
+#: 5625eff714d725cc668b4676
+msgid "Как можно накапливать посещения?"
+msgstr "Hoe kan ik bezoeken verzamelen?"
+
+#: module/Application/view/application/index/support.phtml:245 loco:#:
+#: 5625eff714d725cc668b4677
+#, php-format
+msgid ""
+"Накапливать посещения можно отсканировав QR-код с %s карты, или QR-код из "
+"личного кабинета с сайта, на планшете установленном в заведениях где есть %s."
+msgstr ""
+"U kunt bezoeken verzamelen via het scannen van dde QR-code op uw %s kaart, "
+"of via de QR-code in uw persoonlijke account op onze website, which is "
+"geïnstalleerd op de tablet die aanwezig is in bedrijven waar %s is."
+
+#: module/Application/view/application/index/support.phtml:257 678 loco:#:
+#: 5625eff714d725cc668b4678
+#, php-format
+msgid "Если у меня нет %s карты с собой, могу ли я отметиться без неё?"
+msgstr ""
+"Als ik de %s kaart niet bij me heb, kan ik dan inchecken zonder de kaart?"
+
+#: module/Application/view/application/index/support.phtml:263 loco:#:
+#: 5625eff714d725cc668b4679
+#, php-format
+msgid ""
+"Да. Вы можете отметиться в любом месте где есть %s с помошью вашего e-mail, "
+"но по соображениям безопасности, получить награды за посещения без QR-кода "
+"вы не сможете."
+msgstr ""
+"Ja! U kunt overal inchecken waar %s is, met alleen uw e-mail. Echter, "
+"vanwege veiligheidsredenen, is het niet mogelijk om beloningen te incasseren "
+"zonder QR-code"
+
+#: module/Application/view/application/index/support.phtml:276 67a loco:#:
+#: 5625eff714d725cc668b467a
+msgid "Планшет был отключён от Интернета. Могу ли накапливать посещения?"
+msgstr "De tablet is losgekoppeld van het internet. Hoe verzamel ik bezoeken?"
+
+#: module/Application/view/application/index/support.phtml:282 loco:#:
+#: 5625eff714d725cc668b467b
+msgid ""
+"Если в заведении где вы пытаетесь отметиться планшет отелючён от Интернета, "
+"вы все равно можете отметиться, информация будет сохранена на планшете. Как "
+"только планшет будет подлючен к Интернету, вы сможете увидить ваши посещения "
+"в личном кабинете через наз сайт."
+msgstr ""
+"Als de tablet is losgekoppeld van het internet bij het bedrijf waar u "
+"probeert in te checken, dan kunt u nog steeds inchecken en deze informatie "
+"zal worden opgeslagen op de tablet. Zodra de tablet is aangesloten op het "
+"internet, kunt u uw bezoek zien in uw account op onze website."
+
+#: module/Application/view/application/index/support.phtml:298 loco:#:
+#: 5625eff714d725cc668b467c
+msgid "Как я могу увидить все посещения которые у меня были?"
+msgstr "Hoe kan ik alle check-ins zien die ik ooit heb gemaakt?"
+
+#: module/Application/view/application/index/support.phtml:304 loco:#:
+#: 5625eff714d725cc668b467d
+msgid ""
+"Вы можете увидеть все заведения в которых вы отмечались, посмотреть историю "
+"их посещений и историю получения наград в вашем личном кабинете на нашем "
+"сайте."
+msgstr ""
+"U kunt alle bedrijven waar u ingecheckt bent zien door naar de \"bezoek "
+"geschiedenis\" en de \"beloning geschiedenis\" in uw persoonlijke account op "
+"onze website te gaan."
+
+#: module/Application/view/application/index/support.phtml:317 loco:#:
+#: 5625eff714d725cc668b467e
+msgid "Нужно ли мне что-то купить чтобы накапливать посещения?"
+msgstr "Moet ik iets kopen voordat ik bezoeken kan verzamelen?"
+
+#: module/Application/view/application/index/support.phtml:323 loco:#:
+#: 5625eff714d725cc668b467f
+#, php-format
+msgid ""
+"Это зависит от заведения где вы хотите отметиться, но как правило владельцы "
+"просят чтобы участники %s сделали покупку перед тем как отметиться."
+msgstr ""
+"Dit hangt af van het bedrijf waar u in wilt checken, maar normaal gesproken, "
+"vraagt de eigenaar van het bedrijf de %s leden, om het doen van een aankoop, "
+"voordat u incheckt."
+
+#: module/Application/view/application/index/support.phtml:335 loco:#:
+#: 5625eff714d725cc668b4680
+msgid "Есть ли ограничение использования по времени для накопленных посещений?"
+msgstr "Kunnen bezoeken verlopen?"
+
+#: module/Application/view/application/index/support.phtml:341 loco:#:
+#: 5625eff714d725cc668b4681
+msgid ""
+"Посещения не имеют ограничения по времени, вы можете получить награду за "
+"посещения в любое время пока программа лояльности работает в заведении."
+msgstr ""
+"Bezoeken verlopen niet, u kunt op ieder moment beloningen ontvangen zolang "
+"het bedrijf partner is van het loyaliteit programma."
+
+#: module/Application/view/application/index/support.phtml:354 loco:#:
+#: 5625eff714d725cc668b4682
+#, php-format
+msgid ""
+"В моём любимом заведении убрали %s. Что будет с моими накопленными "
+"посещениями?"
+msgstr ""
+"Mijn favoriete bedrijf bij %s is ermee gestopt. Wat gebeurd er met mijn "
+"verzamelde bezoeken?"
+
+#: module/Application/view/application/index/support.phtml:360 loco:#:
+#: 5625eff714d725cc668b4683
+msgid ""
+"К сожалению, если владельц вашего любимого заведения решил прекратить "
+"использовать программу лояльности, мы ничего с этим поделать не можем."
+msgstr ""
+"Helaas heeft de eigenaar van uw favoriete bedrijf besloten te stoppen met "
+"het loyaliteit programma, we kunnen daar niets aan doen."
+
+#: module/Application/view/application/index/support.phtml:397 684 loco:#:
+#: 5625eff714d725cc668b4684
+msgid "Как я могу получить награду за посещения?"
+msgstr "Hoe kan ik een beloning voor mijn bezoeken krijgen?"
+
+#: module/Application/view/application/index/support.phtml:403 loco:#:
+#: 5625eff714d725cc668b4685
+#, php-format
+msgid ""
+"Отсканировав на планшете QR-код с карты %s или из личного кабинета на нашем "
+"сайте, вам будет показан список наград. Если у вас достаточно посещений "
+"чтобы получить награду, появиться кнопка \"Получить награду\", или будет "
+"показано сколько еще посещений требуется для получения конкретной награды."
+msgstr ""
+"Na het scannen van de QR-code op uw %s kaart of via uw persoonlijke account "
+"op onze website, kunt u een lijst met beloningen zien. Wanneer u voldoende "
+"bezoeken hebt om een beloning te ontvangen, wordt de \"Incasseren\"-knop "
+"beschikbaar. Is deze knop niet zichtbaar dan zal het aantal benodigde "
+"bezoeken voor het verkrijgen van beloningen, worden weergegeven."
+
+#: module/Application/view/application/index/support.phtml:415 686 loco:#:
+#: 5625eff714d725cc668b4686
+msgid "Почему я не могу получить награду используя e-mail?"
+msgstr "Waarom kan ik een beloning niet incasseren via e-mail?"
+
+#: module/Application/view/application/index/support.phtml:421 loco:#:
+#: 5625eff714d725cc668b4687
+#, php-format
+msgid ""
+"Вы можете получить награду только при налиции %s или войдя в свой личный "
+"кабинет на нашем сайте. Мы не хотим чтобы кто-то посторонний зная ваш e-mail "
+"мог получить ваши награды."
+msgstr ""
+"U kunt enkel een beloning incasseren met %s of door in te loggen in uw "
+"persoonlijke account op onze webpagina. We willen niet dat iemand anders u e-"
+"mail kent en uw beloningen incasseert."
+
+#: module/Application/view/application/index/support.phtml:432 688 loco:#:
+#: 5625eff714d725cc668b4688
+msgid "Что произойдет когда я получу награду?"
+msgstr "Wat gebeurt er als ik een beloning ontvang?"
+
+#: module/Application/view/application/index/support.phtml:438 loco:#:
+#: 5625eff714d725cc668b4689
+msgid ""
+"Количество доступных посещений будет уменьшено ровно на то количество, "
+"сколько нужно для получения награды."
+msgstr ""
+"Het aantal beschikbare bezoeken zal worden verminderd met het aantal dat "
+"benodigde bezoeken dat nodig is voor het incasseren van de beloning."
+
+#: module/Application/view/application/index/support.phtml:473 68a loco:#:
+#: 5625eff714d725cc668b468a
+msgid "Хотите получать награды?"
+msgstr "Wilt u beloningen ontvangen?"
+
+#: module/Application/view/application/index/support.phtml:476 68b loco:#:
+#: 5625eff714d725cc668b468b
+msgid ""
+"Зарегестрируйтесь, и вы тут же сможете накапливать визиты у наших партнеров."
+msgstr ""
+"Meldt u aan en u kunt direct bezoeken gaan verzamelen bij onze partners"
+
+#: module/Application/view/application/index/support.phtml:491 68c loco:#:
+#: 5625eff714d725cc668b468c
+msgid "Связаться с нами"
+msgstr "Neem contact met ons op"
+
+#: module/Application/view/application/index/support.phtml:496 68d loco:#:
+#: 5625eff714d725cc668b468d
+msgid "Ваш запрос успешно отправлен! Спасибо! Мы скоро ответим."
+msgstr ""
+"U verzoek is met succes verzonden! Dank u! We nemen zo snel mogelijk contact "
+"op."
+
+#: module/Application/view/application/index/support.phtml:527 68e loco:#:
+#: 5625eff714d725cc668b468e
+msgid "Тема"
+msgstr "?"
+
+#: module/Application/view/application/index/support.phtml:534 68f loco:#:
+#: 5625eff714d725cc668b468f
+msgid "Сообщение"
+msgstr "Bericht"
+
+#: module/Application/view/application/index/support.phtml:537 690 loco:#:
+#: 5625eff714d725cc668b4690
+msgid "Отправить"
+msgstr "Verzenden"
+
+#: module/Application/view/application/merchant/index.phtml:52 691 loco:#:
+#: 5625eff714d725cc668b4691
+#, php-format
+msgid "Награды в %s"
+msgstr "Beloningen bij %s"
+
+#: module/Application/view/application/merchant/index.phtml:55 692 loco:#:
+#: 5625eff714d725cc668b4692
+#, php-format
+msgid "Доступные посещения: %s шт."
+msgstr "Beschikbare bezoeken: %s"
+
+#: module/Application/view/application/merchant/index.phtml:94 693 loco:#:
+#: 5625eff714d725cc668b4693
+msgid "Доступно!"
+msgstr "Beschikbaar"
+
+#: module/Application/view/application/merchant/index.phtml:98 694 loco:#:
+#: 5625eff714d725cc668b4694
+msgid "Еще"
+msgstr "Meer"
+
+#: module/Application/view/application/merchant/index.phtml:118 695 loco:#:
+#: 5625eff714d725cc668b4695
+msgid "Это очень странно!"
+msgstr "Het is vreemd!"
+
+#: module/Application/view/application/merchant/index.phtml:126 696 loco:#:
+#: 5625eff714d725cc668b4696
+msgid "Данное заведение не имеет наград за посещения."
+msgstr "Dit bedrijf heeft geen beloningen voor bezoeken"
+
+#: module/Application/view/email/check-in.phtml:6
+#: loco:5625eff714d725cc668b4698
+msgid ""
+"Отлично! Вы только что отметились в %s и стали еще на один шаг ближе к "
+"получению бесплатной награды ..."
+msgstr ""
+"Perfect! U heeft ingecheckt bij %s en bent een stap dichter bij het "
+"ontvangen van gratis beloningen ..."
+
+#: module/Application/view/email/check-in.phtml:8
+#: module/Application/view/email/check-in.phtml:18
+#: loco:5625eff714d725cc668b4699
+#, php-format
+msgid ""
+"У вас есть %s доступных посешений, которые вы можете обменять на награды."
+msgstr "U heeft %s bezoeken deze kunt u inwisselen voor beloningen."
+
+#: module/Application/view/email/check-in.phtml:10
+#: module/Application/view/email/check-in.phtml:20
+#: loco:5625eff714d725cc668b469a
+#: module/Application/view/email/check-in.phtml:22
+#, php-format
+msgid "Посмотреть награды в %s"
+msgstr "Bekijk voor beloningen op %s"
+
+#: module/Application/view/email/check-in.phtml:12
+#: loco:5625eff714d725cc668b469b
+msgid "До встречи!"
+msgstr "Tot ziens!"
+
+#: module/Application/view/email/redeem.phtml:2 loco:5625eff714d725cc668b469c
+#: module/Application/view/email/redeem.phtml:9
+msgid "Новая награда!"
+msgstr "Nieuwe beloning!"
+
+#: module/Application/view/email/redeem.phtml:9 loco:5625eff714d725cc668b469d
+#: module/Application/view/email/redeem.phtml:16
+#, php-format
+msgid "Поздравлем! Вы получили \"%s\" в %s за %s посещений! Так держать!"
+msgstr "Gefeliciteerd! U heeft \"%s\" bij %s voor %s bezoeken! Ga zo door!"
+
+#: module/Application/view/email/redeem.phtml:11 loco:5625eff714d725cc668b469e
+#: module/Application/view/email/redeem.phtml:12
+#: module/Application/view/email/redeem.phtml:19
+#, php-format
+msgid "Посмотреть другие награды в %s"
+msgstr "Bekijk meer beloningen op %s"
+
+#: module/Application/view/email/redeem.phtml:13
+#: module/Application/view/email/greeting.phtml:35
+#: loco:5625eff714d725cc668b469f module/Application/view/email/redeem.phtml:16
+#: module/Application/view/email/greeting.phtml:37
+#: module/Application/view/email/redeem.phtml:23
+msgid "Удачи!"
+msgstr "Veel geluk!"
+
+#: module/Application/view/email/registration.phtml:3 6a0 loco:#:
+#: 5625eff714d725cc668b46a0
+msgid "Регистрация завершена"
+msgstr "Aanmelden voltooid"
+
+#: module/Application/view/email/registration.phtml:5 6a1 loco:#:
+#: 5625eff714d725cc668b46a1
+msgid ""
+"Поздравляем! Вы только что стали участником цифровой системы лояльности %s"
+msgstr ""
+"Gefeliciteerd! U bent lid geworden van het digitale loyaliteit systeem van %s"
+
+#: module/Application/view/email/registration.phtml:7 6a2 loco:#:
+#: 5625eff714d725cc668b46a2
+msgid "Посмотреть предложения"
+msgstr "Bekijk beloningen"
+
+#: module/Application/view/email/registration.phtml:9 6a3
+#: module/Application/view/#: email/greeting.phtml:28
+#: module/Application/view/email/registration.phtml:14 loco:#:
+#: 5625eff714d725cc668b46a3 module/Application/view/email/greeting.phtml:28
+#: module/Application/view/email/greeting.phtml:29
+msgid "Присоеденяйтесь к нам в"
+msgstr "Volg ons op"
+
+#: module/Application/view/email/registration.phtml:12 6a4
+#: module/Application/view/#: email/greeting.phtml:31
+#: module/Application/view/email/registration.phtml:17 loco:#:
+#: 5625eff714d725cc668b46a4 module/Application/view/email/greeting.phtml:31
+#: module/Application/view/email/greeting.phtml:32
+msgid "или"
+msgstr "of"
+
+#: module/Application/view/email/registration.phtml:16 6a5 loco:#:
+#: 5625eff714d725cc668b46a5
+msgid "Удачного дня и хорошего настроения!"
+msgstr "Met vriendelijke groeten"
+
+#: module/Application/view/layout/email.phtml:205
+#: module/Application/view/layout/email.phtml:200
+#: loco:5625eff714d725cc668b46a6
+msgid "Надоели наши назойливые письма?"
+msgstr "Moe van onze vervelende e-mails"
+
+#: module/Application/view/layout/email.phtml:205
+#: module/Application/view/layout/email.phtml:200
+#: loco:5625eff714d725cc668b46a7
+msgid "Отписаться"
+msgstr "Uitschrijven"
+
+#: module/Application/view/layout/layout.phtml:22
+#: loco:5625eff714d725cc668b46a8
+msgid "Бестлатная система лояльности"
+msgstr "Gratis loyaliteit systeem"
+
+#: module/Application/view/layout/layout.phtml:174
+#: loco:5625eff714d725cc668b46a9
+msgid "Будте с нами"
+msgstr "Inschrijving"
+
+#: module/Application/view/layout/layout.phtml:176
+#: loco:5625eff714d725cc668b46aa
+msgid "Подпишитесь на нашу рассылку и будте в курсе того что мы делаем"
+msgstr "Inschrijven op onze nieuwsbrief"
+
+#: module/Application/view/layout/layout.phtml:183
+#: loco:5625eff714d725cc668b46ab
+msgid "Подписка оформлена. Спасибо!"
+msgstr "Inschrijving gecreëerd. Dank u!"
+
+#: module/Application/view/layout/layout.phtml:192
+#: loco:5625eff714d725cc668b46ac
+msgid "Подписка успешно оформлена. Спасибо!"
+msgstr "Het inschrijven is succesvol. Dank u!"
+
+#: module/Application/view/layout/layout.phtml:207
+#: loco:5625eff714d725cc668b46ad
+msgid "Подписаться"
+msgstr "Inschrijven"
+
+#: module/Application/view/layout/layout.phtml:222
+#: loco:5625eff714d725cc668b46ae
+msgid "Присоединяйтесь к нам"
+msgstr "Volg ons"
+
+#: module/Application/view/layout/layout.phtml:245
+#: loco:5625eff714d725cc668b46af
+msgid "Наш номер"
+msgstr "Ons telefoonnummer"
+
+#: module/Application/view/layout/layout.phtml:308
+#: loco:5625eff714d725cc668b46b0
+msgid "Ваш QR-код"
+msgstr "Uw QR-code"
+
+#: module/Application/view/layout/layout.phtml:319
+#: loco:5625eff714d725cc668b46b1
+msgid "Осканируйте QR-код на планшете"
+msgstr "Scan uw QR-code op de tablet"
+
+#: module/Application/view/layout/layout.phtml:324
+#: loco:5625eff714d725cc668b46b2
+msgid "Закрыть"
+msgstr "Sluiten"
+
+#: module/Application/view/layout/menu/customer.phtml:26
+#: module/Application/view/layout/menu/guest.phtml:40
+#: module/Application/view/layout/menu/owner.phtml:19 6b3 loco:#:
+#: 5625eff714d725cc668b46b3
+msgid "Карта"
+msgstr "Locaties"
+
+#: module/Application/view/layout/menu/customer.phtml:32 6b4 loco:#:
+#: 5625eff714d725cc668b46b4
+msgid "Мой аккаунт"
+msgstr "Mijn account"
+
+#: module/Application/view/layout/menu/customer.phtml:41
+#: module/Application/view/layout/menu/owner.phtml:43 6b5 loco:#:
+#: 5625eff714d725cc668b46b5
+msgid "Выход"
+msgstr "Uitloggen"
+
+#: module/Application/view/layout/menu/guest.phtml:23
+#: module/Application/view/layout/menu/guest.phtml:51
+#: module/Application/view/layout/menu/owner.phtml:25 6b6 loco:#:
+#: 5625eff714d725cc668b46b6
+msgid "Командный центр"
+msgstr "Commando centrum"
+
+#: module/Application/view/layout/menu/guest.phtml:26
+#: module/Application/view/layout/menu/guest.phtml:47 6b7 loco:#:
+#: 5625eff714d725cc668b46b7
+msgid "Для бизнеса"
+msgstr "Voor bedrijven"
+
+#: module/Application/view/application/business/index.phtml:194 loco:#:
+#: 562e729614d725410d8b4567
+#: module/Application/view/application/business/index.phtml:198
+msgid ""
+"Сейчас тот самый момент когда использование систем лояльности через "
+"мобильные платформы стало невероятно значимо."
+msgstr ""
+"Dit is het moment dat het gebruik van loyaliteit via het mobiele platform "
+"overgelijkbaar waardevol wordt."
+
+#: module/Application/view/application/customer/index.phtml:238 loco:#:
+#: 562e729614d725410d8b4568
+msgid "Ваш уникальный QR-код! Используйте его для накопления посещений."
+msgstr "Uw unieke QR-code! Gebruik deze om bezoeken te verzamelen."
+
+#: module/Application/view/application/index/support.phtml:77 loco:#:
+#: 562e729614d725410d8b4569
+msgid ""
+" или check-in (чекин) - это процедура, которая позволяет нам понять чтобы "
+"были в заведении."
+msgstr ""
+"het is een procedure die ons toestaat om te begrijpen waar u bent geweest "
+"waar er %s is."
+
+#: module/Application/view/application/index/support.phtml:116 loco:#:
+#: 562e729614d725410d8b456a
+msgid ""
+" Примечание: накопленные посищения вы можете тратить только в том заведении, "
+"где вы их накопили."
+msgstr ""
+"Opmerking: u kunt alleen verzamelde bezoeken gebruiken bij het bedrijf waar "
+"u ze verzameld heeft."
+
+#: module/Application/view/email/check-in.phtml:8
+#: module/Application/view/email/greeting.phtml:10
+#: loco:562e729614d725410d8b456b
+#, php-format
+msgid "Первая отметка в %s"
+msgstr "Eerste check-in bij %s"
+
+#: module/Application/view/email/check-in.phtml:12
+#: loco:562e729614d725410d8b456c
+#, php-format
+msgid "Новая отметка в %s"
+msgstr "Nieuwe check-in bij %s"
+
+#: module/Application/view/email/check-in.phtml:16
+#: loco:562e729614d725410d8b456d
+#, php-format
+msgid ""
+"Отлично! Вы только что отметились в %s и стали еще на один шаг ближе к "
+"получению бесплатной награды в этом заведении."
+msgstr ""
+"Perfect! U bent ingecheckt bij %s en bent een stap dichter bij het "
+"incasseren van gratis beloningen van dit bedrijf."
+
+#: module/Application/view/email/greeting.phtml:13
+#: loco:562e729614d725410d8b456e
+#, php-format
+msgid ""
+"Отлично! Вы только что отметились в %s и стали на один шаг ближе к получению "
+"бесплатных наград в этом месте."
+msgstr ""
+"Perfect! U bent net ingecheckt bij %s en een stap dichterbij het incasseren "
+"van uw gratis beloningen bij dit bedrijf."
+
+#: module/Application/view/email/greeting.phtml:15
+#: loco:562e729614d725410d8b456f
+msgid "Посмотреть награды"
+msgstr "Bekijk beloningen"
+
+#: module/Application/view/email/greeting.phtml:19
+#: module/Application/view/email/registration.phtml:9 loco:#:
+#: 562e729614d725410d8b4570
+#: module/Application/src/Application/Service/Email.php:278
+#: module/Application/src/Application/Service/Email.php:267
+#: module/Application/view/email/greeting.phtml:20
+#, php-format
+msgid "Регистрация в %s"
+msgstr "Inschrijven bij %s"
+
+#: module/Application/view/email/greeting.phtml:22
+#: loco:562e729614d725410d8b4571
+#: module/Application/view/email/greeting.phtml:23
+#, php-format
+msgid "Вы только что стали участником цифровой системы лояльности %s."
+msgstr ""
+"U bent net deelnemer geworden van het digtale loyaliteits systeem van %s"
+
+#: module/Application/view/email/greeting.phtml:24
+#: loco:562e729614d725410d8b4572
+#: module/Application/view/email/greeting.phtml:25
+msgid "Изменить настройти вашего профиля вы всегда можете в личном кабинете."
+msgstr ""
+"U kunt altijd de instellingen van uw profiel wijzigen in uw account op onze "
+"website."
+
+#: module/Application/view/email/greeting.phtml:26
+#: loco:562e729614d725410d8b4573
+#: module/Application/view/email/greeting.phtml:27
+#, php-format
+msgid "Для входа используйте ваш e-mail и этот пароль: %s"
+msgstr "Om in te loggen gebruikt u uw e-mail en dit wachtwoord: %s"
+
+#: module/Application/view/email/registration.phtml:12 loco:#:
+#: 562e729614d725410d8b4574
+#, php-format
+msgid ""
+"Поздравляем! Вы только что стали участником цифровой системы лояльности %s."
+msgstr ""
+"Gefeliciteerd! U bent nu deelnemer geworden van het digitale loyaliteit "
+"systeem van %s."
+
+#: module/Application/view/email/registration.phtml:21 loco:#:
+#: 562e729614d725410d8b4575
+msgid "Успехов!"
+msgstr "Veel geluk!"
+
+#: module/Application/view/application/business/clients.phtml:153 loco:#:
+#: 562e729614d725410d8b4576
+msgid "Последение награжденные"
+msgstr "Laatste incasseringen"
+
+#: module/Application/src/Application/Service/Email.php:86
+#: module/Application/src/Application/Service/Email.php:84
+#, php-format
+msgid "Добро пожаловать в %s"
+msgstr "Welkom bij %s"
+
+#: module/Application/src/Application/Service/Email.php:155
+#: module/Application/src/Application/Service/Email.php:151
+msgid "Сообщение от пользователей"
+msgstr "Geplaatst door leden"
+
+#: module/Application/src/Application/Service/Email.php:216
+#: module/Application/src/Application/Service/Email.php:208
+#, php-format
+msgid "Отметка в %s"
+msgstr "Inchecken bij %s"
+
+#: module/Application/src/Application/Service/Email.php:345
+#: module/Application/src/Application/Service/Email.php:337
+#, php-format
+msgid "Новая награда в %s"
+msgstr "Nieuwe belonen in %s"
+
+#: module/Application/view/layout/layout.phtml:270
+msgid "Условия использования"
+msgstr "Terms of Service"
+
+#: module/Application/view/layout/layout.phtml:273
+msgid "Политика конфеденциальности"
+msgstr "Privacy policy"
