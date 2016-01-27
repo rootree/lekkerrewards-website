@@ -1,0 +1,2225 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-01-17 11:05+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../view/layout/layout.phtml:6 ../view/layout/layout.phtml:33
+msgid "Skeleton Application"
+msgstr "Skeleton Application"
+
+#: ../view/layout/layout.phtml:36
+msgid "Home"
+msgstr "Главная"
+
+#: ../view/layout/layout.phtml:50
+msgid "All rights reserved."
+msgstr "Все права защищены."
+
+#: ../view/application/index/index.phtml:2
+#, php-format
+msgid "Welcome to %sZend Framework 2%s"
+msgstr "Привет, %sZend Framework 2%s"
+
+#: ../view/application/index/index.phtml:3
+#, php-format
+msgid ""
+"Congratulations! You have successfully installed the %sZF2 Skeleton "
+"Application%s. You are currently running Zend Framework version %s. This "
+"skeleton can serve as a simple starting point for you to begin building your "
+"application on ZF2."
+msgstr ""
+"Поздравляем! Вы успешно установили %sZF2 Skeleton Application%s. У вас "
+"установлен Zend Framework версии %s. Этот каркас может служить простой "
+"отправной точкой, чтобы начать строить приложения на ZF2."
+
+#: ../view/application/index/index.phtml:4
+msgid "Fork Zend Framework 2 on GitHub"
+msgstr "Fork Zend Framework 2 на GitHub"
+
+#: ../view/application/index/index.phtml:10
+msgid "Follow Development"
+msgstr "Следи за Разработкой"
+
+#: ../view/application/index/index.phtml:11
+#, php-format
+msgid ""
+"Zend Framework 2 is under active development. If you are interested in "
+"following the development of ZF2, there is a special ZF2 portal on the "
+"official Zend Framework website which provides links to the ZF2 %swiki%s, "
+"%sdev blog%s, %sissue tracker%s, and much more. This is a great resource for "
+"staying up to date with the latest developments!"
+msgstr ""
+"Zend Framework 2 активно развивается. Если вы заинтересованы в его развитии, "
+"для вас есть специальный портал ZF2 на официальном сайте Zend Framework "
+"который дает ссылки на ZF2 %swiki%s, %sdev blog%s, %sissue tracker%s, и "
+"многое другое. Это отличный ресурс для того чтобы быть в курсе последних "
+"событий."
+
+#: ../view/application/index/index.phtml:12
+msgid "ZF2 Development Portal"
+msgstr "ZF2 Портал Разработчика"
+
+#: ../view/application/index/index.phtml:16
+msgid "Discover Modules"
+msgstr "Узнай о Модулях"
+
+#: ../view/application/index/index.phtml:17
+#, php-format
+msgid ""
+"The community is working on developing a community site to serve as a "
+"repository and gallery for ZF2 modules. The project is available %son GitHub"
+"%s. The site is currently live and currently contains a list of some of the "
+"modules already available for ZF2."
+msgstr ""
+"Сообщество работает над созданием сайта, который служит хранилищем и "
+"галереей для ZF2 модулей. Проект доступен %sна GitHub%s. Сайт в настоящее "
+"время активен и содержит список модулей уже доступных для ZF2."
+
+#: ../view/application/index/index.phtml:18
+msgid "Explore ZF2 Modules"
+msgstr "Узнать о ZF2 модулях"
+
+#: ../view/application/index/index.phtml:22
+msgid "Help &amp; Support"
+msgstr "Помощь и Поддержка"
+
+#: ../view/application/index/index.phtml:23
+#, php-format
+msgid ""
+"If you need any help or support while developing with ZF2, you may reach us "
+"via IRC: %s#zftalk on Freenode%s. We'd love to hear any questions or "
+"feedback you may have regarding the beta releases. Alternatively, you may "
+"subscribe and post questions to the %smailing lists%s."
+msgstr ""
+"Если вам нужна помощь или поддержка при разработке с ZF2, вы можете "
+"связаться с нами по IRC: %s#zftalk on Freenode%s. Мы хотели бы узнать какие "
+"вопросы или предложения вы имеете относительно текущей версии. Кроме того, "
+"вы можете задавать вопросы в %smailing lists%s."
+
+#: ../view/application/index/index.phtml:24
+msgid "Ping us on IRC"
+msgstr "Присоединяйся к IRC"
+
+#: ../view/error/index.phtml:1 module/Application/view/error/index.phtml:1
+msgid "An error occurred"
+msgstr "Произошла ошибка"
+
+#: ../view/error/index.phtml:8 module/Application/view/error/404.phtml:65
+#: module/Application/view/error/index.phtml:8
+msgid "Additional information"
+msgstr "Дополнительная информация"
+
+#: ../view/error/index.phtml:11 ../view/error/index.phtml:35
+#: module/Application/view/error/404.phtml:68
+#: module/Application/view/error/404.phtml:92
+#: module/Application/view/error/index.phtml:11
+#: module/Application/view/error/index.phtml:35
+msgid "File"
+msgstr "Файл"
+
+#: ../view/error/index.phtml:15 ../view/error/index.phtml:39
+#: module/Application/view/error/404.phtml:72
+#: module/Application/view/error/404.phtml:96
+#: module/Application/view/error/index.phtml:15
+#: module/Application/view/error/index.phtml:39
+msgid "Message"
+msgstr "Сообщение"
+
+#: ../view/error/index.phtml:19 ../view/error/index.phtml:43
+#: ../view/error/404.phtml:55 module/Application/view/error/404.phtml:76
+#: module/Application/view/error/404.phtml:100
+#: module/Application/view/error/index.phtml:19
+#: module/Application/view/error/index.phtml:43
+msgid "Stack trace"
+msgstr "Развертывание стека"
+
+#: ../view/error/index.phtml:29 module/Application/view/error/404.phtml:86
+#: module/Application/view/error/index.phtml:29
+msgid "Previous exceptions"
+msgstr "Предыдущие исключения"
+
+#: ../view/error/index.phtml:58 module/Application/view/error/404.phtml:115
+#: module/Application/view/error/index.phtml:58
+msgid "No Exception available"
+msgstr "Нет имеющихся исключений"
+
+#: ../view/error/404.phtml:1
+msgid "A 404 error occurred"
+msgstr "Ошибка 404"
+
+#: ../view/error/404.phtml:10 module/Application/view/error/404.phtml:22
+msgid "The requested controller was unable to dispatch the request."
+msgstr "Запрашиваемый контроллер не смог отправить запрос."
+
+#: ../view/error/404.phtml:13 module/Application/view/error/404.phtml:25
+msgid ""
+"The requested controller could not be mapped to an existing controller class."
+msgstr ""
+"Запрашиваемый контроллер не может быть сопоставлен с существующими классом "
+"контроллера."
+
+#: ../view/error/404.phtml:16 module/Application/view/error/404.phtml:28
+msgid "The requested controller was not dispatchable."
+msgstr "Запрашиваемый контроллер не доступен."
+
+#: ../view/error/404.phtml:19 module/Application/view/error/404.phtml:31
+msgid "The requested URL could not be matched by routing."
+msgstr "Для запрашиваемого URL не может быть достигнуто направление."
+
+#: ../view/error/404.phtml:22 module/Application/view/error/404.phtml:34
+msgid "We cannot determine at this time why a 404 was generated."
+msgstr "Мы не можем определить причину создания страницы 404."
+
+#: ../view/error/404.phtml:34 module/Application/view/error/404.phtml:46
+msgid "Controller"
+msgstr "Контроллер"
+
+#: ../view/error/404.phtml:41 module/Application/view/error/404.phtml:53
+#, php-format
+msgid "resolves to %s"
+msgstr "разрешает для %s"
+
+#: ../view/error/404.phtml:51
+msgid "Exception"
+msgstr "Исключение"
+
+#: module/Application/src/Application/Controller/AjaxController.php:19
+#: module/Application/src/Application/Controller/AjaxController.php:24
+#: module/Application/src/Application/Controller/BusinessController.php:222
+#: module/Application/src/Application/Controller/BusinessController.php:349
+#: module/Application/src/Application/Controller/BusinessController.php:401
+#: module/Application/src/Application/Controller/BusinessController.php:471
+#: module/Application/src/Application/Controller/CustomerController.php:148
+#: module/Application/src/Application/Controller/CustomerController.php:219
+#: module/Application/src/Application/Controller/BusinessController.php:238
+#: module/Application/src/Application/Controller/BusinessController.php:365
+#: module/Application/src/Application/Controller/BusinessController.php:417
+#: module/Application/src/Application/Controller/BusinessController.php:487
+#: module/Application/src/Application/Controller/BusinessController.php:239
+#: module/Application/src/Application/Controller/BusinessController.php:366
+#: module/Application/src/Application/Controller/BusinessController.php:418
+#: module/Application/src/Application/Controller/BusinessController.php:488
+#: module/Application/src/Application/Controller/CustomerController.php:149
+#: module/Application/src/Application/Controller/CustomerController.php:220
+msgid "Ошибка при вводе."
+msgstr ""
+
+#: module/Application/src/Application/Controller/BusinessController.php:87
+#: module/Application/src/Application/Controller/CustomerController.php:307
+#: module/Application/src/Application/Controller/CustomerController.php:308
+#: module/Application/src/Application/Controller/BusinessController.php:89
+#: module/Application/src/Application/Controller/CustomerController.php:313
+#: module/Application/src/Application/Controller/CustomerController.php:314
+msgid "Пустой запрос."
+msgstr ""
+
+#: module/Application/src/Application/Controller/BusinessController.php:100
+#: module/Application/src/Application/Controller/BusinessController.php:233
+#: module/Application/src/Application/Controller/CustomerController.php:315
+#: module/Application/src/Application/Controller/CustomerController.php:316
+#: module/Application/src/Application/Controller/BusinessController.php:102
+#: module/Application/src/Application/Controller/BusinessController.php:249
+#: module/Application/src/Application/Controller/CustomerController.php:321
+#: module/Application/src/Application/Controller/BusinessController.php:250
+#: module/Application/src/Application/Controller/CustomerController.php:324
+msgid "Неправельные аргументы."
+msgstr "Неправильные аргументы."
+
+#: module/Application/src/Application/Controller/BusinessController.php:120
+#: module/Application/src/Application/Controller/CustomerController.php:354
+#: module/Application/src/Application/Controller/CustomerController.php:356
+#: module/Application/src/Application/Controller/BusinessController.php:136
+#: module/Application/src/Application/Controller/CustomerController.php:368
+#: module/Application/src/Application/Controller/CustomerController.php:371
+#, php-format
+msgid "Внутрянная ошибка сервиса. (%s)"
+msgstr "Внутренняя ошибка сервиса. (%s)"
+
+#: module/Application/src/Application/Controller/BusinessController.php:419
+#: module/Application/src/Application/Controller/BusinessController.php:479
+#: module/Application/src/Application/Controller/CustomerController.php:166
+#: module/Application/src/Application/Controller/CustomerController.php:227
+#: module/Application/src/Application/Controller/BusinessController.php:435
+#: module/Application/src/Application/Controller/BusinessController.php:495
+#: module/Application/src/Application/Controller/BusinessController.php:436
+#: module/Application/src/Application/Controller/BusinessController.php:496
+#: module/Application/src/Application/Controller/CustomerController.php:167
+#: module/Application/src/Application/Controller/CustomerController.php:228
+msgid "Переданы невалидные параметры."
+msgstr ""
+
+#: module/Application/src/Application/Controller/BusinessController.php:423
+#: module/Application/src/Application/Controller/CustomerController.php:171
+#: module/Application/src/Application/Controller/CustomerController.php:326
+#: module/Application/src/Application/Controller/CustomerController.php:327
+#: module/Application/src/Application/Controller/BusinessController.php:439
+#: module/Application/src/Application/Controller/CustomerController.php:332
+#: module/Application/src/Application/Controller/BusinessController.php:440
+#: module/Application/src/Application/Controller/CustomerController.php:172
+#: module/Application/src/Application/Controller/CustomerController.php:335
+msgid "Будте внимательны при вводе пароля."
+msgstr ""
+
+#: module/Application/src/Application/Controller/BusinessController.php:426
+#: module/Application/src/Application/Controller/CustomerController.php:174
+#: module/Application/src/Application/Controller/BusinessController.php:442
+#: module/Application/src/Application/Controller/BusinessController.php:443
+#: module/Application/src/Application/Controller/CustomerController.php:175
+msgid "Текуший пароль указан с ошибкой."
+msgstr "Текущий пароль указан с ошибкой."
+
+#: module/Application/src/Application/Controller/BusinessController.php:485
+#: module/Application/src/Application/Controller/CustomerController.php:233
+#: module/Application/src/Application/Controller/BusinessController.php:501
+#: module/Application/src/Application/Controller/BusinessController.php:502
+#: module/Application/src/Application/Controller/CustomerController.php:234
+msgid "Email или пароль неправельный."
+msgstr "E-mail или пароль неправильный."
+
+#: module/Application/src/Application/Controller/CustomerController.php:322
+#: module/Application/src/Application/Controller/CustomerController.php:323
+#: module/Application/src/Application/Controller/CustomerController.php:328
+#: module/Application/src/Application/Controller/CustomerController.php:331
+msgid "Указанный email уже зарегестрирован."
+msgstr "Указанный e-mail уже зарегистрирован."
+
+#: module/Application/src/Application/Controller/CustomerController.php:344
+#: module/Application/src/Application/Controller/CustomerController.php:345
+#: module/Application/src/Application/Controller/CustomerController.php:350
+#: module/Application/src/Application/Controller/CustomerController.php:353
+msgid "Проблема в сервисе авторизации."
+msgstr ""
+
+#: module/Application/view/application/business/client.phtml:19
+#: module/Application/view/application/business/clients.phtml:43
+#: module/Application/view/application/business/clients.phtml:48
+#: module/Application/view/layout/menu/owner.phtml:31
+#: module/Application/view/layout/menu/owner.phtml:34
+msgid "Клиенты"
+msgstr ""
+
+#: module/Application/view/application/business/client.phtml:62
+#: module/Application/view/application/business/dashboard.phtml:46
+msgid "Возраст"
+msgstr ""
+
+#: module/Application/view/application/business/client.phtml:63
+msgid "лет"
+msgstr ""
+
+#: module/Application/view/application/business/client.phtml:67
+#: module/Application/view/application/business/client.phtml:72
+#: module/Application/view/application/business/client.phtml:77
+#: module/Application/view/application/business/dashboard.phtml:142
+#: module/Application/view/application/business/settings.phtml:64
+#: module/Application/view/application/customer/settings.phtml:64
+msgid "Пол"
+msgstr ""
+
+#: module/Application/view/application/business/client.phtml:68
+msgid "Мужской"
+msgstr ""
+
+#: module/Application/view/application/business/client.phtml:73
+msgid "Женский"
+msgstr ""
+
+#: module/Application/view/application/business/client.phtml:78
+msgid "Не указан"
+msgstr ""
+
+#: module/Application/view/application/business/client.phtml:89
+msgid "Первый визит"
+msgstr ""
+
+#: module/Application/view/application/business/client.phtml:91
+msgid "Последний"
+msgstr ""
+
+#: module/Application/view/application/business/client.phtml:105
+#: module/Application/view/application/business/dashboard.phtml:11
+#: module/Application/view/application/business/dashboard.phtml:16
+#: module/Application/view/application/business/reward.phtml:32
+#: module/Application/view/application/customer/index.phtml:6
+#: module/Application/view/application/customer/index.phtml:11
+#: module/Application/view/layout/menu/customer.phtml:35
+#: module/Application/view/layout/menu/owner.phtml:25
+#: module/Application/view/application/customer/index.phtml:13
+#: module/Application/view/layout/menu/owner.phtml:28
+msgid "Сводка"
+msgstr ""
+
+#: module/Application/view/application/business/client.phtml:117
+#: module/Application/view/application/business/client.phtml:231
+#: module/Application/view/application/business/clients.phtml:116
+msgid "Визитов"
+msgstr ""
+
+#: module/Application/view/application/business/client.phtml:130
+#: module/Application/view/application/business/clients.phtml:117
+#: module/Application/view/application/business/clients.phtml:118
+msgid "Наград"
+msgstr ""
+
+#: module/Application/view/application/business/client.phtml:144
+msgid "Пойнтов"
+msgstr "Доступных посещений"
+
+#: module/Application/view/application/business/client.phtml:158
+#: module/Application/view/application/customer/activity.phtml:103
+#: module/Application/view/application/customer/index.phtml:51
+msgid "Последние визиты"
+msgstr ""
+
+#: module/Application/view/application/business/client.phtml:201
+#: module/Application/view/application/customer/activity.phtml:140
+#: module/Application/view/application/customer/index.phtml:104
+#: module/Application/view/application/business/client.phtml:200
+#: module/Application/view/application/customer/index.phtml:110
+msgid "Последние награды"
+msgstr ""
+
+#: module/Application/view/application/business/client.phtml:229
+#: module/Application/view/application/business/clients.phtml:177
+#: module/Application/view/application/business/reward.phtml:103
+#: module/Application/view/application/business/reward.phtml:212
+#: module/Application/view/application/customer/activity.phtml:167
+#: module/Application/view/application/business/client.phtml:228
+msgid "Дата"
+msgstr ""
+
+#: module/Application/view/application/business/client.phtml:230
+#: module/Application/view/application/business/clients.phtml:179
+#: module/Application/view/application/business/reward.phtml:162
+#: module/Application/view/application/business/reward.phtml:213
+#: module/Application/view/application/business/rewards.phtml:38
+#: module/Application/view/application/business/rewards.phtml:99
+#: module/Application/view/application/customer/activity.phtml:172
+#: module/Application/view/application/merchant/index.phtml:72
+#: module/Application/view/application/business/client.phtml:229
+#: module/Application/view/application/index/support.phtml:75
+msgid "Награда"
+msgstr ""
+
+#: module/Application/view/application/business/client.phtml:241
+#: module/Application/view/application/business/clients.phtml:188
+#: module/Application/view/application/business/reward.phtml:113
+#: module/Application/view/application/business/reward.phtml:223
+#: module/Application/view/application/business/client.phtml:240
+msgid "d M Y в H:i"
+msgstr "d.m.Y в H:i"
+
+#: module/Application/view/application/business/client.phtml:250
+#: module/Application/view/application/business/clients.phtml:201
+#: module/Application/view/application/business/reward.phtml:116
+#: module/Application/view/application/business/client.phtml:249
+#, php-format
+msgid "из %s"
+msgstr ""
+
+#: module/Application/view/application/business/clients.phtml:9
+msgid "г."
+msgstr ""
+
+#: module/Application/view/application/business/clients.phtml:13
+msgid "мес."
+msgstr ""
+
+#: module/Application/view/application/business/clients.phtml:16
+msgid "д."
+msgstr ""
+
+#: module/Application/view/application/business/clients.phtml:19
+msgid "ч."
+msgstr ""
+
+#: module/Application/view/application/business/clients.phtml:22
+msgid "мин."
+msgstr ""
+
+#: module/Application/view/application/business/clients.phtml:25
+msgid "сек."
+msgstr ""
+
+#: module/Application/view/application/business/clients.phtml:28
+msgid "назад"
+msgstr ""
+
+#: module/Application/view/application/business/clients.phtml:69
+msgid "Поиск клиентов"
+msgstr ""
+
+#: module/Application/view/application/business/clients.phtml:74
+msgid "Укажите email или имя"
+msgstr ""
+
+#: module/Application/view/application/business/clients.phtml:80
+msgid "Новые и вернувшиеся клиенты"
+msgstr ""
+
+#: module/Application/view/application/business/clients.phtml:91
+msgid "Последние посетители"
+msgstr ""
+
+#: module/Application/view/application/business/clients.phtml:98
+msgid "У вас еще никто не был"
+msgstr ""
+
+#: module/Application/view/application/business/clients.phtml:106
+msgid "Последение посетители будут показаны тут"
+msgstr "Последние посетители будут показаны тут"
+
+#: module/Application/view/application/business/clients.phtml:115
+#: module/Application/view/application/business/reward.phtml:104
+msgid "Посетитель"
+msgstr ""
+
+#: module/Application/view/application/business/clients.phtml:118
+msgid "Последний визит"
+msgstr ""
+
+#: module/Application/view/application/business/clients.phtml:132
+msgid "Первый раз"
+msgstr ""
+
+#: module/Application/view/application/business/clients.phtml:160
+msgid "У вас еще никто не получал ваших наград"
+msgstr ""
+
+#: module/Application/view/application/business/clients.phtml:168
+msgid "Послдение полученные награды будут показына тут"
+msgstr "Последние полученные награды будут показаны тут"
+
+#: module/Application/view/application/business/clients.phtml:178
+#: module/Application/view/application/business/clients.phtml:115
+#: module/Application/view/application/business/reward.phtml:104
+msgid "Клиент"
+msgstr ""
+
+#: module/Application/view/application/business/clients.phtml:180
+#: module/Application/view/application/business/reward.phtml:171
+#: module/Application/view/application/business/reward.phtml:214
+#: module/Application/view/application/business/rewards.phtml:37
+#: module/Application/view/application/business/rewards.phtml:106
+#: module/Application/view/application/customer/activity.phtml:62
+msgid "Визиты"
+msgstr ""
+
+#: module/Application/view/application/business/clients.phtml:234
+#: module/Application/view/application/business/dashboard.phtml:102
+msgid "Новые"
+msgstr ""
+
+#: module/Application/view/application/business/clients.phtml:246
+#: module/Application/view/application/business/dashboard.phtml:114
+msgid "Вернувшиеся"
+msgstr ""
+
+#: module/Application/view/application/business/company.phtml:10
+#: module/Application/view/application/business/company.phtml:15
+#: module/Application/view/application/business/index.phtml:206
+#: module/Application/view/layout/menu/owner.phtml:34
+#: module/Application/view/application/business/index.phtml:408
+#: module/Application/view/layout/menu/owner.phtml:37
+#: module/Application/view/application/business/index.phtml:394
+#: module/Application/view/application/business/index.phtml:398
+msgid "Компания"
+msgstr ""
+
+#: module/Application/view/application/business/company.phtml:34
+#: module/Application/view/application/business/login.phtml:13
+#: module/Application/view/application/business/reward.phtml:142
+#: module/Application/view/application/business/rewards.phtml:74
+#: module/Application/view/application/business/settings.phtml:26
+#: module/Application/view/application/customer/login.phtml:13
+#: module/Application/view/application/customer/settings.phtml:26
+#: module/Application/view/application/customer/sign-up.phtml:13
+#: module/Application/view/application/index/support.phtml:203
+#: module/Application/view/application/index/support.phtml:501
+msgid "Ошибка!"
+msgstr ""
+
+#: module/Application/view/application/business/company.phtml:42
+#: module/Application/view/application/business/reward.phtml:150
+#: module/Application/view/application/business/rewards.phtml:82
+#: module/Application/view/application/business/settings.phtml:34
+#: module/Application/view/application/customer/settings.phtml:34
+#: module/Application/view/application/index/support.phtml:197
+#: module/Application/view/application/index/support.phtml:495
+msgid "Отлично!"
+msgstr ""
+
+#: module/Application/view/application/business/company.phtml:43
+#: module/Application/view/application/business/settings.phtml:35
+#: module/Application/view/application/customer/settings.phtml:35
+msgid "Данные успешно обновлены!"
+msgstr ""
+
+#: module/Application/view/application/business/company.phtml:54
+msgid "Общая информация"
+msgstr ""
+
+#: module/Application/view/application/business/company.phtml:63
+msgid "Логотип"
+msgstr ""
+
+#: module/Application/view/application/business/company.phtml:76
+msgid "Страна"
+msgstr ""
+
+#: module/Application/view/application/business/company.phtml:87
+msgid "Место расположения"
+msgstr ""
+
+#: module/Application/view/application/business/company.phtml:97
+msgid "Категория бизнеса"
+msgstr ""
+
+#: module/Application/view/application/business/company.phtml:111
+msgid "Контакты"
+msgstr ""
+
+#: module/Application/view/application/business/company.phtml:115
+msgid "Веб сайт"
+msgstr ""
+
+#: module/Application/view/application/business/company.phtml:120
+#: module/Application/view/application/business/index.phtml:220
+#: module/Application/view/application/business/settings.phtml:59
+#: module/Application/view/application/customer/settings.phtml:59
+#: module/Application/view/application/index/support.phtml:224
+#: module/Application/view/application/business/index.phtml:423
+#: module/Application/view/application/index/support.phtml:522
+#: module/Application/view/application/business/index.phtml:409
+#: module/Application/view/application/business/index.phtml:413
+msgid "Номер телефона"
+msgstr ""
+
+#: module/Application/view/application/business/company.phtml:125
+#: module/Application/view/application/business/index.phtml:213
+#: module/Application/view/application/business/login.phtml:23
+#: module/Application/view/application/business/settings.phtml:54
+#: module/Application/view/application/customer/login.phtml:29
+#: module/Application/view/application/customer/settings.phtml:54
+#: module/Application/view/application/customer/sign-up.phtml:28
+#: module/Application/view/application/index/support.phtml:219
+#: module/Application/view/layout/layout.phtml:234
+#: module/Application/view/application/business/index.phtml:415
+#: module/Application/view/application/index/support.phtml:517
+#: module/Application/view/layout/layout.phtml:246
+#: module/Application/view/application/business/index.phtml:401
+#: module/Application/view/application/business/index.phtml:405
+msgid "Email"
+msgstr "E-mail"
+
+#: module/Application/view/application/business/company.phtml:130
+msgid "Социальность"
+msgstr ""
+
+#: module/Application/view/application/business/company.phtml:134
+msgid "Страница в Facebook"
+msgstr ""
+
+#: module/Application/view/application/business/company.phtml:164
+#: module/Application/view/application/business/reward.phtml:177
+msgid "Обновить"
+msgstr ""
+
+#: module/Application/view/application/business/dashboard.phtml:35
+msgid "Новые и Вернувшиеся посетители"
+msgstr ""
+
+#: module/Application/view/application/business/dashboard.phtml:56
+msgid "Род"
+msgstr ""
+
+#: module/Application/view/application/business/dashboard.phtml:72
+msgid "Посетители до дням"
+msgstr ""
+
+#: module/Application/view/application/business/dashboard.phtml:134
+#, php-format
+msgid "%s лет"
+msgstr ""
+
+#: module/Application/view/application/business/dashboard.phtml:145
+msgid "Мужчины"
+msgstr ""
+
+#: module/Application/view/application/business/dashboard.phtml:151
+msgid "Женщины"
+msgstr ""
+
+#: module/Application/view/application/business/dashboard.phtml:157
+msgid "Не указано"
+msgstr ""
+
+#: module/Application/view/application/business/dashboard.phtml:179
+msgid "/"
+msgstr ""
+
+#: module/Application/view/application/business/index.phtml:159
+#, php-format
+msgid "Начните с %s!"
+msgstr ""
+
+#: module/Application/view/application/business/index.phtml:161
+msgid "Ваши клиенты лучшее что у вас есть."
+msgstr "Ваши это клиенты лучшее что у вас есть."
+
+#: module/Application/view/application/business/index.phtml:170
+#: module/Application/view/application/business/index.phtml:180
+#: module/Application/view/application/business/index.phtml:370
+#: module/Application/view/application/business/index.phtml:380
+#: module/Application/view/application/business/index.phtml:356
+#: module/Application/view/application/business/index.phtml:366
+#: module/Application/view/application/business/index.phtml:360
+msgid "Ваш запрос успешно отправлен! Спасибо! Мы скоро свяжемся с вами."
+msgstr ""
+
+#: module/Application/view/application/business/index.phtml:186
+#: module/Application/view/application/index/support.phtml:204
+#: module/Application/view/layout/layout.phtml:186
+#: module/Application/view/application/business/index.phtml:386
+#: module/Application/view/application/index/support.phtml:502
+#: module/Application/view/layout/layout.phtml:198
+#: module/Application/view/application/business/index.phtml:372
+#: module/Application/view/application/business/index.phtml:376
+#, php-format
+msgid ""
+"К сожалению не получается отправить ваш запрос. Но вы можете позвонить нам "
+"на %s."
+msgstr ""
+
+#: module/Application/view/application/business/index.phtml:199
+#: module/Application/view/application/business/index.phtml:400
+#: module/Application/view/application/business/index.phtml:386
+#: module/Application/view/application/business/index.phtml:390
+msgid "Полное имя"
+msgstr ""
+
+#: module/Application/view/application/business/index.phtml:229
+#: module/Application/view/application/business/index.phtml:432
+#: module/Application/view/application/business/index.phtml:418
+#: module/Application/view/application/business/index.phtml:422
+msgid "Заказать обратный звонок"
+msgstr ""
+
+#: module/Application/view/application/business/index.phtml:234
+#, php-format
+msgid "Вопросы? Позвоните нам %s."
+msgstr ""
+
+#: module/Application/view/application/business/login.phtml:9
+msgid "Вход в Командый Центр"
+msgstr "Вход в Командный Центр"
+
+#: module/Application/view/application/business/login.phtml:28
+#: module/Application/view/application/customer/login.phtml:34
+#: module/Application/view/application/customer/sign-up.phtml:33
+msgid "Пароль"
+msgstr ""
+
+#: module/Application/view/application/business/login.phtml:31
+#: module/Application/view/application/customer/login.phtml:37
+#: module/Application/view/layout/menu/guest.phtml:39
+#: module/Application/view/layout/menu/guest.phtml:36
+#: module/Application/view/email/greeting.phtml:29
+msgid "Вход"
+msgstr ""
+
+#: module/Application/view/application/business/reward.phtml:47
+msgid "Необходимые визиты"
+msgstr ""
+
+#: module/Application/view/application/business/reward.phtml:61
+msgid "Использована"
+msgstr ""
+
+#: module/Application/view/application/business/reward.phtml:76
+msgid "Использования"
+msgstr ""
+
+#: module/Application/view/application/business/reward.phtml:83
+msgid "Данной наградой никто не воспользовался"
+msgstr ""
+
+#: module/Application/view/application/business/reward.phtml:91
+msgid "Полученые нагроды ваших посетителей будут показаны тут"
+msgstr "Полученные награды ваших посетителей будут показаны тут"
+
+#: module/Application/view/application/business/reward.phtml:105
+msgid "Потрачено"
+msgstr ""
+
+#: module/Application/view/application/business/reward.phtml:138
+msgid "Изменить награду"
+msgstr ""
+
+#: module/Application/view/application/business/reward.phtml:151
+msgid "Награда обновлена!"
+msgstr ""
+
+#: module/Application/view/application/business/reward.phtml:185
+msgid "История изменений"
+msgstr ""
+
+#: module/Application/view/application/business/reward.phtml:192
+msgid "Вы не меня эту награду"
+msgstr ""
+
+#: module/Application/view/application/business/reward.phtml:200
+msgid "Все изменения награды будут показываться тут"
+msgstr ""
+
+#: module/Application/view/application/business/rewards.phtml:7
+#: module/Application/view/application/business/rewards.phtml:12
+#: module/Application/view/application/customer/activity.phtml:75
+#: module/Application/view/application/index/locations.phtml:71
+#: module/Application/view/layout/menu/owner.phtml:28
+#: module/Application/view/application/index/support.phtml:385
+#: module/Application/view/layout/menu/owner.phtml:31
+msgid "Награды"
+msgstr ""
+
+#: module/Application/view/application/business/rewards.phtml:31
+msgid "Ваши награды"
+msgstr ""
+
+#: module/Application/view/application/business/rewards.phtml:41
+msgid "Действия"
+msgstr ""
+
+#: module/Application/view/application/business/rewards.phtml:55
+msgid "Изменить"
+msgstr ""
+
+#: module/Application/view/application/business/rewards.phtml:56
+msgid "В архив"
+msgstr ""
+
+#: module/Application/view/application/business/rewards.phtml:83
+msgid "Новая награда добавлена!"
+msgstr ""
+
+#: module/Application/view/application/business/rewards.phtml:90
+msgid "Добавить новую награду"
+msgstr ""
+
+#: module/Application/view/application/business/rewards.phtml:112
+msgid "Добавить награду"
+msgstr ""
+
+#: module/Application/view/application/business/rewards.phtml:136
+msgid "Подтвердите архивацию"
+msgstr ""
+
+#: module/Application/view/application/business/rewards.phtml:140
+msgid ""
+"После перенесения в архив, ваши посетители не смогут воспользоваться данной "
+"наградой."
+msgstr ""
+
+#: module/Application/view/application/business/rewards.phtml:142
+msgid "Вы хотите продолжить?"
+msgstr ""
+
+#: module/Application/view/application/business/rewards.phtml:146
+msgid "Отмена"
+msgstr ""
+
+#: module/Application/view/application/business/rewards.phtml:147
+msgid "Архивировать"
+msgstr ""
+
+#: module/Application/view/application/business/settings.phtml:6
+#: module/Application/view/application/customer/settings.phtml:6
+msgid "Настройки"
+msgstr ""
+
+#: module/Application/view/application/business/settings.phtml:11
+#: module/Application/view/application/customer/settings.phtml:11
+#: module/Application/view/layout/menu/customer.phtml:38
+#: module/Application/view/layout/menu/owner.phtml:37
+#: module/Application/view/layout/menu/owner.phtml:40
+msgid "Профиль"
+msgstr ""
+
+#: module/Application/view/application/business/settings.phtml:45
+#: module/Application/view/application/customer/settings.phtml:45
+msgid "Персональная информация"
+msgstr ""
+
+#: module/Application/view/application/business/settings.phtml:49
+#: module/Application/view/application/customer/settings.phtml:49
+msgid "Имя"
+msgstr ""
+
+#: module/Application/view/application/business/settings.phtml:69
+#: module/Application/view/application/customer/settings.phtml:69
+msgid "Мужчина"
+msgstr ""
+
+#: module/Application/view/application/business/settings.phtml:73
+#: module/Application/view/application/customer/settings.phtml:73
+msgid "Женщина"
+msgstr ""
+
+#: module/Application/view/application/business/settings.phtml:79
+#: module/Application/view/application/customer/settings.phtml:79
+msgid "Дата рождения"
+msgstr ""
+
+#: module/Application/view/application/business/settings.phtml:85
+#: module/Application/view/application/customer/settings.phtml:85
+msgid "День"
+msgstr ""
+
+#: module/Application/view/application/business/settings.phtml:94
+#: module/Application/view/application/customer/settings.phtml:94
+msgid "Месяц"
+msgstr ""
+
+#: module/Application/view/application/business/settings.phtml:95
+#: module/Application/view/application/common/calendar.phtml:14
+#: module/Application/view/application/customer/settings.phtml:95
+msgid "Январь"
+msgstr ""
+
+#: module/Application/view/application/business/settings.phtml:96
+#: module/Application/view/application/common/calendar.phtml:14
+#: module/Application/view/application/customer/settings.phtml:96
+msgid "Февраль"
+msgstr ""
+
+#: module/Application/view/application/business/settings.phtml:97
+#: module/Application/view/application/common/calendar.phtml:14
+#: module/Application/view/application/customer/settings.phtml:97
+msgid "Март"
+msgstr ""
+
+#: module/Application/view/application/business/settings.phtml:98
+#: module/Application/view/application/common/calendar.phtml:14
+#: module/Application/view/application/customer/settings.phtml:98
+msgid "Апрель"
+msgstr ""
+
+#: module/Application/view/application/business/settings.phtml:99
+#: module/Application/view/application/common/calendar.phtml:14
+#: module/Application/view/application/customer/settings.phtml:99
+msgid "Май"
+msgstr ""
+
+#: module/Application/view/application/business/settings.phtml:100
+#: module/Application/view/application/common/calendar.phtml:14
+#: module/Application/view/application/customer/settings.phtml:100
+msgid "Июнь"
+msgstr ""
+
+#: module/Application/view/application/business/settings.phtml:101
+#: module/Application/view/application/common/calendar.phtml:14
+#: module/Application/view/application/customer/settings.phtml:101
+msgid "Июль"
+msgstr ""
+
+#: module/Application/view/application/business/settings.phtml:102
+#: module/Application/view/application/common/calendar.phtml:14
+#: module/Application/view/application/customer/settings.phtml:102
+msgid "Август"
+msgstr ""
+
+#: module/Application/view/application/business/settings.phtml:103
+#: module/Application/view/application/common/calendar.phtml:14
+#: module/Application/view/application/customer/settings.phtml:103
+msgid "Сентябрь"
+msgstr ""
+
+#: module/Application/view/application/business/settings.phtml:104
+#: module/Application/view/application/common/calendar.phtml:14
+#: module/Application/view/application/customer/settings.phtml:104
+msgid "Октябрь"
+msgstr ""
+
+#: module/Application/view/application/business/settings.phtml:105
+#: module/Application/view/application/common/calendar.phtml:14
+#: module/Application/view/application/customer/settings.phtml:105
+msgid "Ноябрь"
+msgstr ""
+
+#: module/Application/view/application/business/settings.phtml:106
+#: module/Application/view/application/common/calendar.phtml:14
+#: module/Application/view/application/customer/settings.phtml:106
+msgid "Декабрь"
+msgstr ""
+
+#: module/Application/view/application/business/settings.phtml:110
+#: module/Application/view/application/customer/settings.phtml:110
+msgid "Год"
+msgstr ""
+
+#: module/Application/view/application/business/settings.phtml:130
+#: module/Application/view/application/customer/settings.phtml:130
+msgid "Безопасность"
+msgstr ""
+
+#: module/Application/view/application/business/settings.phtml:135
+#: module/Application/view/application/customer/settings.phtml:135
+msgid "Новый пароль"
+msgstr ""
+
+#: module/Application/view/application/business/settings.phtml:140
+#: module/Application/view/application/customer/settings.phtml:140
+msgid "Новый пароль еще раз"
+msgstr ""
+
+#: module/Application/view/application/business/settings.phtml:145
+#: module/Application/view/application/customer/settings.phtml:145
+msgid "Текуший пароль, если вы хотите установать новый"
+msgstr "Текущий пароль, если вы хотите установить новый"
+
+#: module/Application/view/application/business/settings.phtml:151
+#: module/Application/view/application/customer/settings.phtml:151
+msgid "Сохранить"
+msgstr ""
+
+#: module/Application/view/application/common/calendar.phtml:5
+msgid "Пн"
+msgstr ""
+
+#: module/Application/view/application/common/calendar.phtml:6
+msgid "Вт"
+msgstr ""
+
+#: module/Application/view/application/common/calendar.phtml:7
+msgid "Ср"
+msgstr ""
+
+#: module/Application/view/application/common/calendar.phtml:8
+msgid "Чт"
+msgstr ""
+
+#: module/Application/view/application/common/calendar.phtml:9
+msgid "Пт"
+msgstr ""
+
+#: module/Application/view/application/common/calendar.phtml:10
+msgid "Сб"
+msgstr ""
+
+#: module/Application/view/application/common/calendar.phtml:11
+msgid "Вс"
+msgstr ""
+
+#: module/Application/view/application/customer/activity.phtml:14
+#: module/Application/view/application/customer/activity.phtml:22
+#: module/Application/view/application/merchant/index.phtml:140
+#: module/Application/view/application/merchant/index.phtml:139
+msgid "Моя активность"
+msgstr ""
+
+#: module/Application/view/application/customer/activity.phtml:15
+#: module/Application/view/application/customer/index.phtml:138
+#: module/Application/view/application/customer/index.phtml:150
+#, php-format
+msgid "В %s"
+msgstr ""
+
+#: module/Application/view/application/customer/activity.phtml:89
+msgid "Баллы"
+msgstr ""
+
+#: module/Application/view/application/customer/activity.phtml:110
+msgid "Вы еще не были в этом месте"
+msgstr ""
+
+#: module/Application/view/application/customer/activity.phtml:118
+msgid "Ваши последние визиты будут отображаться тут."
+msgstr ""
+
+#: module/Application/view/application/customer/activity.phtml:147
+msgid "У вас еще нет наград"
+msgstr ""
+
+#: module/Application/view/application/customer/activity.phtml:155
+msgid "Ваши награды будут отображены в этой части страницы."
+msgstr ""
+
+#: module/Application/view/application/customer/activity.phtml:170
+msgid "Балы"
+msgstr "Доступные визиты"
+
+#: module/Application/view/application/customer/activity.phtml:206
+msgid "Это только начало"
+msgstr ""
+
+#: module/Application/view/application/customer/activity.phtml:214
+msgid "У вас еще нет визитов и наград в этом месте."
+msgstr "У вас еще нет визитов и наград в этом заведении."
+
+#: module/Application/view/application/customer/activity.phtml:217
+msgid "Вернуться к наградам"
+msgstr ""
+
+#: module/Application/view/application/customer/index.phtml:26
+#: module/Application/view/application/customer/index.phtml:28
+msgid "Ваша активность"
+msgstr ""
+
+#: module/Application/view/application/customer/index.phtml:31
+#: module/Application/view/application/customer/index.phtml:33
+msgid "Всё по нулям"
+msgstr ""
+
+#: module/Application/view/application/customer/index.phtml:38
+msgid "Попробуйте найти места где вы можете получить награду за посещения."
+msgstr ""
+
+#: module/Application/view/application/customer/index.phtml:41
+#: module/Application/view/application/customer/index.phtml:173
+msgid "Найти новые места"
+msgstr ""
+
+#: module/Application/view/application/customer/index.phtml:57
+#: module/Application/view/application/customer/index.phtml:111
+#: module/Application/view/application/customer/index.phtml:163
+#: module/Application/view/application/customer/index.phtml:60
+#: module/Application/view/application/customer/index.phtml:117
+#: module/Application/view/application/customer/index.phtml:179
+msgid "Пусто"
+msgstr ""
+
+#: module/Application/view/application/customer/index.phtml:65
+msgid "Ваши последние визиты будут отображаться в этой части страницы."
+msgstr ""
+
+#: module/Application/view/application/customer/index.phtml:81
+#, php-format
+msgid "Вы получили %d баллов"
+msgstr ""
+
+#: module/Application/view/application/customer/index.phtml:119
+#: module/Application/view/application/customer/index.phtml:126
+msgid "Ваши последние награды будут отображаться в этой части страницы."
+msgstr ""
+
+#: module/Application/view/application/customer/index.phtml:134
+#, php-format
+msgid "Вы потратили %d баллов"
+msgstr ""
+
+#: module/Application/view/application/customer/index.phtml:156
+msgid "Ваши места"
+msgstr ""
+
+#: module/Application/view/application/customer/index.phtml:170
+msgid "Вы не были ни в одном из мест где вы можете получить награду."
+msgstr ""
+
+#: module/Application/view/application/customer/index.phtml:193
+#, php-format
+msgid "%s баллов"
+msgstr ""
+
+#: module/Application/view/application/customer/login.phtml:9
+msgid "Авторицация"
+msgstr "Авторизация"
+
+#: module/Application/view/application/customer/login.phtml:20
+msgid "Доступ!"
+msgstr ""
+
+#: module/Application/view/application/customer/login.phtml:21
+msgid "Для получения доступа к запрошенной странице, пройдите авторизацию."
+msgstr ""
+
+#: module/Application/view/application/customer/login.phtml:47
+msgid "Впервые у нас? Создать аккаунт"
+msgstr ""
+
+#: module/Application/view/application/customer/sign-up.phtml:9
+#: module/Application/view/application/index/support.phtml:181
+#: module/Application/view/layout/menu/guest.phtml:36
+#: module/Application/view/application/index/support.phtml:479
+#: module/Application/view/layout/menu/guest.phtml:33
+msgid "Регистрация"
+msgstr ""
+
+#: module/Application/view/application/customer/sign-up.phtml:23
+#: module/Application/view/application/index/support.phtml:214
+#: module/Application/view/application/index/support.phtml:512
+msgid "Ваше имя"
+msgstr ""
+
+#: module/Application/view/application/customer/sign-up.phtml:38
+msgid "Пароль еще раз"
+msgstr ""
+
+#: module/Application/view/application/customer/sign-up.phtml:41
+#: module/Application/view/application/index/index.phtml:27
+msgid "Зарегестрироваться"
+msgstr ""
+
+#: module/Application/view/application/customer/sign-up.phtml:50
+msgid "У вас уже есть аккаунт?"
+msgstr ""
+
+#: module/Application/view/application/index/support.phtml:6
+#: module/Application/view/application/index/support.phtml:11
+#: module/Application/view/layout/layout.phtml:255
+#: module/Application/view/layout/menu/customer.phtml:29
+#: module/Application/view/layout/menu/guest.phtml:33
+#: module/Application/view/layout/menu/owner.phtml:19
+#: module/Application/view/layout/layout.phtml:267
+#: module/Application/view/layout/menu/guest.phtml:43
+#: module/Application/view/layout/menu/owner.phtml:22
+msgid "Поддержка"
+msgstr ""
+
+#: module/Application/view/application/index/support.phtml:175
+#: module/Application/view/application/index/support.phtml:473
+msgid "Хотите получать награды?"
+msgstr ""
+
+#: module/Application/view/application/index/support.phtml:178
+#: module/Application/view/application/index/support.phtml:476
+msgid ""
+"Зарегестрируйтесь, и вы тут же сможете накапливать визиты у наших партнеров."
+msgstr ""
+"Зарегестрируйтесь, и вы тут же сможете накапливать посещения у наших "
+"партнеров."
+
+#: module/Application/view/application/index/support.phtml:193
+#: module/Application/view/application/index/support.phtml:491
+msgid "Связаться с нами"
+msgstr ""
+
+#: module/Application/view/application/index/support.phtml:198
+#: module/Application/view/application/index/support.phtml:496
+msgid "Ваш запрос успешно отправлен! Спасибо! Мы скоро ответим."
+msgstr ""
+
+#: module/Application/view/application/index/support.phtml:229
+#: module/Application/view/application/index/support.phtml:527
+msgid "Тема"
+msgstr ""
+
+#: module/Application/view/application/index/support.phtml:236
+#: module/Application/view/application/index/support.phtml:534
+msgid "Сообщение"
+msgstr ""
+
+#: module/Application/view/application/index/support.phtml:239
+#: module/Application/view/application/index/support.phtml:537
+msgid "Отправить"
+msgstr ""
+
+#: module/Application/view/application/merchant/index.phtml:52
+#, php-format
+msgid "Награды в %s"
+msgstr ""
+
+#: module/Application/view/application/merchant/index.phtml:55
+#, php-format
+msgid "Доступные былы: %s шт."
+msgstr "Доступные посещения: %s шт."
+
+#: module/Application/view/application/merchant/index.phtml:69
+#: module/Application/view/application/business/client.phtml:158
+#: module/Application/view/application/business/reward.phtml:171
+#: module/Application/view/application/business/reward.phtml:214
+#: module/Application/view/application/business/rewards.phtml:37
+#: module/Application/view/application/business/rewards.phtml:106
+#: module/Application/view/application/customer/activity.phtml:62
+#: module/Application/view/application/customer/activity.phtml:170
+#: module/Application/view/application/index/support.phtml:71
+#: module/Application/view/application/index/support.phtml:227
+msgid "Посещения"
+msgstr ""
+
+#: module/Application/view/application/merchant/index.phtml:94
+msgid "Доступно!"
+msgstr ""
+
+#: module/Application/view/application/merchant/index.phtml:98
+msgid "Еще"
+msgstr ""
+
+#: module/Application/view/application/merchant/index.phtml:119
+#: module/Application/view/application/merchant/index.phtml:118
+msgid "Это очень странно!"
+msgstr ""
+
+#: module/Application/view/application/merchant/index.phtml:127
+#: module/Application/view/application/merchant/index.phtml:126
+msgid "Данное заведение не имеет наград за посещения."
+msgstr ""
+
+#: module/Application/view/layout/email.phtml:198
+msgid "Надоели наши надоедливые письма?"
+msgstr ""
+
+#: module/Application/view/layout/email.phtml:198
+#: module/Application/view/layout/email.phtml:205
+#: module/Application/view/layout/email.phtml:200
+msgid "Отписаться"
+msgstr ""
+
+#: module/Application/view/layout/layout.phtml:22
+msgid "Бестлатная система лояльности"
+msgstr "Бесплатная система лояльности"
+
+#: module/Application/view/layout/layout.phtml:162
+#: module/Application/view/layout/layout.phtml:174
+msgid "Будте с нами"
+msgstr ""
+
+#: module/Application/view/layout/layout.phtml:164
+msgid "Подпишитесь на нашу подписку и будте в курсе того что мы делаем"
+msgstr ""
+
+#: module/Application/view/layout/layout.phtml:171
+#: module/Application/view/layout/layout.phtml:183
+msgid "Подписка оформлена. Спасибо!"
+msgstr ""
+
+#: module/Application/view/layout/layout.phtml:180
+#: module/Application/view/layout/layout.phtml:192
+msgid "Подписка успешно оформлена. Спасибо!"
+msgstr ""
+
+#: module/Application/view/layout/layout.phtml:195
+#: module/Application/view/layout/layout.phtml:207
+msgid "Подписаться"
+msgstr ""
+
+#: module/Application/view/layout/layout.phtml:210
+#: module/Application/view/layout/layout.phtml:222
+msgid "Присоединяйтесь к нам"
+msgstr ""
+
+#: module/Application/view/layout/layout.phtml:233
+#: module/Application/view/layout/layout.phtml:245
+msgid "Наш номер"
+msgstr ""
+
+#: module/Application/view/layout/layout.phtml:258
+msgid "О нас"
+msgstr ""
+
+#: module/Application/view/layout/layout.phtml:261
+msgid "Условия приватности"
+msgstr ""
+
+#: module/Application/view/layout/layout.phtml:296
+#: module/Application/view/layout/layout.phtml:308
+msgid "Ваш QR-код"
+msgstr ""
+
+#: module/Application/view/layout/layout.phtml:307
+#: module/Application/view/layout/layout.phtml:319
+msgid "Осканируйте QR-код на планшете"
+msgstr "Отсканируйте QR-код на планшете"
+
+#: module/Application/view/layout/layout.phtml:312
+#: module/Application/view/layout/layout.phtml:324
+msgid "Закрыть"
+msgstr ""
+
+#: module/Application/view/layout/menu/customer.phtml:26
+#: module/Application/view/layout/menu/guest.phtml:30
+#: module/Application/view/layout/menu/guest.phtml:40
+#: module/Application/view/layout/menu/owner.phtml:19
+msgid "Карта"
+msgstr ""
+
+#: module/Application/view/layout/menu/customer.phtml:32
+msgid "Мой аккаунт"
+msgstr ""
+
+#: module/Application/view/layout/menu/customer.phtml:41
+#: module/Application/view/layout/menu/owner.phtml:40
+#: module/Application/view/layout/menu/owner.phtml:43
+msgid "Выход"
+msgstr ""
+
+#: module/Application/view/layout/menu/guest.phtml:23
+#: module/Application/view/layout/menu/guest.phtml:47
+#: module/Application/view/layout/menu/owner.phtml:22
+#: module/Application/view/layout/menu/guest.phtml:51
+#: module/Application/view/layout/menu/owner.phtml:25
+msgid "Командный центр"
+msgstr ""
+
+#: module/Application/view/layout/menu/guest.phtml:26
+#: module/Application/view/layout/menu/guest.phtml:43
+#: module/Application/view/layout/menu/guest.phtml:47
+msgid "Для бизнеса"
+msgstr ""
+
+#: module/Application/view/application/business/client.phtml:89
+msgid "Первое визит"
+msgstr ""
+
+#: module/Application/view/application/business/client.phtml:117
+msgid "Всего посещений"
+msgstr ""
+
+#: module/Application/view/application/business/client.phtml:130
+msgid "Получено наград"
+msgstr ""
+
+#: module/Application/view/application/business/client.phtml:144
+#: module/Application/view/application/customer/activity.phtml:89
+#: module/Application/view/application/index/support.phtml:73
+msgid "Доступные посещения"
+msgstr ""
+
+#: module/Application/view/application/business/client.phtml:230
+msgid "Потрачего посещений"
+msgstr "Потрачено посещений"
+
+#: module/Application/view/application/business/clients.phtml:117
+msgid "Посещений"
+msgstr ""
+
+#: module/Application/view/application/business/clients.phtml:160
+msgid "У вас еще ни кто не получал ваших наград"
+msgstr ""
+
+#: module/Application/view/application/business/clients.phtml:168
+msgid "Последние полученные награды будут показына тут"
+msgstr "Последние полученные награды будут показаны тут"
+
+#: module/Application/view/application/business/clients.phtml:180
+msgid "Потраченные посещения"
+msgstr ""
+
+#: module/Application/view/application/business/dashboard.phtml:35
+msgid "Новые и Вернувшиеся клиенты"
+msgstr ""
+
+#: module/Application/view/application/business/dashboard.phtml:72
+msgid "Клиенты по дням"
+msgstr ""
+
+#: module/Application/view/application/business/index.phtml:14
+msgid "Посторойте отношения с клиентами"
+msgstr "Постройте отношения с клиентами"
+
+#: module/Application/view/application/business/index.phtml:19
+msgid "Вместе с современной цифровой системой лояльности"
+msgstr ""
+
+#: module/Application/view/application/business/index.phtml:58
+#, php-format
+msgid "%sЦИФРОВЫЕ%s системы лояльности"
+msgstr ""
+
+#: module/Application/view/application/business/index.phtml:60
+msgid "Какие приимушества?"
+msgstr "Какие преимущества?"
+
+#: module/Application/view/application/business/index.phtml:78
+#: module/Application/view/application/business/index.phtml:80
+msgid "Клиенты ждут их"
+msgstr ""
+
+#: module/Application/view/application/business/index.phtml:80
+#: module/Application/view/application/business/index.phtml:82
+msgid ""
+"Клиенты четко смогут видеть какие награды у вас есть и что нужно чтобы "
+"получить их"
+msgstr ""
+
+#: module/Application/view/application/business/index.phtml:92
+#: module/Application/view/application/business/index.phtml:94
+msgid "Они интерактивны"
+msgstr "Они интерактивные"
+
+#: module/Application/view/application/business/index.phtml:94
+#: module/Application/view/application/business/index.phtml:96
+msgid "Вы всегда сможете понять какое предложентие пользуется больше спросом"
+msgstr "Вы всегда сможете понять какое предложение пользуется больше спросом"
+
+#: module/Application/view/application/business/index.phtml:105
+#: module/Application/view/application/business/index.phtml:107
+msgid "Спосопствуют общению"
+msgstr "Способствуют общению"
+
+#: module/Application/view/application/business/index.phtml:107
+#: module/Application/view/application/business/index.phtml:109
+msgid "Клиенты больше смогут узнать о вашем бизнесе, а вы о клиентах"
+msgstr ""
+
+#: module/Application/view/application/business/index.phtml:118
+#: module/Application/view/application/business/index.phtml:120
+msgid "Подчеркивают значимость клиента"
+msgstr ""
+
+#: module/Application/view/application/business/index.phtml:120
+#: module/Application/view/application/business/index.phtml:122
+msgid "Это способ показать на сколько клиенты важны для вас"
+msgstr ""
+
+#: module/Application/view/application/business/index.phtml:131
+#: module/Application/view/application/business/index.phtml:135
+msgid "Метрики"
+msgstr ""
+
+#: module/Application/view/application/business/index.phtml:133
+#: module/Application/view/application/business/index.phtml:137
+msgid "Цифры смогут показать в каком направлении двигается ваш бизнес"
+msgstr ""
+
+#: module/Application/view/application/business/index.phtml:144
+#: module/Application/view/application/business/index.phtml:148
+msgid "Автоматические данные"
+msgstr ""
+
+#: module/Application/view/application/business/index.phtml:146
+#: module/Application/view/application/business/index.phtml:150
+msgid "Все данные собираються автоматически и доступны в любой момент"
+msgstr "Все данные собираются автоматически и доступны в любой момент"
+
+#: module/Application/view/application/business/index.phtml:157
+#: module/Application/view/application/business/index.phtml:161
+msgid "Способ для продвижения"
+msgstr ""
+
+#: module/Application/view/application/business/index.phtml:159
+#: module/Application/view/application/business/index.phtml:163
+msgid ""
+"Ваши клинеты смогут рассказывать друзьям, какие награды были получены именно "
+"у вас"
+msgstr ""
+"Ваши клиенты смогут рассказывать друзьям, какие награды были получены именно "
+"у вас"
+
+#: module/Application/view/application/business/index.phtml:170
+#: module/Application/view/application/business/index.phtml:174
+msgid "Приимущество перед конкурентами"
+msgstr "Преимущество перед конкурентами"
+
+#: module/Application/view/application/business/index.phtml:172
+#: module/Application/view/application/business/index.phtml:176
+msgid "Будте на шаг впереди ваших конкурентов вместе с нами"
+msgstr ""
+
+#: module/Application/view/application/business/index.phtml:205
+#: module/Application/view/application/business/index.phtml:194
+#: module/Application/view/application/business/index.phtml:198
+msgid ""
+"Сейчас тот самый момент когда использование систем лояльности через "
+"мобильные платформы стало невероятно значимо."
+msgstr ""
+
+#: module/Application/view/application/business/index.phtml:212
+#: module/Application/view/application/business/index.phtml:201
+#: module/Application/view/application/business/index.phtml:205
+#, php-format
+msgid ""
+"Если вы не используете их, ваши конкуренты будут. %sОни превратят ваших "
+"клиентов в своих фанатов."
+msgstr ""
+
+#: module/Application/view/application/business/index.phtml:219
+#: module/Application/view/application/business/index.phtml:208
+#: module/Application/view/application/business/index.phtml:212
+msgid "Журнал Forbes"
+msgstr ""
+
+#: module/Application/view/application/business/index.phtml:223
+#: module/Application/view/application/business/index.phtml:212
+#: module/Application/view/application/business/index.phtml:216
+msgid "Ссылка на статью"
+msgstr ""
+
+#: module/Application/view/application/business/index.phtml:253
+#: module/Application/view/application/business/index.phtml:239
+#: module/Application/view/application/business/index.phtml:243
+#, php-format
+msgid "Почему именно %s"
+msgstr ""
+
+#: module/Application/view/application/business/index.phtml:273
+#: module/Application/view/application/business/index.phtml:259
+#: module/Application/view/application/business/index.phtml:263
+msgid "Полностью настраеваемая система лояльности"
+msgstr "Полностью настраиваемая система лояльности"
+
+#: module/Application/view/application/business/index.phtml:284
+#: module/Application/view/application/business/index.phtml:270
+#: module/Application/view/application/business/index.phtml:274
+msgid "Лёгкое управление и понятный интерфейс"
+msgstr ""
+
+#: module/Application/view/application/business/index.phtml:295
+#: module/Application/view/application/business/index.phtml:281
+#: module/Application/view/application/business/index.phtml:285
+msgid "Доступ с любого компьютера или телефона"
+msgstr ""
+
+#: module/Application/view/application/business/index.phtml:306
+#: module/Application/view/application/business/index.phtml:292
+#: module/Application/view/application/business/index.phtml:296
+msgid "Иструмент слежения активности клиентов"
+msgstr "Инструмент слежения активности клиентов"
+
+#: module/Application/view/application/business/index.phtml:317
+#: module/Application/view/application/business/index.phtml:303
+#: module/Application/view/application/business/index.phtml:307
+msgid "Еще одна причина клиентам возврашаться к вам"
+msgstr "Еще одна причина клиентам возвращаться к вам"
+
+#: module/Application/view/application/business/index.phtml:328
+#: module/Application/view/application/business/index.phtml:314
+#: module/Application/view/application/business/index.phtml:318
+msgid "Минимальные затраты на установку и поддержание системы"
+msgstr ""
+
+#: module/Application/view/application/business/index.phtml:359
+#: module/Application/view/application/business/index.phtml:345
+#: module/Application/view/application/business/index.phtml:349
+msgid "Создайте свою программу лояльности!"
+msgstr ""
+
+#: module/Application/view/application/business/index.phtml:361
+#: module/Application/view/application/business/index.phtml:347
+#: module/Application/view/application/business/index.phtml:351
+msgid "Ваши клиенты это лучшее что у вас есть."
+msgstr ""
+
+#: module/Application/view/application/business/index.phtml:437
+#: module/Application/view/application/business/index.phtml:423
+#: module/Application/view/application/business/index.phtml:427
+#, php-format
+msgid "Вопросы? Позвоните нам %s"
+msgstr ""
+
+#: module/Application/view/application/business/reward.phtml:47
+msgid "Требуеться посещений"
+msgstr "Требуется посещений"
+
+#: module/Application/view/application/business/reward.phtml:76
+msgid "Награждения"
+msgstr ""
+
+#: module/Application/view/application/business/reward.phtml:83
+msgid "Награду еще ни кто не получил"
+msgstr ""
+
+#: module/Application/view/application/business/reward.phtml:91
+msgid "Полученые награды ваших посетителей будут показаны тут"
+msgstr "Полученные награды ваших посетителей будут показаны тут"
+
+#: module/Application/view/application/business/reward.phtml:105
+msgid "Потраченые посещения"
+msgstr "Потраченные посещения"
+
+#: module/Application/view/application/business/reward.phtml:192
+msgid "Вы не меняли награду"
+msgstr ""
+
+#: module/Application/view/application/business/rewards.phtml:31
+msgid "Награды в вашем заведении"
+msgstr ""
+
+#: module/Application/view/application/customer/activity.phtml:103
+#: module/Application/view/application/customer/index.phtml:54
+msgid "Последние посещения"
+msgstr ""
+
+#: module/Application/view/application/customer/activity.phtml:110
+msgid "Вы еще не были в этом заведении"
+msgstr ""
+
+#: module/Application/view/application/customer/activity.phtml:118
+msgid "Ваши последние посещения будут отображаться тут."
+msgstr ""
+
+#: module/Application/view/application/customer/index.phtml:41
+msgid "Попробуйте найти заведения где вы можете получить награду за посещения."
+msgstr ""
+
+#: module/Application/view/application/customer/index.phtml:44
+msgid "Найти заведения"
+msgstr ""
+
+#: module/Application/view/application/customer/index.phtml:69
+msgid "Ваши последние посещения будут отображаться в этой части страницы."
+msgstr ""
+
+#: module/Application/view/application/customer/index.phtml:152
+#, php-format
+msgid "за %d посещений"
+msgstr ""
+
+#: module/Application/view/application/customer/index.phtml:172
+msgid "Ваши заведения"
+msgstr ""
+
+#: module/Application/view/application/customer/index.phtml:187
+msgid "Вы не были ни в одном из заведений где вы можно получить награду."
+msgstr ""
+
+#: module/Application/view/application/customer/index.phtml:191
+msgid "Найти новые заведения"
+msgstr ""
+
+#: module/Application/view/application/customer/index.phtml:214
+#, php-format
+msgid "%s"
+msgstr ""
+
+#: module/Application/view/application/customer/index.phtml:238
+msgid "Ваш уникальный QR-код!"
+msgstr ""
+
+#: module/Application/view/application/index/index.phtml:17
+msgid "Станте участником цифровой системы лояльности"
+msgstr "Станьте участником цифровой системы лояльности"
+
+#: module/Application/view/application/index/index.phtml:21
+msgid "И получайте награды за посещения в ваших любимых заведениях"
+msgstr ""
+
+#: module/Application/view/application/index/index.phtml:52
+#, php-format
+msgid "Как работает %s"
+msgstr ""
+
+#: module/Application/view/application/index/index.phtml:73
+#, php-format
+msgid ""
+"Возмите карту с QR-кодом на %s стенде или зарегестрируйтесь на нашем сайте"
+msgstr ""
+"Возьмите карту с QR-кодом на %s стенде или зарегестрируйтесь на нашем сайте"
+
+#: module/Application/view/application/index/index.phtml:89
+#, php-format
+msgid ""
+"Накапливайте посещения сканируя QR-код с вашей карты или QR-код из личного "
+"кабинета на планшете в заведениях где есть %s"
+msgstr ""
+
+#: module/Application/view/application/index/index.phtml:103
+#, php-format
+msgid "Получайте награды за посещения в ваших любимых заведениях с %s"
+msgstr ""
+
+#: module/Application/view/application/index/index.phtml:124
+msgid "Открыть карту"
+msgstr ""
+
+#: module/Application/view/application/index/index.phtml:128
+#, php-format
+msgid "Найдите заведения в которых работает %s"
+msgstr ""
+
+#: module/Application/view/application/index/support.phtml:34
+msgid "Общие вопросы"
+msgstr ""
+
+#: module/Application/view/application/index/support.phtml:45
+#, php-format
+msgid "Что такое %s?"
+msgstr ""
+
+#: module/Application/view/application/index/support.phtml:51
+#, php-format
+msgid ""
+"%s - это уникальная цифровая система лояльности которая позволяет получать "
+"награды в вашех любимых заведениях за посещения."
+msgstr ""
+"%s - это уникальная цифровая система лояльности которая позволяет получать "
+"награды в ваших любимых заведениях за посещения."
+
+#: module/Application/view/application/index/support.phtml:64
+msgid "Термины"
+msgstr ""
+
+#: module/Application/view/application/index/support.phtml:70
+msgid ""
+"Чтобы не было путаницы, мы решили определить термины, которыем мы используем."
+msgstr ""
+"Чтобы не было путаницы, мы решили определить термины, которые мы используем."
+
+#: module/Application/view/application/index/support.phtml:71
+msgid "- это другими словами ваш визиты в конкретном заведении."
+msgstr ""
+
+#: module/Application/view/application/index/support.phtml:73
+msgid "- это те посещения которые вы можете потратить на награду."
+msgstr ""
+
+#: module/Application/view/application/index/support.phtml:75
+msgid ""
+"- это как правило товар или сервис в заведении, который вы можете получить "
+"за доступные посещения."
+msgstr ""
+
+#: module/Application/view/application/index/support.phtml:77
+msgid "Отметка"
+msgstr ""
+
+#: module/Application/view/application/index/support.phtml:77
+msgid ""
+" или check-in (чекин) - это процедура, которая позволяет нам понять чтобы "
+"были в заведении."
+msgstr ""
+
+#: module/Application/view/application/index/support.phtml:89
+#, php-format
+msgid "Как можно стать участником %s?"
+msgstr ""
+
+#: module/Application/view/application/index/support.phtml:95
+#, php-format
+msgid ""
+"Возмите %s в любом месте где мы расположены. Нажмите на \"Начать\" на "
+"планшете, отсканируйте QR-код с карты и укажите ваш e-mail. Не хотети носить "
+"с собой карту? Тогда просто зарегистрируйтесь на нашем сайте."
+msgstr ""
+"Возьмите %s в любом месте где мы расположены. Нажмите на \"Начать\" на "
+"планшете, отсканируйте QR-код с карты и укажите ваш e-mail. Не хотите носить "
+"с собой карту? Тогда просто зарегистрируйтесь на нашем сайте."
+
+#: module/Application/view/application/index/support.phtml:107
+#, php-format
+msgid "Как работает %s?"
+msgstr ""
+
+#: module/Application/view/application/index/support.phtml:113
+#, php-format
+msgid ""
+"Накапливайте посещения сканируя на планшете QR-код с вашей %s или с вашего "
+"аккаунта. Получайте награды за доступные посещения просто выбрав их на "
+"планшете и показав кассиру подтвержение об этом."
+msgstr ""
+"Накапливайте посещения сканируя на планшете QR-код с вашей %s или с вашего "
+"аккаунта. Получайте награды за доступные посещения просто выбрав их на "
+"планшете и показав кассиру подтверждение об этом."
+
+#: module/Application/view/application/index/support.phtml:116
+msgid ""
+" Примечание: накопленные посищения вы можете тратить только в том заведении, "
+"где вы их накопили."
+msgstr ""
+" Примечание: накопленные посещения вы можете тратить только в том заведении, "
+"где вы их накопили."
+
+#: module/Application/view/application/index/support.phtml:129
+#, php-format
+msgid "Как я могу найти места где есть %s?"
+msgstr ""
+
+#: module/Application/view/application/index/support.phtml:135
+#, php-format
+msgid ""
+"Перейдите на эту страницу %s. На ней будет карта, где собраны заведения с "
+"%s. Выбрав одно из заведений, вы сможете узнать его адрес и телефон, а также "
+"о наградах которые есть в этом заведении."
+msgstr ""
+
+#: module/Application/view/application/index/support.phtml:147
+msgid "Я забыл отметиться. Могу ли я засчитать это посещение?"
+msgstr ""
+
+#: module/Application/view/application/index/support.phtml:153
+#, php-format
+msgid ""
+"Да. Сфотографируйте ваш чек и отправьте его к нам по электронной почте на %s."
+msgstr ""
+
+#: module/Application/view/application/index/support.phtml:167
+#, php-format
+msgid "%s карта"
+msgstr ""
+
+#: module/Application/view/application/index/support.phtml:179
+#, php-format
+msgid "Что такое карта %s?"
+msgstr ""
+
+#: module/Application/view/application/index/support.phtml:185
+#, php-format
+msgid ""
+"Карта %s это карта с уникальным QR-кодом. Эту карту вы можете использовать "
+"для накопления посещений в заведениях где работает %s."
+msgstr ""
+
+#: module/Application/view/application/index/support.phtml:197
+#, php-format
+msgid "Я потерял %s могу ли я получить новую без потери накопленых посещений?"
+msgstr ""
+"Я потерял %s могу ли я получить новую без потери накопленных посещений?"
+
+#: module/Application/view/application/index/support.phtml:203
+#, php-format
+msgid ""
+"Да. Вы можете прийти в любое место где есть %s, взять новую карту и при "
+"регистрации указать ваш e-mail, которые был привязан к потерянной карте."
+msgstr ""
+
+#: module/Application/view/application/index/support.phtml:239
+msgid "Как можно накапливать посещения?"
+msgstr ""
+
+#: module/Application/view/application/index/support.phtml:245
+#, php-format
+msgid ""
+"Накапливать посещения можно отсканировав QR-код с %s карты, или QR-код из "
+"личного кабинета с сайта, на планшете установленном в заведениях где есть %s."
+msgstr ""
+
+#: module/Application/view/application/index/support.phtml:257
+#, php-format
+msgid "Если у меня нет %s карты с собой, могу ли я отметиться без неё?"
+msgstr ""
+
+#: module/Application/view/application/index/support.phtml:263
+#, php-format
+msgid ""
+"Да. Вы можете отметиться в любом месте где есть %s с помошью вашего e-mail, "
+"но по соображениям безопасности, получить награды за посещения без QR-кода "
+"вы не сможете."
+msgstr ""
+"Да. Вы можете отметиться в любом месте где есть %s с помощью вашего e-mail, "
+"но по соображениям безопасности, получить награды за посещения без QR-кода "
+"вы не сможете."
+
+#: module/Application/view/application/index/support.phtml:276
+msgid "Планшет был отключён от Интернета. Могу ли накапливать посещения?"
+msgstr ""
+
+#: module/Application/view/application/index/support.phtml:282
+msgid ""
+"Если в заведении где вы пытаетесь отметиться планшет отелючён от Интернета, "
+"вы все равно можете отметиться, информация будет сохранена на планшете. Как "
+"только планшет будет подлючен к Интернету, вы сможете увидить ваши посещения "
+"в личном кабинете через наз сайт."
+msgstr ""
+"Если в заведении где вы пытаетесь отметиться планшет отключён от Интернета, "
+"вы все равно можете отметиться, информация будет сохранена на планшете. Как "
+"только планшет будет подключен к Интернету, вы сможете увидеть ваши "
+"посещения в личном кабинете через наш сайт."
+
+#: module/Application/view/application/index/support.phtml:298
+msgid "Как я могу увидить все посещения которые у меня были?"
+msgstr "Как я могу увидеть все посещения которые у меня были?"
+
+#: module/Application/view/application/index/support.phtml:304
+msgid ""
+"Вы можете увидеть все заведения в которых вы отмечались, посмотреть историю "
+"их посещений и историю получения наград в вашем личном кабинете на нашем "
+"сайте."
+msgstr ""
+
+#: module/Application/view/application/index/support.phtml:317
+msgid "Нужно ли мне что-то купить чтобы накапливать посещения?"
+msgstr ""
+
+#: module/Application/view/application/index/support.phtml:323
+#, php-format
+msgid ""
+"Это зависит от заведения где вы хотите отметиться, но как правило владельцы "
+"просят чтобы участники %s сделали покупку перед тем как отметиться."
+msgstr ""
+
+#: module/Application/view/application/index/support.phtml:335
+msgid "Есть ли ограничение использования по времени для накопленных посещений?"
+msgstr ""
+
+#: module/Application/view/application/index/support.phtml:341
+msgid ""
+"Посещения не имеют ограничения по времени, вы можете получить награду за "
+"посещения в любое время пока программа лояльности работает в заведении."
+msgstr ""
+
+#: module/Application/view/application/index/support.phtml:354
+#, php-format
+msgid ""
+"В моём любимом заведении убрали %s. Что будет с моими накопленными "
+"посещениями?"
+msgstr ""
+
+#: module/Application/view/application/index/support.phtml:360
+msgid ""
+"К сожалению, если владельц вашего любимого заведения решил прекратить "
+"использовать программу лояльности, мы ничего с этим поделать не можем."
+msgstr ""
+"К сожалению, если владелец вашего любимого заведения решил прекратить "
+"использовать программу лояльности, мы ничего с этим поделать не можем."
+
+#: module/Application/view/application/index/support.phtml:397
+msgid "Как я могу получить награду за посещения?"
+msgstr ""
+
+#: module/Application/view/application/index/support.phtml:403
+#, php-format
+msgid ""
+"Отсканировав на планшете QR-код с карты %s или из личного кабинета на нашем "
+"сайте, вам будет показан список наград. Если у вас достаточно посещений "
+"чтобы получить награду, появиться кнопка \"Получить награду\", или будет "
+"показано сколько еще посещений требуется для получения конкретной награды."
+msgstr ""
+
+#: module/Application/view/application/index/support.phtml:415
+msgid "Почему я не могу получить награду используя e-mail?"
+msgstr ""
+
+#: module/Application/view/application/index/support.phtml:421
+#, php-format
+msgid ""
+"Вы можете получить награду только при налиции %s или войдя в свой личный "
+"кабинет на нашем сайте. Мы не хотим чтобы кто-то посторонний зная ваш e-mail "
+"мог получить ваши награды."
+msgstr ""
+"Вы можете получить награду только при наличии %s или войдя в свой личный "
+"кабинет на нашем сайте. Мы не хотим чтобы кто-то посторонний зная ваш e-mail "
+"мог получить ваши награды."
+
+#: module/Application/view/application/index/support.phtml:432
+msgid "Что произойдет когда я получу награду?"
+msgstr ""
+
+#: module/Application/view/application/index/support.phtml:438
+msgid ""
+"Количество доступных посещений будет уменьшено ровно на то количество, "
+"сколько нужно для получения награды."
+msgstr ""
+
+#: module/Application/view/application/merchant/index.phtml:55
+#, php-format
+msgid "Доступные посещения: %s шт."
+msgstr ""
+
+#: module/Application/view/email/check-in.phtml:3
+msgid "Новый или первый Check-in"
+msgstr ""
+
+#: module/Application/view/email/check-in.phtml:6
+#: module/Application/view/email/check-in.phtml:16
+#, php-format
+msgid ""
+"Отлично! Вы только что отметились в %s и стали еще на один шаг ближе к "
+"получению бесплатной награды в этом заведении."
+msgstr ""
+
+#: module/Application/view/email/check-in.phtml:8
+#: module/Application/view/email/check-in.phtml:18
+#, php-format
+msgid ""
+"У вас есть %s доступных посешений, которые вы можете обменять на награды."
+msgstr ""
+"У вас есть %s доступных посещений, которые вы можете обменять на награды."
+
+#: module/Application/view/email/check-in.phtml:10
+#: module/Application/view/email/check-in.phtml:22
+#, php-format
+msgid "Посмотреть награды в %s"
+msgstr ""
+
+#: module/Application/view/email/check-in.phtml:12
+msgid "До встречи!"
+msgstr ""
+
+#: module/Application/view/email/redeem.phtml:2
+#: module/Application/view/email/redeem.phtml:9
+msgid "Новая награда!"
+msgstr ""
+
+#: module/Application/view/email/redeem.phtml:9
+#: module/Application/view/email/redeem.phtml:16
+#, php-format
+msgid "Поздравлем! Вы получили \"%s\" в %s за %s посещений! Так держать!"
+msgstr "Поздравляем! Вы получили \"%s\" в %s за %s посещений! Так держать!"
+
+#: module/Application/view/email/redeem.phtml:11
+#: module/Application/view/email/redeem.phtml:12
+#: module/Application/view/email/redeem.phtml:19
+#, php-format
+msgid "Посмотреть другие награды в %s"
+msgstr ""
+
+#: module/Application/view/email/redeem.phtml:13
+#: module/Application/view/email/greeting.phtml:35
+#: module/Application/view/email/redeem.phtml:16
+#: module/Application/view/email/greeting.phtml:37
+#: module/Application/view/email/redeem.phtml:23
+#: module/Application/view/email/greeting.phtml:42
+msgid "Удачи!"
+msgstr ""
+
+#: module/Application/view/email/registration.phtml:3
+msgid "Регистрация завершена"
+msgstr ""
+
+#: module/Application/view/email/registration.phtml:5
+#, php-format
+msgid ""
+"Поздравляем! Вы только что стали участником цифровой системы лояльности %s"
+msgstr ""
+
+#: module/Application/view/email/registration.phtml:7
+msgid "Посмотреть предложения"
+msgstr ""
+
+#: module/Application/view/email/registration.phtml:9
+#: module/Application/view/email/greeting.phtml:28
+#: module/Application/view/email/registration.phtml:14
+#: module/Application/view/email/greeting.phtml:29
+#: module/Application/view/email/greeting.phtml:33
+msgid "Присоеденяйтесь к нам в"
+msgstr "Присоединяйтесь к нам в"
+
+#: module/Application/view/email/registration.phtml:12
+#: module/Application/view/email/greeting.phtml:31
+#: module/Application/view/email/registration.phtml:17
+#: module/Application/view/email/greeting.phtml:32
+#: module/Application/view/email/greeting.phtml:36
+msgid "или"
+msgstr ""
+
+#: module/Application/view/email/registration.phtml:16
+msgid "Удачного дня и хорошего настроения!"
+msgstr ""
+
+#: module/Application/view/layout/email.phtml:205
+#: module/Application/view/layout/email.phtml:200
+msgid "Надоели наши назойливые письма?"
+msgstr ""
+
+#: module/Application/view/layout/layout.phtml:176
+msgid "Подпишитесь на нашу рассылку и будте в курсе того что мы делаем"
+msgstr ""
+
+#: module/Application/src/Application/Service/Email.php:86
+#: module/Application/src/Application/Service/Email.php:84
+#, php-format
+msgid "Добро пожаловать в %s"
+msgstr ""
+
+#: module/Application/src/Application/Service/Email.php:155
+#: module/Application/src/Application/Service/Email.php:151
+msgid "Сообщение от пользователей"
+msgstr ""
+
+#: module/Application/src/Application/Service/Email.php:216
+#: module/Application/src/Application/Service/Email.php:208
+#, php-format
+msgid "Отметка в %s"
+msgstr ""
+
+#: module/Application/src/Application/Service/Email.php:278
+#: module/Application/view/email/greeting.phtml:19
+#: module/Application/view/email/registration.phtml:9
+#: module/Application/src/Application/Service/Email.php:267
+#: module/Application/view/email/greeting.phtml:20
+#, php-format
+msgid "Регистрация в %s"
+msgstr ""
+
+#: module/Application/src/Application/Service/Email.php:345
+#: module/Application/src/Application/Service/Email.php:337
+#, php-format
+msgid "Новая награда в %s"
+msgstr ""
+
+#: module/Application/view/application/business/clients.phtml:153
+msgid "Последение награжденные"
+msgstr "Последние награжденные"
+
+#: module/Application/view/application/customer/index.phtml:238
+msgid "Ваш уникальный QR-код! Используйте его для накопления посещений."
+msgstr ""
+
+#: module/Application/view/email/check-in.phtml:8
+#: module/Application/view/email/greeting.phtml:10
+#, php-format
+msgid "Первая отметка в %s"
+msgstr ""
+
+#: module/Application/view/email/check-in.phtml:12
+#, php-format
+msgid "Новая отметка в %s"
+msgstr ""
+
+#: module/Application/view/email/greeting.phtml:13
+#, php-format
+msgid ""
+"Отлично! Вы только что отметились в %s и стали на один шаг ближе к получению "
+"бесплатных наград в этом месте."
+msgstr ""
+
+#: module/Application/view/email/greeting.phtml:15
+msgid "Посмотреть награды"
+msgstr ""
+
+#: module/Application/view/email/greeting.phtml:22
+#: module/Application/view/email/greeting.phtml:23
+#, php-format
+msgid "Вы только что стали участником цифровой системы лояльности %s."
+msgstr ""
+
+#: module/Application/view/email/greeting.phtml:24
+#: module/Application/view/email/greeting.phtml:25
+msgid "Изменить настройти вашего профиля вы всегда можете в личном кабинете."
+msgstr "Изменить настройки вашего профиля вы всегда можете в личном кабинете."
+
+#: module/Application/view/email/greeting.phtml:26
+#: module/Application/view/email/greeting.phtml:27
+#, php-format
+msgid "Для входа используйте ваш e-mail и этот пароль: %s"
+msgstr ""
+
+#: module/Application/view/email/registration.phtml:12
+#, php-format
+msgid ""
+"Поздравляем! Вы только что стали участником цифровой системы лояльности %s."
+msgstr ""
+
+#: module/Application/view/email/registration.phtml:21
+msgid "Успехов!"
+msgstr ""
+
+#: module/Application/view/layout/layout.phtml:270
+msgid "Условия использования"
+msgstr ""
+
+#: module/Application/view/layout/layout.phtml:273
+msgid "Политика конфеденциальности"
+msgstr "Политика конфиденциальности"
+
+#: module/Application/view/application/business/client.phtml:207
+msgid "У данного клиента нет наград"
+msgstr ""
+
+#: module/Application/view/application/business/client.phtml:216
+msgid "Последние награды клиента будут тут"
+msgstr ""
+
+#: module/Application/view/application/merchant/index.phtml:98
+#, php-format
+msgid "Еще %s"
+msgstr ""
+
+#: module/Application/view/email/greeting.phtml:31
+msgid ""
+"Подсказка! Теперь вы можете использовать не только карту с QR-кодом для "
+"отметок и получения наград, но и QR-код из личного кабинета."
+msgstr ""

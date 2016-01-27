@@ -1,0 +1,266 @@
+<?php
+
+/** @var \Application\Model\Entity\MerchantsCustomers $customerRelationEntity */
+$this->partial('application/common/calendar.phtml', array());
+$customerEntity = $customerRelationEntity->getFkCustomer();
+
+?>
+
+<!-- Start Page Banner -->
+<div class="page-banner no-subtitle">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h2><?= $customerRelationEntity->getFkCustomer()->getName() ?></h2>
+            </div>
+            <div class="col-md-6">
+                <ul class="breadcrumbs">
+                    <li><a href="/"><?= $this->layout()->company['name'] ?></a></li>
+                    <li><a href="/business/clients/"><?= $this->translate('Клиенты') ?></a></li>
+                    <li><?= $customerRelationEntity->getFkCustomer()->getName() ?></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Page Banner -->
+
+
+<div id="content" class="customer-content">
+    <div class="container">
+
+        <div class="row blog-page">
+
+            <!--Sidebar-->
+            <div class="col-md-3 sidebar left-sidebar "><!-- customer-page -->
+
+                <div class="row">
+                    <div class="col-sm-6 col-md-12">
+                        <div class="team-member" style="margin-top: 15px;">
+                            <!-- Memebr Photo, Name & Position -->
+                            <div class="member-photo">
+                                <img alt="" src="/images/default.png"/>
+
+                               <!-- <div class="member-name">
+                                    <?/*= $customerRelationEntity->getFkCustomer()->getName() */?>
+                                    <span><?/*= $customerRelationEntity->getVisits() */?> <?/*= $this->translate('Визитов') */?></span>
+                                </div>-->
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-12" style="margin-top:25px; ;">
+
+                        <!-- Info - Icons List -->
+                        <ul class="icons-list">
+                            <?php if ($customerEntity->getBirthday()):
+                                $d1 = new DateTime();
+                                $d2 = $customerEntity->getBirthday();
+                                $diff = $d2->diff($d1);
+                                ?>
+                                <li><i class="fa fa-birthday-cake "> </i> <strong><?= $this->translate('Возраст') ?>
+                                        :</strong> <?= $diff->y ?> <?= $this->translate('лет') ?></li>
+                            <?php endif ?>
+
+                            <?php if ($customerEntity->getGender() == \Application\Model\Entity\Customer::GENDER_MAN): ?>
+                                <li><i class="fa fa-male"></i> <strong><?= $this->translate('Пол') ?>
+                                        :</strong> <?= $this->translate('Мужской') ?></li>
+                            <?php endif ?>
+
+                            <?php if ($customerEntity->getGender() == \Application\Model\Entity\Customer::GENDER_WOMAN): ?>
+                                <li><i class="fa fa-female"></i> <strong><?= $this->translate('Пол') ?>
+                                        :</strong> <?= $this->translate('Женский') ?></li>
+                            <?php endif ?>
+
+                            <?php if (!$customerEntity->getGender()): ?>
+                                <li><i class="fa fa-venus-mars"></i> <strong><?= $this->translate('Пол') ?>
+                                        :</strong> <?= $this->translate('Не указан') ?></li>
+                            <?php endif ?>
+
+                            <li><i class="fa fa-envelope"></i> <strong>Email:</strong>
+                                <?= substr($customerEntity->getEMail(), 0, strpos($customerEntity->getEMail(), '@') + 1) . '...' ?>
+                            </li>
+                        </ul>
+
+                        <div class="hr5" style="margin-top:10px;margin-bottom:10px;"></div>
+
+                        <ul class="icons-list">
+                            <li><i class="fa fa-calendar"></i> <strong><?= $this->translate('Первое визит') ?>
+                                    :</strong> <?= $customerRelationEntity->getCreatedAt()->format('d M Y') ?></li>
+                            <li><i class="fa fa-calendar"></i> <strong><?= $this->translate('Последний') ?>
+                                    :</strong> <?= $customerRelationEntity->getUpdatedAt()->format('d M Y') ?></li>
+                        </ul>
+
+                    </div>
+                </div>
+
+            </div>
+            <!--End sidebar-->
+
+
+            <!-- Start Blog Posts -->
+            <div class="col-md-9 blog-box">
+
+                <h4 class="classic-title"><span><?= $this->translate('Сводка') ?></span></h4>
+
+                <!-- Start Services Icons -->
+                <div class="row">
+
+                    <!-- Start Service Icon 1 -->
+                    <div class="col-md-4 col-sm-4  ">
+                        <div class="panel status panel-success">
+                            <div class="panel-heading">
+                                <h1 class="panel-title text-center"><?= $customerRelationEntity->getVisits() ?></h1>
+                            </div>
+                            <div class="panel-body text-center">
+                                <strong><?= $this->translate('Всего посещений') ?></strong>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Service Icon 1 -->
+
+                    <!-- Start Service Icon 2 -->
+                    <div class="col-md-4 col-sm-4  ">
+                        <div class="panel status panel-primary">
+                            <div class="panel-heading">
+                                <h1 class="panel-title text-center"><?= $customerRelationEntity->getRedeems() ?></h1>
+                            </div>
+                            <div class="panel-body text-center">
+                                <strong><?= $this->translate('Получено наград') ?></strong>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Service Icon 2 -->
+
+                    <!-- Start Service Icon 4 -->
+                    <div class="col-md-4  col-sm-4  ">
+
+                        <div class="panel status panel-warning">
+                            <div class="panel-heading">
+                                <h1 class="panel-title text-center"><?= $customerRelationEntity->getPoints() ?></h1>
+                            </div>
+                            <div class="panel-body text-center">
+                                <strong><?= $this->translate('Доступные посещения') ?></strong>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- End Service Icon 3 -->
+
+
+                </div>
+                <!-- End Services Icons -->
+
+
+                <!--Visits-->
+
+                <h4 class="classic-title"><span><?= $this->translate('Посещения') ?></span></h4>
+
+                <?php if (!$lastVisits): ?>
+
+                    <div class="col-md-12">
+                        <!-- Start Big Heading -->
+                        <div class="big-title text-center" style=" margin-top:25px;">
+                            <h1>Последение два месяца клиент не посещал вас</h1>
+                        </div>
+                        <!-- End Big Heading -->
+
+                        <!-- Divider -->
+                        <div class="hr5" style=" margin-bottom:25px;"></div>
+
+                        <!-- Text -->
+                        <p class="text-center" style="margin-bottom:20px;">Посещение этого клиента будет показыно тут</p>
+                    </div>
+
+                <?php else: ?>
+
+                    <div class="row">
+
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <?php
+                            $timestamp = strtotime('-1 month');
+                            echo build_calendar(date('m', $timestamp), date('Y', $timestamp), $lastVisits); ?>
+                        </div>
+
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <?php echo build_calendar(date('m'), date('Y'), $lastVisits); ?>
+                        </div>
+
+
+                    </div>
+                <?php endif ?>
+
+                <!-- Divider -->
+                <div class="hr5" style="margin-top:25px;margin-bottom:45px;"></div>
+
+
+                <!--Redeems-->
+
+                <h4 class="classic-title"><span><?= $this->translate('Последние награды') ?></span></h4>
+
+                <?php if (!$lastRedeems): ?>
+
+                    <div class="col-md-12">
+                        <!-- Start Big Heading -->
+                        <div class="big-title text-center" style=" margin-top:25px;">
+                            <h1><?= $this->translate('У данного клиента нет наград') ?></h1>
+                        </div>
+                        <!-- End Big Heading -->
+
+                        <!-- Divider -->
+                        <div class="hr5" style=" margin-bottom:25px;"></div>
+
+                        <!-- Text -->
+                        <p class="text-center" style="margin-bottom:20px;">
+                            <?= $this->translate('Последние награды клиента будут тут') ?>
+                        </p>
+                    </div>
+
+                <?php else: ?>
+
+                    <div class="row">
+                        <div class="col-md-12">
+
+                            <table class="table table-reward">
+                                <thead>
+                                <tr>
+                                    <th class="date-th"><?= $this->translate('Дата') ?></th>
+                                    <th><?= $this->translate('Награда') ?></th>
+                                    <th class="text-center"><?= $this->translate('Потрачего посещений') ?></th>
+                                </tr>
+                                </thead>
+                                <tbody>
+
+                                <?php
+                                /** @var \Application\Model\Entity\Redeem $redeem */
+                                foreach ($lastRedeems as $redeem): ?>
+
+                                    <tr>
+                                        <td class="reward-date"><?= $redeem->getCreatedAt()->format($this->translate('d M Y в H:i')) ?></td>
+                                        <td>
+                                            <a href="/business/reward/<?= $redeem->getFkReward()->getId() ?>/">
+                                                <?= $redeem->getFkReward()->getName() ?>
+                                            </a>
+                                        </td>
+                                        <td class="text-center">
+                                            <?= $redeem->getSpent() ?>
+                                            <small
+                                                class="spent-rewards"><?= sprintf($this->translate('из %s'), $redeem->getTotal()) ?></small>
+                                        </td>
+                                    </tr>
+
+                                <?php endforeach; ?>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                <?php endif ?>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Content -->

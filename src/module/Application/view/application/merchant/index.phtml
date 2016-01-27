@@ -1,0 +1,152 @@
+<?php
+/** @var \Application\Model\Entity\MerchantBranch $merchantBranch */
+/** @var \Application\Model\Entity\Visit $visit */
+$TYPE_CUSTOMER = \Application\Controller\AbstractApplicationController::USER_TYPE_CUSTOMER;
+?>
+
+
+<!-- Start Page Banner -->
+<div class="page-banner  " style="height: 200px;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h2><?= $merchantBranch->getFkMerchant()->getName() ?>
+                    <small class="visible-lg visible-md visible-sm ">
+                        <?= $merchantBranch->getFkMerchant()->getFkCategory()->getName() ?>
+                    </small>
+                </h2>
+            </div>
+            <div class="col-md-6">
+                <ul class="breadcrumbs">
+                    <li><a href="/"><?= $this->layout()->company['name'] ?></a></li>
+                    <li><?= $merchantBranch->getFkMerchant()->getName() ?></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Page Banner -->
+
+
+<div id="content">
+    <div class="container">
+
+        <div class="row blog-page merchant-page">
+
+            <!--Sidebar-->
+            <div class="col-md-3 sidebar left-sidebar sidebar-map">
+
+                <?= $this->partial('application/merchant/partials/overview.phtml', array(
+                    'merchantBranch' => $merchantBranch,
+                    'merchantURL' => $merchantURL,
+                )); ?>
+
+            </div>
+            <!--End sidebar-->
+
+
+            <!-- Start Blog Posts -->
+            <div class="col-md-9 blog-box  " style="margin-top: 25px;">
+
+                <h1 class="classic-title">
+                    <?= sprintf($this->translate('Награды в %s'), $merchantBranch->getFkMerchant()->getName()) ?>
+                    <?php if ($this->layout()->userType == $TYPE_CUSTOMER): ?>
+                        <small>
+                            <?= sprintf($this->translate('Доступные посещения: %s шт.'), '<b>' . $availablePoints. '</b>') ?>
+                        </small>
+                    <?php endif ?>
+                </h1>
+
+                <div class="row">
+                    <div class="col-md-12">
+
+                        <?php if ($rewards): ?>
+
+                            <table class="table table-reward">
+                                <thead>
+                                <tr>
+                                    <th class="text-center visits-th" >
+                                        <?= $this->translate('Посещения') ?>
+                                    </th>
+                                    <th class="reward-row ">
+                                        <?= $this->translate('Награда') ?>
+                                    </th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <?php
+                                /** @var \Application\Model\Entity\Reward $reward */
+                                foreach ($rewards as $reward): ?>
+                                    <tr>
+                                        <td class="text-center">
+                                            <span class="badge badge-reward">
+                                                <?= $reward->getPoints() ?>
+                                            </span>
+                                        </td>
+                                        <td class="reward-name reward-row">
+
+                                            <?php if ($this->layout()->userType == $TYPE_CUSTOMER): ?>
+                                                <div class="col-md-9 col-sm-9 col-xs-12 reward-user-name">
+                                                    <?= $reward->getName() ?>
+                                                </div>
+                                                <div class="col-md-3 col-sm-3 col-xs-12 reward-user-more ">
+                                                    <?php if ($availablePoints >= $reward->getPoints()): ?>
+                                                        <?= $this->translate('Доступно!') ?>
+                                                    <?php else: ?>
+
+                                                        <div class="progress" >
+                                                            <span class="progress-value"><?= sprintf($this->translate('Еще %s'), ($reward->getPoints() - $availablePoints)) ?></span>
+                                                            <div class="progress-bar" style="width:<?= ($availablePoints * 100 / $reward->getPoints()) ?>%;">
+                                                            </div>
+                                                        </div>
+
+                                                    <?php endif ?>
+                                                </div>
+                                            <?php else: ?>
+                                                <?= $reward->getName() ?>
+                                            <?php endif ?>
+
+                                        </td>
+                                    </tr>
+                                <?php endforeach ?>
+                                </tbody>
+                            </table>
+
+                        <?php else: ?>
+
+                            <div class="big-title text-center" style=" margin-top:25px;">
+                                <h1><?= $this->translate('Это очень странно!') ?></h1>
+                            </div>
+
+                            <!-- Divider -->
+                            <div class="hr5" style=" margin-bottom:25px;"></div>
+
+                            <!-- End Big Heading -->
+                            <p class="text-center"
+                               style="margin-bottom:20px;"><?= $this->translate('Данное заведение не имеет наград за посещения.') ?></p>
+
+
+                        <?php endif ?>
+
+                    </div>
+                </div>
+
+                <?php if ($this->layout()->userType == $TYPE_CUSTOMER): ?>
+                    <div class="row" style="margin-bottom: 25px;">
+                        <div class="col-md-12">
+                            <a href="/customer/activity/<?= $merchantBranch->getPermalinkPath() ?>/"
+                               class="btn-system btn-large">
+                                <?= $this->translate('Моя активность') ?>
+                            </a>
+                        </div>
+                    </div>
+                <?php endif ?>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Content -->
+
+
+

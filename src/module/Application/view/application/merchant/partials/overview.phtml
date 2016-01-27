@@ -1,0 +1,96 @@
+<style>
+    #map_canvas {
+        background-image: url(http://maps.googleapis.com/maps/api/staticmap?center=<?= $merchantBranch->getLongitude() ?>,<?= $merchantBranch->getLatitude() ?>&zoom=15&scale=false&size=640x640&maptype=roadmap&format=png&visual_refresh=true&markers=color:0xff0000%7C<?= $merchantBranch->getLongitude() ?>,<?= $merchantBranch->getLatitude() ?>);
+    }
+</style>
+
+<script>
+
+    function middleInScreen(div) {
+        windowHeight = $(window).height();
+        windowWidth = $(window).width();
+        divHeight = (windowHeight - 100 - 100) / 3; // heights of your header/footer
+        divWidth = windowWidth / 2;
+        $(div).css({/*width: divWidth+"px",*/ height: divHeight + "px"});
+    }
+    $(document).ready(function () {
+        middleInScreen('#map_gap')
+    });
+
+    $(window).resize(function () {
+        middleInScreen('#map_gap')
+    });
+</script>
+
+
+<div id="map_canvas">
+
+    <div class="team-member">
+        <!-- Memebr Photo, Name & Position -->
+        <div class="member-photo">
+            <img alt="" src="<?= $merchantURL ?>"/>
+        </div>
+
+        <div id="map_gap">
+
+        </div>
+
+        <!-- Memebr Social Links -->
+        <div class="bottom-merchant">
+
+            <div class=" text-center member-socail ">
+
+
+                <?php if ($merchantBranch->getFkMerchant()->getFacebook()): ?>
+                    <a  data-toggle="" class="facebook itl-tooltip" data-placement="bottom" title="Facebook page"
+                       href="<?= $merchantBranch->getFkMerchant()->getFacebook() ?>"
+                       target="_blank"><i class="fa fa-facebook"></i></a>
+                <?php endif ?>
+                <?php if ($merchantBranch->getFkMerchant()->getTwitter()): ?>
+                    <a data-toggle="" class="twitter itl-tooltip" data-placement="bottom" title="twitter"
+                       href="<?= $merchantBranch->getFkMerchant()->getTwitter() ?>" target="_blank"><i
+                            class="fa fa-twitter"></i></a>
+                <?php endif ?>
+                <?php if ($merchantBranch->getFkMerchant()->getYelpId()): ?>
+                    <a data-toggle="" class="yelp itl-tooltip" data-placement="bottom" title="yelp"
+                       href="<?= $merchantBranch->getFkMerchant()->getYelpId() ?>"
+                       target="_blank"><i class="fa fa-yelp"></i></a>
+                <?php endif ?>
+
+            </div>
+
+            <!-- Start Contact Info -->
+            <ul class="icons-list">
+                <?php if ($merchantBranch->getFkMerchant()->getWebsite()): ?>
+                    <li>
+                        <i class="fa fa-home"> </i>
+                        <a data-toggle="" href="http://<?= $merchantBranch->getFkMerchant()->getWebsite() ?>" target="_blank">
+                            <?= $merchantBranch->getFkMerchant()->getWebsite() ?>
+                        </a>
+                    </li>
+                <?php endif ?>
+                <?php if ($merchantBranch->getEMail()): ?>
+                    <li><i class="fa fa-envelope-o"></i>
+                        <a data-toggle="" href="mailto:<?= $merchantBranch->getEMail() ?>"><?= $merchantBranch->getEMail() ?></a>
+                    </li>
+                <?php endif ?>
+                <li><i class="fa fa-phone"></i>
+                    <a data-toggle="" href="tel:<?= $merchantBranch->getPhoneNumber() ?>">
+                        <?= $merchantBranch->getPhoneNumber() ?>
+                    </a>
+                </li>
+                <li><i class="fa fa-map-marker"></i>
+                    <a data-toggle="" href="https://www.google.com/maps/place/<?= urlencode($merchantBranch->getFullAddress()) ?>/"
+                       target="_blank">
+                        <?= $merchantBranch->getFullAddress() ?>
+                    </a>
+                </li>
+            </ul>
+            <!-- End Contact Info -->
+
+        </div>
+
+    </div>
+</div>
+
+

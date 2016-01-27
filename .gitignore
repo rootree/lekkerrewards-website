@@ -6,7 +6,9 @@ nbproject
 .idea
 .project
 .settings
+.vagrant
 composer.lock
 vendor/bin
 vendor/doctrine
 vendor/symfony
+src/logs/*

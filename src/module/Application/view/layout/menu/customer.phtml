@@ -1,0 +1,53 @@
+<!-- Start  Logo & Naviagtion  -->
+<div class="navbar navbar-default navbar-top">
+    <div class="container">
+        <div class="navbar-header">
+            <!-- Stat Toggle Nav Link For Mobiles -->
+
+            <!-- End Toggle Nav Link For Mobiles -->
+            <a class="navbar-brand" href="/" style="padding-right: 0;">
+                <img alt="" src="images/margo.png" class="logo-top">
+            </a>
+
+            <a  onclick="return true;" style="z-index: 100000" class="navbar-brand qr-btn visible-xs " data-toggle="modal" data-target="#qr-block" id="elementToPointAtForMobiles">
+                <i class="fa fa-qrcode"></i>
+            </a>
+
+        </div>
+        <div class="navbar-collapse collapse">
+            <!-- Stat Search -->
+            <div class="search-side">
+                <a class="show-search qr-btn-desktop" data-toggle="modal" data-target="#qr-block" id="elementToPointAt"><i class="fa fa-qrcode"></i></a>
+            </div>
+            <!-- End Search -->
+            <!-- Start Navigation List -->
+            <ul class="nav navbar-nav navbar-right wpb-mobile-menu"  >
+                <li>
+                    <a href="/locations/" <?= (($controller == \Application\Controller\IndexController::class && $action == 'locations') || ($controller == \Application\Controller\MerchantController::class )) ? ' class="active" ' : ''; ?>><?= $this->translate('Карта')?></a>
+                </li>
+                <li>
+                    <a href="/support/" <?= ($controller == \Application\Controller\IndexController::class && $action == 'support') ? ' class="active" ' : ''; ?>><?= $this->translate('Поддержка')?></a>
+                </li>
+                <li>
+                    <a data-toggle="nope" href="/customer/" <?= ($controller == \Application\Controller\CustomerController::class) ? ' class="active" ' : ''; ?> onclick="return false;"><?= $this->translate('Мой аккаунт')?></a>
+                    <ul class="dropdown">
+                        <li>
+                            <a href="/customer/" <?= ($controller == \Application\Controller\CustomerController::class && $action == 'index') ? ' class="active" ' : ''; ?>><?= $this->translate('Сводка')?></a>
+                        </li>
+                        <li>
+                            <a href="/customer/settings/" <?= ($controller == \Application\Controller\CustomerController::class && $action == 'settings') ? ' class="active" ' : ''; ?>><?= $this->translate('Профиль')?></a>
+                        </li>
+                        <li>
+                            <a href="/customer/logout/" <?= ($controller == \Application\Controller\CustomerController::class && $action == 'logout') ? ' class="active" ' : ''; ?>><?= $this->translate('Выход')?></a>
+                        </li>
+                    </ul>
+                </li>
+
+            </ul>
+            <!-- End Navigation List -->
+        </div>
+    </div>
+
+
+</div>
+<!-- End Header Logo & Naviagtion -->
