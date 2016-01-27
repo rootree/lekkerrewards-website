@@ -55,7 +55,7 @@ Introduction
 
 # Access to live 
  
- 	ssh webmaster@37.200.70.94
+    ssh webmaster@37.200.70.94
     cd /var/websites/lekkerrewards.nl/
     tail -f /var/log/apache2/error.log
     tail -f /var/websites/lekkerrewards.nl/logs/log_2
@@ -70,5 +70,5 @@ Introduction
 
     ssh webmaster@37.200.70.94
     chmod 777 -R /var/websites/lekkerrewards.nl/data/DoctrineORMModule/.
-    cd /var/websites/lekkerrewards.nl/dumps/ && /var/websites/lekkerrewards.nl/utils/mysql2sqlite.sh -u root -p111111 loyalty | sqlite3 database.sqlite
+    cd /var/websites/lekkerrewards.nl/dumps/ && /var/websites/lekkerrewards.nl/utils/mysql2sqlite.sh -u root -p111111 loyalty | sqlite3 `date +"%Y-%m-%d"`".loyalty.db"
     ./utils/mysql2sqlite.sh -u root -p111111 loyalty | sqlite3 ./loyalty.db
