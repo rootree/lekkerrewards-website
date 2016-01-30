@@ -88,7 +88,7 @@ class Email
             $merchantBranchEntity->getFkMerchant()->getName()
         );
         $mail->Body    = $content;
-        $mail->AltBody = $content;
+        $mail->AltBody = strip_tags($content);;
         $mail->CharSet = 'utf-8';
 
         $mail->send();
@@ -155,7 +155,7 @@ class Email
 
         $mail->Subject = $this->translator->translate('Сообщение от пользователей');
         $mail->Body    = $content;
-        $mail->AltBody = $content;
+        $mail->AltBody = strip_tags($content);;
         $mail->CharSet = 'utf-8';
 
         $mail->send();
@@ -216,7 +216,7 @@ class Email
             $merchantBranchEntity->getFkMerchant()->getName()
         );
         $mail->Body    = $content;
-        $mail->AltBody = $content;
+        $mail->AltBody = strip_tags($content);;
         $mail->CharSet = 'utf-8';
 
         $mail->send();
@@ -277,7 +277,7 @@ class Email
             $this->config['company']['name']
         );
         $mail->Body    = $content;
-        $mail->AltBody = $content;
+        $mail->AltBody = strip_tags($content);
         $mail->CharSet = 'utf-8';
 
         $mail->send();
@@ -356,7 +356,7 @@ class Email
             $merchantBranchEntity->getFkMerchant()->getName()
         );
         $mail->Body    = $content;
-        $mail->AltBody = $content;
+        $mail->AltBody = strip_tags($content);;
         $mail->CharSet = 'utf-8';
 
         $mail->send();

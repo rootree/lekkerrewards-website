@@ -4,7 +4,7 @@ return array(
     'company' => array(
         'name' => 'LekkerRewards',
         'card' => 'LekkerCard',
-        'emailRobot' => 'LekkerRobot',
+        'emailRobot' => 'LekkerRewards',
         'countryCode' => 'NL',
         'phone' => '+31 6 83899381',
         'email' => 'support@lekkerrewards.nl',

@@ -76,6 +76,14 @@ class AbstractApiController extends AbstractActionController
 
         $event->setResult($actionResponse);
 
+        $body = $this->getRequest()->getContent();
+        $url = $_SERVER['REMOTE_ADDR'];
+        //$url = $actionResponse;
+
+        /** @var \Application\Service\ErrorHandling $service */
+        $service = $this->serviceLocator->get('ApplicationServiceErrorHandling');
+        $service->logData($url ."\n". $body ."\n". json_encode($actionResponse));
+
         return $actionResponse;
     }
 
@@ -105,12 +113,7 @@ class AbstractApiController extends AbstractActionController
     protected function getPostParams($request)
     {
         $body = $request->getContent();
-
-        /** @var \Application\Service\ErrorHandling $service */
-        $service = $this->serviceLocator->get('ApplicationServiceErrorHandling');
-        $service->logData($body);
-
-        return json_decode($body);
+                return json_decode($body);
     }
 
     protected function getDiffInHours($interval)
