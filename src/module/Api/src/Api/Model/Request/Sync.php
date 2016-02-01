@@ -9,4 +9,10 @@ class Sync
      * @required
      */
     public $timestamp;
+
+    /**
+     * @var int
+     * @required
+     */
+    public $visits;
 }

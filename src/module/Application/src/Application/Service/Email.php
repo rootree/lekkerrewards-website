@@ -58,7 +58,8 @@ class Email
         $content = $this->viewRenderer->render(
             'layout/email',
             [
-                'content' => $checkInContent
+                'content' => $checkInContent,
+                'company' => $this->config['company'],
             ]
         );
 
@@ -88,7 +89,7 @@ class Email
             $merchantBranchEntity->getFkMerchant()->getName()
         );
         $mail->Body    = $content;
-        $mail->AltBody = strip_tags($content);;
+        $mail->AltBody = strip_tags($checkInContent);;
         $mail->CharSet = 'utf-8';
 
         $mail->send();
@@ -109,7 +110,8 @@ class Email
         $content = $this->viewRenderer->render(
             'layout/email',
             [
-                'content' => print_r($feedbackForm->toArray(), 1)
+                'content' => print_r($feedbackForm->toArray(), 1),
+                'company' => $this->config['company'],
             ]
         );
         // make a header as html
@@ -155,7 +157,6 @@ class Email
 
         $mail->Subject = $this->translator->translate('Сообщение от пользователей');
         $mail->Body    = $content;
-        $mail->AltBody = strip_tags($content);;
         $mail->CharSet = 'utf-8';
 
         $mail->send();
@@ -187,7 +188,8 @@ class Email
         $content = $this->viewRenderer->render(
             'layout/email',
             [
-                'content' => $checkInContent
+                'content' => $checkInContent,
+                'company' => $this->config['company'],
             ]
         );
 
@@ -216,7 +218,7 @@ class Email
             $merchantBranchEntity->getFkMerchant()->getName()
         );
         $mail->Body    = $content;
-        $mail->AltBody = strip_tags($content);;
+        $mail->AltBody = strip_tags($checkInContent);;
         $mail->CharSet = 'utf-8';
 
         $mail->send();
@@ -244,7 +246,8 @@ class Email
         $content = $this->viewRenderer->render(
             'layout/email',
             [
-                'content' => $checkInContent
+                'content' => $checkInContent,
+                'company' => $this->config['company'],
             ]
         );
 
@@ -277,7 +280,7 @@ class Email
             $this->config['company']['name']
         );
         $mail->Body    = $content;
-        $mail->AltBody = strip_tags($content);
+        $mail->AltBody = strip_tags($checkInContent);
         $mail->CharSet = 'utf-8';
 
         $mail->send();
@@ -326,7 +329,8 @@ class Email
         $content = $this->viewRenderer->render(
             'layout/email',
             [
-                'content' => $checkInContent
+                'content' => $checkInContent,
+                'company' => $this->config['company'],
             ]
         );
 
@@ -356,7 +360,7 @@ class Email
             $merchantBranchEntity->getFkMerchant()->getName()
         );
         $mail->Body    = $content;
-        $mail->AltBody = strip_tags($content);;
+        $mail->AltBody = strip_tags($checkInContent);;
         $mail->CharSet = 'utf-8';
 
         $mail->send();

@@ -338,7 +338,7 @@ class ApiController extends AbstractApiController
             $jm = new \JsonMapper();
             $jm->bExceptionOnMissingData = true;
 
-            /** @var \Api\Model\Request\Sync $redeem */
+            /** @var \Api\Model\Request\Sync $redeemRequest */
             $redeemRequest = $jm->map($data, new \Api\Model\Request\Sync());
             $dateTime = $this->handlerTimeStamp($redeemRequest->timestamp);
 
@@ -357,6 +357,20 @@ class ApiController extends AbstractApiController
                 $this->merchantBranchEntity,
                 $dateTime
             );
+
+            $visitsOnWeb = $merchantService->getCountOfVisits($this->merchantBranchEntity);
+            if ($redeemRequest->visits != $visitsOnWeb) {
+                /** @var \Application\Service\ErrorHandling $service */
+                $service = $this->serviceLocator->get('ApplicationServiceErrorHandling');
+                $service->logData(
+                    sprintf(
+                        "Merchant #%d has different count of visits on the tablet (%d) and on the website (%d)",
+                        $this->merchantBranchEntity->getId(),
+                        $redeemRequest->visits,
+                        $visitsOnWeb
+                    )
+                );
+            }
 
             return new JsonModel([
                 'success' => true,

@@ -5,6 +5,7 @@ return array(
         'name' => 'LekkerRewards',
         'card' => 'LekkerCard',
         'emailRobot' => 'LekkerRewards',
+        'baseHost' => 'http://lekkerrewards.nl/',
         'countryCode' => 'NL',
         'phone' => '+31 6 83899381',
         'email' => 'support@lekkerrewards.nl',
@@ -28,6 +29,6 @@ return array(
         'canTakeNewCardAfter' => '23', // Hours
         'pointsPerVisit' => '1',
         'pointsForFirstVisit' => '1',
-        'coolDown' => '6',
+        'coolDown' => '0',
     ),
 );

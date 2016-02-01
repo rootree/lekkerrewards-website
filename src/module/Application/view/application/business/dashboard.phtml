@@ -71,11 +71,12 @@
 
                 <h4 class="classic-title"><span><?= $this->translate('Клиенты по дням')?></span></h4>
 
+                <?php echo build_calendar(date('m'), date('Y'), $lastVisitors); ?>
+
                 <?php
                 $timestamp = strtotime( '-1 month' );
                 echo build_calendar(date('m', $timestamp), date('Y', $timestamp), $lastVisitors); ?>
 
-                <?php echo build_calendar(date('m'), date('Y'), $lastVisitors); ?>
 
             </div>
 

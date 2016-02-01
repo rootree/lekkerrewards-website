@@ -31,7 +31,7 @@ Introduction
     rsync -azP --del --exclude '.git' --exclude '.DS_Store' ./src/ webmaster@37.200.70.94:"/var/websites/lekkerrewards.nl/"
     scp -r ./src/. webmaster@37.200.70.94:"/var/websites/lekkerrewards.nl/"
     scp ./src/config/autoload/local.live.php webmaster@37.200.70.94:"/var/websites/lekkerrewards.nl/config/autoload/local.php"
-    scp ./src/config/autoload/doctrine.live.php webmaster@37.200.70.94:"/var/websites/lekkerrewards.nl/config/autoload/doctrine.php"
+    scp ./src/config/autoload/doctrine.live.php webmaster@37.200.70.94:"/var/websites/lekkerrewards.nl/config/autoload/doctrine.local.php"
     scp ./src/config/autoload/logs.live.php webmaster@37.200.70.94:"/var/websites/lekkerrewards.nl/config/autoload/logs.global.php"
     ssh webmaster@37.200.70.94
     cd /var/websites/lekkerrewards.nl/

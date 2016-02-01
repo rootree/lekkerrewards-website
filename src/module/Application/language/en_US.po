@@ -1930,7 +1930,7 @@ msgid ""
 "Отлично! Вы только что отметились в %s и стали еще на один шаг ближе к "
 "получению бесплатной награды ..."
 msgstr ""
-"Excellent! You just checked in at %s and became one step closer to getting "
+"Excellent! You've just checked in at %s and became one step closer to getting "
 "free rewards ..."
 
 #: module/Application/view/email/check-in.phtml:8
@@ -2175,7 +2175,7 @@ msgid ""
 "Отлично! Вы только что отметились в %s и стали еще на один шаг ближе к "
 "получению бесплатной награды в этом заведении."
 msgstr ""
-"Excellent! You just checked in at %s and became one step closer to redeeming "
+"Excellent! You've just checked in at %s and became one step closer to redeeming "
 "free rewards in this place."
 
 #: module/Application/view/email/greeting.phtml:13
@@ -2185,7 +2185,7 @@ msgid ""
 "Отлично! Вы только что отметились в %s и стали на один шаг ближе к получению "
 "бесплатных наград в этом месте."
 msgstr ""
-"Excellent! You just checked in at %s and are one step closer to redeeming "
+"Excellent! You've just checked in at %s and are one step closer to redeeming "
 "free rewards at this location."
 
 #: module/Application/view/email/greeting.phtml:15

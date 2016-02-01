@@ -278,6 +278,19 @@ class Merchant
 
     /**
      * @param MerchantBranchEntity $merchantBranchEntity
+     * @return int
+     */
+    public function getCountOfVisits(MerchantBranchEntity $merchantBranchEntity)
+    {
+        $query = $this->entityManager->createQuery(
+            'SELECT COUNT(v.id) FROM Application\Model\Entity\Visit v WHERE v.status = '.
+            \Application\Model\Entity\Visit::STATUS_OK .' AND v.fkMerchantBranch = ' . $merchantBranchEntity->getId()
+        );
+        return $query->getSingleScalarResult();
+    }
+
+    /**
+     * @param MerchantBranchEntity $merchantBranchEntity
      * @param CustomerEntity $customerEntity
      * @return VisitEntity[]
      */
