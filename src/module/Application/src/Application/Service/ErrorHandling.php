@@ -37,7 +37,7 @@ class ErrorHandling
      */
     public function logData($e)
     {
-        $log = "Data:\n" . $e;
+        $log = "\n\nData:\n" . $e;
         $this->logger->debug($log);
     }
 }

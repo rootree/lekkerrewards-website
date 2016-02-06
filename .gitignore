@@ -12,3 +12,4 @@ vendor/bin
 vendor/doctrine
 vendor/symfony
 src/logs/*
+src/data/DoctrineORMModule/Proxy/*

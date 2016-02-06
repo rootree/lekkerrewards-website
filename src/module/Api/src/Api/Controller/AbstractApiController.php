@@ -82,7 +82,7 @@ class AbstractApiController extends AbstractActionController
 
         /** @var \Application\Service\ErrorHandling $service */
         $service = $this->serviceLocator->get('ApplicationServiceErrorHandling');
-        $service->logData($url ."\n". $body ."\n". json_encode($actionResponse));
+        $service->logData($url ."\n". $body ."\n". $actionResponse->serialize());
 
         return $actionResponse;
     }
