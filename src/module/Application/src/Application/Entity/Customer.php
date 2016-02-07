@@ -43,6 +43,13 @@ class Customer
     private $isPhotoUploaded = '0';
 
     /**
+     * @var boolean
+     *
+     * @ORM\Column(name="is_subscribed", type="boolean", nullable=false)
+     */
+    private $isSubscribed = '1';
+
+    /**
      * @var \DateTime
      *
      * @ORM\Column(name="birthday", type="datetime", nullable=true)
@@ -166,6 +173,30 @@ class Customer
     public function getIsPhotoUploaded()
     {
         return $this->isPhotoUploaded;
+    }
+
+    /**
+     * Set isSubscribed
+     *
+     * @param boolean $isSubscribed
+     *
+     * @return Customer
+     */
+    public function setIsSubscribed($isSubscribed)
+    {
+        $this->isSubscribed = $isSubscribed;
+
+        return $this;
+    }
+
+    /**
+     * Get isPhotoUploaded
+     *
+     * @return boolean
+     */
+    public function getIsSubscribed()
+    {
+        return $this->isSubscribed;
     }
 
     /**

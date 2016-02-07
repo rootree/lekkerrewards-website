@@ -26,7 +26,21 @@ class IndexController extends AbstractApplicationController
 
     public function indexAction()
     {
-        return new ViewModel(array());
+        // var_dump(md5('support@lekkerrewards.nl' . \Application\Service\Email::UN_SUBSCRIBE_HASH_WORD)); exit();
+
+        $isSubscribed = false;
+
+        $unSubscribeHash = $this->params()->fromQuery('unsubscribe', '');
+        if ($unSubscribeHash) {
+
+            /** @var \Application\Service\Customer $customerService */
+            $customerService = $this->getServiceLocator()->get('Application\Service\Customer');
+            $isSubscribed = $customerService->unSubscribeByUnSubscribeHash($unSubscribeHash);
+        }
+
+        return new ViewModel(array(
+            'isSubscribed' => $isSubscribed
+        ));
     }
 
     public function supportAction()

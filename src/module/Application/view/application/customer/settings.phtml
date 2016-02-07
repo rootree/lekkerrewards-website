@@ -1,3 +1,6 @@
+<?php
+/** @var \Application\Model\Entity\Customer $customer */
+?>
 <!-- Start Page Banner -->
 <div class="page-banner no-subtitle">
     <div class="container">
@@ -146,12 +149,31 @@
                             </div>
                         </div>
 
-
-                        <!-- End Contact Form -->
-                        <button type="submit" id="submit" class="btn-system btn-large"><?= $this->translate('Сохранить')?></button>
-                        <div id="success" style="color:#34495e;"></div>
                 </div>
 
+                <div class="col-md-6">
+
+                    <!-- Classic Heading -->
+                    <h4 class="classic-title"><span><?= $this->translate('Настройки')?></span></h4>
+
+
+                    <div class="form-group">
+                        <div class="controls">
+                            <label>
+                                <input type="checkbox" name="isSubscribed" <?php if ($customer->getIsSubscribed() == 1): ?>checked="checked"<?php endif ?> value="1">
+                                <?= $this->translate('Получать уведомления по e-mail об активности')?>
+                            </label>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-md-6">
+
+                    <!-- End Contact Form -->
+                    <button type="submit" id="submit" class="btn-system btn-large"><?= $this->translate('Сохранить')?></button>
+                    <div id="success" style="color:#34495e;"></div>
+                </div>
 
             </form>
         </div>

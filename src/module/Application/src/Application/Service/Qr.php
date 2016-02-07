@@ -100,4 +100,37 @@ class Qr
         $this->entityManager->persist($qrEntity);
         $this->entityManager->flush();
     }
+
+    /**
+     * @param \DateTime $dateTime
+     * @return QrEntity[]
+     */
+    public function getUpdatedQrs($dateTime)
+    {
+        $qb = $this->entityManager->createQueryBuilder();
+        $qb->select('qr')
+            ->from('\Application\Model\Entity\Qr', 'qr')
+            ->andWhere('qr.updatedAt >= :updatedAt')
+            ->andWhere('qr.status >= :status');
+
+        $qb->setParameters(array(
+            'updatedAt' => $dateTime,
+            'status' => QrEntity::STATUS_ACTIVATED
+        ));
+
+        $qrsList = $qb->getQuery()->getResult();
+
+        $updatedQrs = [];
+
+        /** @var QrEntity $qrEntity */
+        foreach ($qrsList as $qrEntity) {
+            $updatedQrs[$qrEntity->getCode()] = [
+                'code' => $qrEntity->getCode(),
+                'status' => $qrEntity->getStatus(),
+                'source' => $qrEntity->getSource(),
+            ];
+        }
+
+        return $updatedQrs;
+    }
 }

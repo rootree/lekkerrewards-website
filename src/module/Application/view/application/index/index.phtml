@@ -47,6 +47,13 @@
 
         <div class="row  "  >
 
+
+            <?php if ($isSubscribed): ?>
+                <div class="alert alert-success" style="margin-top: -20px;">
+                    <?= $this->translate('Вы были отписаны от уведомлений о вашей активности. Приносим свои извенения за нашу назойливость.')?>
+                </div>
+            <?php endif?>
+
             <!-- Start Big Heading -->
             <div class="big-title text-center">
                 <h1><?= sprintf($this->translate('Как работает %s'), $this->layout()->company['name']) ?></h1>

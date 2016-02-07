@@ -22,6 +22,8 @@ class Settings extends AbstractForm
         $this->add($name);
         $email = new Element\Text('eMail');
         $this->add($email);
+        $isSubscribed = new Element\Checkbox('isSubscribed');
+        $this->add($isSubscribed);
         $password = new Element\Text('password-new');
         $this->add($password);
         $password = new Element\Text('password-rep');

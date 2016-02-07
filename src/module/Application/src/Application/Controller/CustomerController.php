@@ -158,6 +158,10 @@ class CustomerController extends AbstractAuthController
                     );
                 }
 
+                if (!array_key_exists('isSubscribed', $data)) {
+                    $data['isSubscribed'] = 0;
+                }
+
                 $entityManager = $this->getServiceLocator()->get('Doctrine\ORM\EntityManager');
                 $settingsForm = new SettingsForm($entityManager);
                 $settingsForm->bind($this->customer);
@@ -181,6 +185,7 @@ class CustomerController extends AbstractAuthController
                     );
                 }
 
+                $this->customer->setUpdatedAt(new \DateTime());
                 $customerService->save($this->customer);
 
                 $viewModel['successUpdate'] = true;

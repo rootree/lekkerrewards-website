@@ -77,7 +77,7 @@ class AbstractApiController extends AbstractActionController
         $event->setResult($actionResponse);
 
         $body = $this->getRequest()->getContent();
-        $url = $_SERVER['REMOTE_ADDR'];
+        $url = $_SERVER['REQUEST_URI'];
         //$url = $actionResponse;
 
         /** @var \Application\Service\ErrorHandling $service */

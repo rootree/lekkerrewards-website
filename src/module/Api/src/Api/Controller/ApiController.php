@@ -120,7 +120,7 @@ class ApiController extends AbstractApiController
         $date = new \DateTime();
         $date->setTimestamp(substr($timestamp, 0, -3));
         $date->setTimezone($timeZone);
-//var_export($date); exit();
+// var_export($date); exit();
         return $date;
     }
 
@@ -316,7 +316,7 @@ class ApiController extends AbstractApiController
         $customerEntity = new CustomerEntity();
 
         $customerEntity->setCreatedAt($dateTime);
-        $customerEntity->setUpdatedAt($dateTime);
+        $customerEntity->setUpdatedAt(new \DateTime());
         $customerEntity->setPassword($passwordOpened);
         $customerEntity->setEMail($email);
         $customerEntity->setName(substr($email, 0, strpos($email, '@')));
@@ -358,6 +358,18 @@ class ApiController extends AbstractApiController
                 $dateTime
             );
 
+            /**
+             * @var \Application\Service\Customer $customerService
+             */
+            $customerService = $this->getServiceLocator()->get('Application\Service\Customer');
+            $customersForUpdateResult = $customerService->getUpdatedCustomers($dateTime);
+
+            /**
+             * @var \Application\Service\Qr $qrService
+             */
+            $qrService = $this->getServiceLocator()->get('Application\Service\Qr');
+            $qrsForAddResult = $qrService->getUpdatedQrs($dateTime);
+
             $visitsOnWeb = $merchantService->getCountOfVisits($this->merchantBranchEntity);
             if ($redeemRequest->visits != $visitsOnWeb) {
                 /** @var \Application\Service\ErrorHandling $service */
@@ -377,6 +389,8 @@ class ApiController extends AbstractApiController
                 'isUpdated' => ($rewardsForUpdateResult || $rewardsForDeleteResult || $rewardsHistory),
                 'rewardsForDelete' => $rewardsForDeleteResult,
                 'rewardsForUpdate' => $rewardsForUpdateResult,
+                'customersForUpdate' => $customersForUpdateResult,
+                'qrsForAdd' => $qrsForAddResult,
                 'rewardsHistory' => $rewardsHistory,
                 'dateTime' => $redeemRequest->timestamp
             ]);

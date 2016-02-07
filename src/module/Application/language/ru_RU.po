@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-17 11:05+0000\n"
+"POT-Creation-Date: 2016-02-07 19:48+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -215,6 +215,7 @@ msgstr "Исключение"
 #: module/Application/src/Application/Controller/BusinessController.php:488
 #: module/Application/src/Application/Controller/CustomerController.php:149
 #: module/Application/src/Application/Controller/CustomerController.php:220
+#: module/Application/src/Application/Controller/CustomerController.php:225
 msgid "Ошибка при вводе."
 msgstr ""
 
@@ -224,6 +225,7 @@ msgstr ""
 #: module/Application/src/Application/Controller/BusinessController.php:89
 #: module/Application/src/Application/Controller/CustomerController.php:313
 #: module/Application/src/Application/Controller/CustomerController.php:314
+#: module/Application/src/Application/Controller/CustomerController.php:324
 msgid "Пустой запрос."
 msgstr ""
 
@@ -236,6 +238,7 @@ msgstr ""
 #: module/Application/src/Application/Controller/CustomerController.php:321
 #: module/Application/src/Application/Controller/BusinessController.php:250
 #: module/Application/src/Application/Controller/CustomerController.php:324
+#: module/Application/src/Application/Controller/CustomerController.php:334
 msgid "Неправельные аргументы."
 msgstr "Неправильные аргументы."
 
@@ -245,6 +248,7 @@ msgstr "Неправильные аргументы."
 #: module/Application/src/Application/Controller/BusinessController.php:136
 #: module/Application/src/Application/Controller/CustomerController.php:368
 #: module/Application/src/Application/Controller/CustomerController.php:371
+#: module/Application/src/Application/Controller/CustomerController.php:381
 #, php-format
 msgid "Внутрянная ошибка сервиса. (%s)"
 msgstr "Внутренняя ошибка сервиса. (%s)"
@@ -259,6 +263,8 @@ msgstr "Внутренняя ошибка сервиса. (%s)"
 #: module/Application/src/Application/Controller/BusinessController.php:496
 #: module/Application/src/Application/Controller/CustomerController.php:167
 #: module/Application/src/Application/Controller/CustomerController.php:228
+#: module/Application/src/Application/Controller/CustomerController.php:171
+#: module/Application/src/Application/Controller/CustomerController.php:233
 msgid "Переданы невалидные параметры."
 msgstr ""
 
@@ -271,6 +277,8 @@ msgstr ""
 #: module/Application/src/Application/Controller/BusinessController.php:440
 #: module/Application/src/Application/Controller/CustomerController.php:172
 #: module/Application/src/Application/Controller/CustomerController.php:335
+#: module/Application/src/Application/Controller/CustomerController.php:176
+#: module/Application/src/Application/Controller/CustomerController.php:345
 msgid "Будте внимательны при вводе пароля."
 msgstr ""
 
@@ -279,6 +287,7 @@ msgstr ""
 #: module/Application/src/Application/Controller/BusinessController.php:442
 #: module/Application/src/Application/Controller/BusinessController.php:443
 #: module/Application/src/Application/Controller/CustomerController.php:175
+#: module/Application/src/Application/Controller/CustomerController.php:179
 msgid "Текуший пароль указан с ошибкой."
 msgstr "Текущий пароль указан с ошибкой."
 
@@ -287,6 +296,7 @@ msgstr "Текущий пароль указан с ошибкой."
 #: module/Application/src/Application/Controller/BusinessController.php:501
 #: module/Application/src/Application/Controller/BusinessController.php:502
 #: module/Application/src/Application/Controller/CustomerController.php:234
+#: module/Application/src/Application/Controller/CustomerController.php:239
 msgid "Email или пароль неправельный."
 msgstr "E-mail или пароль неправильный."
 
@@ -294,6 +304,7 @@ msgstr "E-mail или пароль неправильный."
 #: module/Application/src/Application/Controller/CustomerController.php:323
 #: module/Application/src/Application/Controller/CustomerController.php:328
 #: module/Application/src/Application/Controller/CustomerController.php:331
+#: module/Application/src/Application/Controller/CustomerController.php:341
 msgid "Указанный email уже зарегестрирован."
 msgstr "Указанный e-mail уже зарегистрирован."
 
@@ -301,6 +312,7 @@ msgstr "Указанный e-mail уже зарегистрирован."
 #: module/Application/src/Application/Controller/CustomerController.php:345
 #: module/Application/src/Application/Controller/CustomerController.php:350
 #: module/Application/src/Application/Controller/CustomerController.php:353
+#: module/Application/src/Application/Controller/CustomerController.php:363
 msgid "Проблема в сервисе авторизации."
 msgstr ""
 
@@ -327,6 +339,8 @@ msgstr ""
 #: module/Application/view/application/business/dashboard.phtml:142
 #: module/Application/view/application/business/settings.phtml:64
 #: module/Application/view/application/customer/settings.phtml:64
+#: module/Application/view/application/business/dashboard.phtml:143
+#: module/Application/view/application/customer/settings.phtml:67
 msgid "Пол"
 msgstr ""
 
@@ -521,11 +535,13 @@ msgstr ""
 
 #: module/Application/view/application/business/clients.phtml:234
 #: module/Application/view/application/business/dashboard.phtml:102
+#: module/Application/view/application/business/dashboard.phtml:103
 msgid "Новые"
 msgstr ""
 
 #: module/Application/view/application/business/clients.phtml:246
 #: module/Application/view/application/business/dashboard.phtml:114
+#: module/Application/view/application/business/dashboard.phtml:115
 msgid "Вернувшиеся"
 msgstr ""
 
@@ -550,6 +566,7 @@ msgstr ""
 #: module/Application/view/application/customer/sign-up.phtml:13
 #: module/Application/view/application/index/support.phtml:203
 #: module/Application/view/application/index/support.phtml:501
+#: module/Application/view/application/customer/settings.phtml:29
 msgid "Ошибка!"
 msgstr ""
 
@@ -560,12 +577,14 @@ msgstr ""
 #: module/Application/view/application/customer/settings.phtml:34
 #: module/Application/view/application/index/support.phtml:197
 #: module/Application/view/application/index/support.phtml:495
+#: module/Application/view/application/customer/settings.phtml:37
 msgid "Отлично!"
 msgstr ""
 
 #: module/Application/view/application/business/company.phtml:43
 #: module/Application/view/application/business/settings.phtml:35
 #: module/Application/view/application/customer/settings.phtml:35
+#: module/Application/view/application/customer/settings.phtml:38
 msgid "Данные успешно обновлены!"
 msgstr ""
 
@@ -606,6 +625,7 @@ msgstr ""
 #: module/Application/view/application/index/support.phtml:522
 #: module/Application/view/application/business/index.phtml:409
 #: module/Application/view/application/business/index.phtml:413
+#: module/Application/view/application/customer/settings.phtml:62
 msgid "Номер телефона"
 msgstr ""
 
@@ -623,6 +643,8 @@ msgstr ""
 #: module/Application/view/layout/layout.phtml:246
 #: module/Application/view/application/business/index.phtml:401
 #: module/Application/view/application/business/index.phtml:405
+#: module/Application/view/application/customer/settings.phtml:57
+#: module/Application/view/layout/layout.phtml:245
 msgid "Email"
 msgstr "E-mail"
 
@@ -657,18 +679,22 @@ msgid "%s лет"
 msgstr ""
 
 #: module/Application/view/application/business/dashboard.phtml:145
+#: module/Application/view/application/business/dashboard.phtml:146
 msgid "Мужчины"
 msgstr ""
 
 #: module/Application/view/application/business/dashboard.phtml:151
+#: module/Application/view/application/business/dashboard.phtml:152
 msgid "Женщины"
 msgstr ""
 
 #: module/Application/view/application/business/dashboard.phtml:157
+#: module/Application/view/application/business/dashboard.phtml:158
 msgid "Не указано"
 msgstr ""
 
 #: module/Application/view/application/business/dashboard.phtml:179
+#: module/Application/view/application/business/dashboard.phtml:180
 msgid "/"
 msgstr ""
 
@@ -699,6 +725,7 @@ msgstr ""
 #: module/Application/view/layout/layout.phtml:198
 #: module/Application/view/application/business/index.phtml:372
 #: module/Application/view/application/business/index.phtml:376
+#: module/Application/view/layout/layout.phtml:197
 #, php-format
 msgid ""
 "К сожалению не получается отправить ваш запрос. Но вы можете позвонить нам "
@@ -848,6 +875,8 @@ msgstr ""
 
 #: module/Application/view/application/business/settings.phtml:6
 #: module/Application/view/application/customer/settings.phtml:6
+#: module/Application/view/application/customer/settings.phtml:9
+#: module/Application/view/application/customer/settings.phtml:157
 msgid "Настройки"
 msgstr ""
 
@@ -856,143 +885,169 @@ msgstr ""
 #: module/Application/view/layout/menu/customer.phtml:38
 #: module/Application/view/layout/menu/owner.phtml:37
 #: module/Application/view/layout/menu/owner.phtml:40
+#: module/Application/view/application/customer/settings.phtml:14
 msgid "Профиль"
 msgstr ""
 
 #: module/Application/view/application/business/settings.phtml:45
 #: module/Application/view/application/customer/settings.phtml:45
+#: module/Application/view/application/customer/settings.phtml:48
 msgid "Персональная информация"
 msgstr ""
 
 #: module/Application/view/application/business/settings.phtml:49
 #: module/Application/view/application/customer/settings.phtml:49
+#: module/Application/view/application/customer/settings.phtml:52
 msgid "Имя"
 msgstr ""
 
 #: module/Application/view/application/business/settings.phtml:69
 #: module/Application/view/application/customer/settings.phtml:69
+#: module/Application/view/application/customer/settings.phtml:72
 msgid "Мужчина"
 msgstr ""
 
 #: module/Application/view/application/business/settings.phtml:73
 #: module/Application/view/application/customer/settings.phtml:73
+#: module/Application/view/application/customer/settings.phtml:76
 msgid "Женщина"
 msgstr ""
 
 #: module/Application/view/application/business/settings.phtml:79
 #: module/Application/view/application/customer/settings.phtml:79
+#: module/Application/view/application/customer/settings.phtml:82
 msgid "Дата рождения"
 msgstr ""
 
 #: module/Application/view/application/business/settings.phtml:85
 #: module/Application/view/application/customer/settings.phtml:85
+#: module/Application/view/application/customer/settings.phtml:88
 msgid "День"
 msgstr ""
 
 #: module/Application/view/application/business/settings.phtml:94
 #: module/Application/view/application/customer/settings.phtml:94
+#: module/Application/view/application/customer/settings.phtml:97
 msgid "Месяц"
 msgstr ""
 
 #: module/Application/view/application/business/settings.phtml:95
 #: module/Application/view/application/common/calendar.phtml:14
 #: module/Application/view/application/customer/settings.phtml:95
+#: module/Application/view/application/customer/settings.phtml:98
 msgid "Январь"
 msgstr ""
 
 #: module/Application/view/application/business/settings.phtml:96
 #: module/Application/view/application/common/calendar.phtml:14
 #: module/Application/view/application/customer/settings.phtml:96
+#: module/Application/view/application/customer/settings.phtml:99
 msgid "Февраль"
 msgstr ""
 
 #: module/Application/view/application/business/settings.phtml:97
 #: module/Application/view/application/common/calendar.phtml:14
 #: module/Application/view/application/customer/settings.phtml:97
+#: module/Application/view/application/customer/settings.phtml:100
 msgid "Март"
 msgstr ""
 
 #: module/Application/view/application/business/settings.phtml:98
 #: module/Application/view/application/common/calendar.phtml:14
 #: module/Application/view/application/customer/settings.phtml:98
+#: module/Application/view/application/customer/settings.phtml:101
 msgid "Апрель"
 msgstr ""
 
 #: module/Application/view/application/business/settings.phtml:99
 #: module/Application/view/application/common/calendar.phtml:14
 #: module/Application/view/application/customer/settings.phtml:99
+#: module/Application/view/application/customer/settings.phtml:102
 msgid "Май"
 msgstr ""
 
 #: module/Application/view/application/business/settings.phtml:100
 #: module/Application/view/application/common/calendar.phtml:14
 #: module/Application/view/application/customer/settings.phtml:100
+#: module/Application/view/application/customer/settings.phtml:103
 msgid "Июнь"
 msgstr ""
 
 #: module/Application/view/application/business/settings.phtml:101
 #: module/Application/view/application/common/calendar.phtml:14
 #: module/Application/view/application/customer/settings.phtml:101
+#: module/Application/view/application/customer/settings.phtml:104
 msgid "Июль"
 msgstr ""
 
 #: module/Application/view/application/business/settings.phtml:102
 #: module/Application/view/application/common/calendar.phtml:14
 #: module/Application/view/application/customer/settings.phtml:102
+#: module/Application/view/application/customer/settings.phtml:105
 msgid "Август"
 msgstr ""
 
 #: module/Application/view/application/business/settings.phtml:103
 #: module/Application/view/application/common/calendar.phtml:14
 #: module/Application/view/application/customer/settings.phtml:103
+#: module/Application/view/application/customer/settings.phtml:106
 msgid "Сентябрь"
 msgstr ""
 
 #: module/Application/view/application/business/settings.phtml:104
 #: module/Application/view/application/common/calendar.phtml:14
 #: module/Application/view/application/customer/settings.phtml:104
+#: module/Application/view/application/customer/settings.phtml:107
 msgid "Октябрь"
 msgstr ""
 
 #: module/Application/view/application/business/settings.phtml:105
 #: module/Application/view/application/common/calendar.phtml:14
 #: module/Application/view/application/customer/settings.phtml:105
+#: module/Application/view/application/customer/settings.phtml:108
 msgid "Ноябрь"
 msgstr ""
 
 #: module/Application/view/application/business/settings.phtml:106
 #: module/Application/view/application/common/calendar.phtml:14
 #: module/Application/view/application/customer/settings.phtml:106
+#: module/Application/view/application/customer/settings.phtml:109
 msgid "Декабрь"
 msgstr ""
 
 #: module/Application/view/application/business/settings.phtml:110
 #: module/Application/view/application/customer/settings.phtml:110
+#: module/Application/view/application/customer/settings.phtml:113
 msgid "Год"
 msgstr ""
 
 #: module/Application/view/application/business/settings.phtml:130
 #: module/Application/view/application/customer/settings.phtml:130
+#: module/Application/view/application/customer/settings.phtml:133
 msgid "Безопасность"
 msgstr ""
 
 #: module/Application/view/application/business/settings.phtml:135
 #: module/Application/view/application/customer/settings.phtml:135
+#: module/Application/view/application/customer/settings.phtml:138
 msgid "Новый пароль"
 msgstr ""
 
 #: module/Application/view/application/business/settings.phtml:140
 #: module/Application/view/application/customer/settings.phtml:140
+#: module/Application/view/application/customer/settings.phtml:143
 msgid "Новый пароль еще раз"
 msgstr ""
 
 #: module/Application/view/application/business/settings.phtml:145
 #: module/Application/view/application/customer/settings.phtml:145
+#: module/Application/view/application/customer/settings.phtml:148
 msgid "Текуший пароль, если вы хотите установать новый"
 msgstr "Текущий пароль, если вы хотите установить новый"
 
 #: module/Application/view/application/business/settings.phtml:151
 #: module/Application/view/application/customer/settings.phtml:151
+#: module/Application/view/application/customer/settings.phtml:174
 msgid "Сохранить"
 msgstr ""
 
@@ -1186,6 +1241,7 @@ msgstr ""
 #: module/Application/view/layout/layout.phtml:267
 #: module/Application/view/layout/menu/guest.phtml:43
 #: module/Application/view/layout/menu/owner.phtml:22
+#: module/Application/view/layout/layout.phtml:266
 msgid "Поддержка"
 msgstr ""
 
@@ -1275,6 +1331,7 @@ msgstr ""
 #: module/Application/view/layout/email.phtml:198
 #: module/Application/view/layout/email.phtml:205
 #: module/Application/view/layout/email.phtml:200
+#: module/Application/view/layout/email.phtml:202
 msgid "Отписаться"
 msgstr ""
 
@@ -1284,6 +1341,7 @@ msgstr "Бесплатная система лояльности"
 
 #: module/Application/view/layout/layout.phtml:162
 #: module/Application/view/layout/layout.phtml:174
+#: module/Application/view/layout/layout.phtml:173
 msgid "Будте с нами"
 msgstr ""
 
@@ -1293,26 +1351,31 @@ msgstr ""
 
 #: module/Application/view/layout/layout.phtml:171
 #: module/Application/view/layout/layout.phtml:183
+#: module/Application/view/layout/layout.phtml:182
 msgid "Подписка оформлена. Спасибо!"
 msgstr ""
 
 #: module/Application/view/layout/layout.phtml:180
 #: module/Application/view/layout/layout.phtml:192
+#: module/Application/view/layout/layout.phtml:191
 msgid "Подписка успешно оформлена. Спасибо!"
 msgstr ""
 
 #: module/Application/view/layout/layout.phtml:195
 #: module/Application/view/layout/layout.phtml:207
+#: module/Application/view/layout/layout.phtml:206
 msgid "Подписаться"
 msgstr ""
 
 #: module/Application/view/layout/layout.phtml:210
 #: module/Application/view/layout/layout.phtml:222
+#: module/Application/view/layout/layout.phtml:221
 msgid "Присоединяйтесь к нам"
 msgstr ""
 
 #: module/Application/view/layout/layout.phtml:233
 #: module/Application/view/layout/layout.phtml:245
+#: module/Application/view/layout/layout.phtml:244
 msgid "Наш номер"
 msgstr ""
 
@@ -1326,16 +1389,19 @@ msgstr ""
 
 #: module/Application/view/layout/layout.phtml:296
 #: module/Application/view/layout/layout.phtml:308
+#: module/Application/view/layout/layout.phtml:307
 msgid "Ваш QR-код"
 msgstr ""
 
 #: module/Application/view/layout/layout.phtml:307
 #: module/Application/view/layout/layout.phtml:319
+#: module/Application/view/layout/layout.phtml:318
 msgid "Осканируйте QR-код на планшете"
 msgstr "Отсканируйте QR-код на планшете"
 
 #: module/Application/view/layout/layout.phtml:312
 #: module/Application/view/layout/layout.phtml:324
+#: module/Application/view/layout/layout.phtml:323
 msgid "Закрыть"
 msgstr ""
 
@@ -1698,11 +1764,13 @@ msgid "И получайте награды за посещения в ваши�
 msgstr ""
 
 #: module/Application/view/application/index/index.phtml:52
+#: module/Application/view/application/index/index.phtml:59
 #, php-format
 msgid "Как работает %s"
 msgstr ""
 
 #: module/Application/view/application/index/index.phtml:73
+#: module/Application/view/application/index/index.phtml:80
 #, php-format
 msgid ""
 "Возмите карту с QR-кодом на %s стенде или зарегестрируйтесь на нашем сайте"
@@ -1710,6 +1778,7 @@ msgstr ""
 "Возьмите карту с QR-кодом на %s стенде или зарегестрируйтесь на нашем сайте"
 
 #: module/Application/view/application/index/index.phtml:89
+#: module/Application/view/application/index/index.phtml:96
 #, php-format
 msgid ""
 "Накапливайте посещения сканируя QR-код с вашей карты или QR-код из личного "
@@ -1717,15 +1786,18 @@ msgid ""
 msgstr ""
 
 #: module/Application/view/application/index/index.phtml:103
+#: module/Application/view/application/index/index.phtml:110
 #, php-format
 msgid "Получайте награды за посещения в ваших любимых заведениях с %s"
 msgstr ""
 
 #: module/Application/view/application/index/index.phtml:124
+#: module/Application/view/application/index/index.phtml:131
 msgid "Открыть карту"
 msgstr ""
 
 #: module/Application/view/application/index/index.phtml:128
+#: module/Application/view/application/index/index.phtml:135
 #, php-format
 msgid "Найдите заведения в которых работает %s"
 msgstr ""
@@ -2101,26 +2173,31 @@ msgstr ""
 
 #: module/Application/view/layout/email.phtml:205
 #: module/Application/view/layout/email.phtml:200
+#: module/Application/view/layout/email.phtml:202
 msgid "Надоели наши назойливые письма?"
 msgstr ""
 
 #: module/Application/view/layout/layout.phtml:176
+#: module/Application/view/layout/layout.phtml:175
 msgid "Подпишитесь на нашу рассылку и будте в курсе того что мы делаем"
 msgstr ""
 
 #: module/Application/src/Application/Service/Email.php:86
 #: module/Application/src/Application/Service/Email.php:84
+#: module/Application/src/Application/Service/Email.php:99
 #, php-format
 msgid "Добро пожаловать в %s"
 msgstr ""
 
 #: module/Application/src/Application/Service/Email.php:155
 #: module/Application/src/Application/Service/Email.php:151
+#: module/Application/src/Application/Service/Email.php:169
 msgid "Сообщение от пользователей"
 msgstr ""
 
 #: module/Application/src/Application/Service/Email.php:216
 #: module/Application/src/Application/Service/Email.php:208
+#: module/Application/src/Application/Service/Email.php:230
 #, php-format
 msgid "Отметка в %s"
 msgstr ""
@@ -2130,12 +2207,14 @@ msgstr ""
 #: module/Application/view/email/registration.phtml:9
 #: module/Application/src/Application/Service/Email.php:267
 #: module/Application/view/email/greeting.phtml:20
+#: module/Application/src/Application/Service/Email.php:293
 #, php-format
 msgid "Регистрация в %s"
 msgstr ""
 
 #: module/Application/src/Application/Service/Email.php:345
 #: module/Application/src/Application/Service/Email.php:337
+#: module/Application/src/Application/Service/Email.php:374
 #, php-format
 msgid "Новая награда в %s"
 msgstr ""
@@ -2198,10 +2277,12 @@ msgid "Успехов!"
 msgstr ""
 
 #: module/Application/view/layout/layout.phtml:270
+#: module/Application/view/layout/layout.phtml:269
 msgid "Условия использования"
 msgstr ""
 
 #: module/Application/view/layout/layout.phtml:273
+#: module/Application/view/layout/layout.phtml:272
 msgid "Политика конфеденциальности"
 msgstr "Политика конфиденциальности"
 
@@ -2222,4 +2303,14 @@ msgstr ""
 msgid ""
 "Подсказка! Теперь вы можете использовать не только карту с QR-кодом для "
 "отметок и получения наград, но и QR-код из личного кабинета."
+msgstr ""
+
+#: module/Application/view/application/customer/settings.phtml:164
+msgid "Получать уведомления по e-mail об активности"
+msgstr ""
+
+#: module/Application/view/application/index/index.phtml:53
+msgid ""
+"Вы были отписаны от уведомлений о вашей активности. Приносим свои извенения "
+"за нашу назойливость."
 msgstr ""

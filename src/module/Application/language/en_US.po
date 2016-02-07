@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-17 11:06+0000\n"
+"POT-Creation-Date: 2016-02-07 19:49+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -111,6 +111,7 @@ msgstr ""
 #: module/Application/src/Application/Controller/BusinessController.php:488
 #: module/Application/src/Application/Controller/CustomerController.php:149
 #: module/Application/src/Application/Controller/CustomerController.php:220
+#: module/Application/src/Application/Controller/CustomerController.php:225
 msgid "Ошибка при вводе."
 msgstr "Input error."
 
@@ -120,6 +121,7 @@ msgstr "Input error."
 #: module/Application/src/Application/Controller/BusinessController.php:89
 #: module/Application/src/Application/Controller/CustomerController.php:313
 #: module/Application/src/Application/Controller/CustomerController.php:314
+#: module/Application/src/Application/Controller/CustomerController.php:324
 msgid "Пустой запрос."
 msgstr "Empty request."
 
@@ -132,6 +134,7 @@ msgstr "Empty request."
 #: module/Application/src/Application/Controller/CustomerController.php:321
 #: module/Application/src/Application/Controller/BusinessController.php:250
 #: module/Application/src/Application/Controller/CustomerController.php:324
+#: module/Application/src/Application/Controller/CustomerController.php:334
 msgid "Неправельные аргументы."
 msgstr "Wrong arguments."
 
@@ -143,6 +146,7 @@ msgstr "Wrong arguments."
 #: module/Application/src/Application/Controller/BusinessController.php:136
 #: module/Application/src/Application/Controller/CustomerController.php:368
 #: module/Application/src/Application/Controller/CustomerController.php:371
+#: module/Application/src/Application/Controller/CustomerController.php:381
 #, php-format
 msgid "Внутрянная ошибка сервиса. (%s)"
 msgstr "Internal error (%s)"
@@ -158,6 +162,8 @@ msgstr "Internal error (%s)"
 #: module/Application/src/Application/Controller/BusinessController.php:496
 #: module/Application/src/Application/Controller/CustomerController.php:167
 #: module/Application/src/Application/Controller/CustomerController.php:228
+#: module/Application/src/Application/Controller/CustomerController.php:171
+#: module/Application/src/Application/Controller/CustomerController.php:233
 msgid "Переданы невалидные параметры."
 msgstr "Invalid parameters. "
 
@@ -170,6 +176,8 @@ msgstr "Invalid parameters. "
 #: module/Application/src/Application/Controller/BusinessController.php:440
 #: module/Application/src/Application/Controller/CustomerController.php:172
 #: module/Application/src/Application/Controller/CustomerController.php:335
+#: module/Application/src/Application/Controller/CustomerController.php:176
+#: module/Application/src/Application/Controller/CustomerController.php:345
 msgid "Будте внимательны при вводе пароля."
 msgstr "Please type the password carefully."
 
@@ -179,6 +187,7 @@ msgstr "Please type the password carefully."
 #: module/Application/src/Application/Controller/BusinessController.php:442
 #: module/Application/src/Application/Controller/BusinessController.php:443
 #: module/Application/src/Application/Controller/CustomerController.php:175
+#: module/Application/src/Application/Controller/CustomerController.php:179
 msgid "Текуший пароль указан с ошибкой."
 msgstr "The current password is incorrect."
 
@@ -188,6 +197,7 @@ msgstr "The current password is incorrect."
 #: module/Application/src/Application/Controller/BusinessController.php:501
 #: module/Application/src/Application/Controller/BusinessController.php:502
 #: module/Application/src/Application/Controller/CustomerController.php:234
+#: module/Application/src/Application/Controller/CustomerController.php:239
 msgid "Email или пароль неправельный."
 msgstr "Either e-mail or password is incorrect."
 
@@ -195,6 +205,7 @@ msgstr "Either e-mail or password is incorrect."
 #: 58e loco:5625eff714d725cc668b458e
 #: module/Application/src/Application/Controller/CustomerController.php:328
 #: module/Application/src/Application/Controller/CustomerController.php:331
+#: module/Application/src/Application/Controller/CustomerController.php:341
 msgid "Указанный email уже зарегестрирован."
 msgstr "Specified e-mail already exists."
 
@@ -202,6 +213,7 @@ msgstr "Specified e-mail already exists."
 #: 58f loco:5625eff714d725cc668b458f
 #: module/Application/src/Application/Controller/CustomerController.php:350
 #: module/Application/src/Application/Controller/CustomerController.php:353
+#: module/Application/src/Application/Controller/CustomerController.php:363
 msgid "Проблема в сервисе авторизации."
 msgstr "There is a problem with the authentication service."
 
@@ -231,6 +243,8 @@ msgstr "y.o."
 #: module/Application/view/application/business/settings.phtml:64
 #: module/Application/view/application/customer/settings.phtml:64 593 loco:#:
 #: 5625eff714d725cc668b4593
+#: module/Application/view/application/business/dashboard.phtml:143
+#: module/Application/view/application/customer/settings.phtml:67
 msgid "Пол"
 msgstr "Gender"
 
@@ -457,12 +471,14 @@ msgstr "Spent visits"
 #: module/Application/view/application/business/clients.phtml:234
 #: module/Application/view/application/business/dashboard.phtml:102 5b8
 #: loco:#: 5625eff714d725cc668b45b8
+#: module/Application/view/application/business/dashboard.phtml:103
 msgid "Новые"
 msgstr "New"
 
 #: module/Application/view/application/business/clients.phtml:246
 #: module/Application/view/application/business/dashboard.phtml:114 5b9
 #: loco:#: 5625eff714d725cc668b45b9
+#: module/Application/view/application/business/dashboard.phtml:115
 msgid "Вернувшиеся"
 msgstr "Returned"
 
@@ -487,6 +503,7 @@ msgstr "Company"
 #: module/Application/view/application/customer/sign-up.phtml:13
 #: module/Application/view/application/index/support.phtml:501 5bb loco:#:
 #: 5625eff714d725cc668b45bb
+#: module/Application/view/application/customer/settings.phtml:29
 msgid "Ошибка!"
 msgstr "Error!"
 
@@ -497,6 +514,7 @@ msgstr "Error!"
 #: module/Application/view/application/customer/settings.phtml:34
 #: module/Application/view/application/index/support.phtml:495 5bc loco:#:
 #: 5625eff714d725cc668b45bc
+#: module/Application/view/application/customer/settings.phtml:37
 msgid "Отлично!"
 msgstr "Nice!"
 
@@ -504,6 +522,7 @@ msgstr "Nice!"
 #: module/Application/view/application/business/settings.phtml:35
 #: module/Application/view/application/customer/settings.phtml:35 5bd loco:#:
 #: 5625eff714d725cc668b45bd
+#: module/Application/view/application/customer/settings.phtml:38
 msgid "Данные успешно обновлены!"
 msgstr "The information is updated!"
 
@@ -551,6 +570,7 @@ msgstr "Website"
 #: 5625eff714d725cc668b45c5
 #: module/Application/view/application/business/index.phtml:409
 #: module/Application/view/application/business/index.phtml:413
+#: module/Application/view/application/customer/settings.phtml:62
 msgid "Номер телефона"
 msgstr "Phone"
 
@@ -567,6 +587,8 @@ msgstr "Phone"
 #: 5625eff714d725cc668b45c6
 #: module/Application/view/application/business/index.phtml:401
 #: module/Application/view/application/business/index.phtml:405
+#: module/Application/view/application/customer/settings.phtml:57
+#: module/Application/view/layout/layout.phtml:245
 msgid "Email"
 msgstr "E-mail"
 
@@ -609,21 +631,25 @@ msgstr "%s y.o."
 
 #: module/Application/view/application/business/dashboard.phtml:145 5ce
 #: loco:#: 5625eff714d725cc668b45ce
+#: module/Application/view/application/business/dashboard.phtml:146
 msgid "Мужчины"
 msgstr "Men"
 
 #: module/Application/view/application/business/dashboard.phtml:151 5cf
 #: loco:#: 5625eff714d725cc668b45cf
+#: module/Application/view/application/business/dashboard.phtml:152
 msgid "Женщины"
 msgstr "Women"
 
 #: module/Application/view/application/business/dashboard.phtml:157 5d0
 #: loco:#: 5625eff714d725cc668b45d0
+#: module/Application/view/application/business/dashboard.phtml:158
 msgid "Не указано"
 msgstr "N/A"
 
 #: module/Application/view/application/business/dashboard.phtml:179 5d1
 #: loco:#: 5625eff714d725cc668b45d1
+#: module/Application/view/application/business/dashboard.phtml:180
 msgid "/"
 msgstr "/"
 
@@ -882,6 +908,7 @@ msgstr ""
 #: 5625eff714d725cc668b45f4
 #: module/Application/view/application/business/index.phtml:372
 #: module/Application/view/application/business/index.phtml:376
+#: module/Application/view/layout/layout.phtml:197
 #, php-format
 msgid ""
 "К сожалению не получается отправить ваш запрос. Но вы можете позвонить нам "
@@ -1066,6 +1093,8 @@ msgstr "Archive"
 #: module/Application/view/application/business/settings.phtml:6
 #: module/Application/view/application/customer/settings.phtml:6 613 loco:#:
 #: 5625eff714d725cc668b4613
+#: module/Application/view/application/customer/settings.phtml:9
+#: module/Application/view/application/customer/settings.phtml:157
 msgid "Настройки"
 msgstr "Settings"
 
@@ -1074,48 +1103,56 @@ msgstr "Settings"
 #: module/Application/view/layout/menu/customer.phtml:38
 #: module/Application/view/layout/menu/owner.phtml:40 614 loco:#:
 #: 5625eff714d725cc668b4614
+#: module/Application/view/application/customer/settings.phtml:14
 msgid "Профиль"
 msgstr "Profile"
 
 #: module/Application/view/application/business/settings.phtml:45
 #: module/Application/view/application/customer/settings.phtml:45 615 loco:#:
 #: 5625eff714d725cc668b4615
+#: module/Application/view/application/customer/settings.phtml:48
 msgid "Персональная информация"
 msgstr "Personal Information"
 
 #: module/Application/view/application/business/settings.phtml:49
 #: module/Application/view/application/customer/settings.phtml:49 616 loco:#:
 #: 5625eff714d725cc668b4616
+#: module/Application/view/application/customer/settings.phtml:52
 msgid "Имя"
 msgstr "Name"
 
 #: module/Application/view/application/business/settings.phtml:69
 #: module/Application/view/application/customer/settings.phtml:69 617 loco:#:
 #: 5625eff714d725cc668b4617
+#: module/Application/view/application/customer/settings.phtml:72
 msgid "Мужчина"
 msgstr "Male"
 
 #: module/Application/view/application/business/settings.phtml:73
 #: module/Application/view/application/customer/settings.phtml:73 618 loco:#:
 #: 5625eff714d725cc668b4618
+#: module/Application/view/application/customer/settings.phtml:76
 msgid "Женщина"
 msgstr "Female"
 
 #: module/Application/view/application/business/settings.phtml:79
 #: module/Application/view/application/customer/settings.phtml:79 619 loco:#:
 #: 5625eff714d725cc668b4619
+#: module/Application/view/application/customer/settings.phtml:82
 msgid "Дата рождения"
 msgstr "Birthday "
 
 #: module/Application/view/application/business/settings.phtml:85
 #: module/Application/view/application/customer/settings.phtml:85 61a loco:#:
 #: 5625eff714d725cc668b461a
+#: module/Application/view/application/customer/settings.phtml:88
 msgid "День"
 msgstr "Day"
 
 #: module/Application/view/application/business/settings.phtml:94
 #: module/Application/view/application/customer/settings.phtml:94 61b loco:#:
 #: 5625eff714d725cc668b461b
+#: module/Application/view/application/customer/settings.phtml:97
 msgid "Месяц"
 msgstr "Month"
 
@@ -1123,6 +1160,7 @@ msgstr "Month"
 #: module/Application/view/application/common/calendar.phtml:14
 #: module/Application/view/application/customer/settings.phtml:95 61c loco:#:
 #: 5625eff714d725cc668b461c
+#: module/Application/view/application/customer/settings.phtml:98
 msgid "Январь"
 msgstr "January "
 
@@ -1130,6 +1168,7 @@ msgstr "January "
 #: module/Application/view/application/common/calendar.phtml:14
 #: module/Application/view/application/customer/settings.phtml:96 61d loco:#:
 #: 5625eff714d725cc668b461d
+#: module/Application/view/application/customer/settings.phtml:99
 msgid "Февраль"
 msgstr "February "
 
@@ -1137,6 +1176,7 @@ msgstr "February "
 #: module/Application/view/application/common/calendar.phtml:14
 #: module/Application/view/application/customer/settings.phtml:97 61e loco:#:
 #: 5625eff714d725cc668b461e
+#: module/Application/view/application/customer/settings.phtml:100
 msgid "Март"
 msgstr "March "
 
@@ -1144,6 +1184,7 @@ msgstr "March "
 #: module/Application/view/application/common/calendar.phtml:14
 #: module/Application/view/application/customer/settings.phtml:98 61f loco:#:
 #: 5625eff714d725cc668b461f
+#: module/Application/view/application/customer/settings.phtml:101
 msgid "Апрель"
 msgstr "April "
 
@@ -1151,6 +1192,7 @@ msgstr "April "
 #: module/Application/view/application/common/calendar.phtml:14
 #: module/Application/view/application/customer/settings.phtml:99 620 loco:#:
 #: 5625eff714d725cc668b4620
+#: module/Application/view/application/customer/settings.phtml:102
 msgid "Май"
 msgstr "May"
 
@@ -1158,6 +1200,7 @@ msgstr "May"
 #: module/Application/view/application/common/calendar.phtml:14
 #: module/Application/view/application/customer/settings.phtml:100 621 loco:#:
 #: 5625eff714d725cc668b4621
+#: module/Application/view/application/customer/settings.phtml:103
 msgid "Июнь"
 msgstr "June"
 
@@ -1165,6 +1208,7 @@ msgstr "June"
 #: module/Application/view/application/common/calendar.phtml:14
 #: module/Application/view/application/customer/settings.phtml:101 622 loco:#:
 #: 5625eff714d725cc668b4622
+#: module/Application/view/application/customer/settings.phtml:104
 msgid "Июль"
 msgstr "July"
 
@@ -1172,6 +1216,7 @@ msgstr "July"
 #: module/Application/view/application/common/calendar.phtml:14
 #: module/Application/view/application/customer/settings.phtml:102 623 loco:#:
 #: 5625eff714d725cc668b4623
+#: module/Application/view/application/customer/settings.phtml:105
 msgid "Август"
 msgstr "August "
 
@@ -1179,6 +1224,7 @@ msgstr "August "
 #: module/Application/view/application/common/calendar.phtml:14
 #: module/Application/view/application/customer/settings.phtml:103 624 loco:#:
 #: 5625eff714d725cc668b4624
+#: module/Application/view/application/customer/settings.phtml:106
 msgid "Сентябрь"
 msgstr "September"
 
@@ -1186,6 +1232,7 @@ msgstr "September"
 #: module/Application/view/application/common/calendar.phtml:14
 #: module/Application/view/application/customer/settings.phtml:104 625 loco:#:
 #: 5625eff714d725cc668b4625
+#: module/Application/view/application/customer/settings.phtml:107
 msgid "Октябрь"
 msgstr "October "
 
@@ -1193,6 +1240,7 @@ msgstr "October "
 #: module/Application/view/application/common/calendar.phtml:14
 #: module/Application/view/application/customer/settings.phtml:105 626 loco:#:
 #: 5625eff714d725cc668b4626
+#: module/Application/view/application/customer/settings.phtml:108
 msgid "Ноябрь"
 msgstr "November "
 
@@ -1200,42 +1248,49 @@ msgstr "November "
 #: module/Application/view/application/common/calendar.phtml:14
 #: module/Application/view/application/customer/settings.phtml:106 627 loco:#:
 #: 5625eff714d725cc668b4627
+#: module/Application/view/application/customer/settings.phtml:109
 msgid "Декабрь"
 msgstr "December "
 
 #: module/Application/view/application/business/settings.phtml:110
 #: module/Application/view/application/customer/settings.phtml:110 628 loco:#:
 #: 5625eff714d725cc668b4628
+#: module/Application/view/application/customer/settings.phtml:113
 msgid "Год"
 msgstr "Year"
 
 #: module/Application/view/application/business/settings.phtml:130
 #: module/Application/view/application/customer/settings.phtml:130 629 loco:#:
 #: 5625eff714d725cc668b4629
+#: module/Application/view/application/customer/settings.phtml:133
 msgid "Безопасность"
 msgstr "Security "
 
 #: module/Application/view/application/business/settings.phtml:135
 #: module/Application/view/application/customer/settings.phtml:135 62a loco:#:
 #: 5625eff714d725cc668b462a
+#: module/Application/view/application/customer/settings.phtml:138
 msgid "Новый пароль"
 msgstr "New password"
 
 #: module/Application/view/application/business/settings.phtml:140
 #: module/Application/view/application/customer/settings.phtml:140 62b loco:#:
 #: 5625eff714d725cc668b462b
+#: module/Application/view/application/customer/settings.phtml:143
 msgid "Новый пароль еще раз"
 msgstr "Repeat new password"
 
 #: module/Application/view/application/business/settings.phtml:145
 #: module/Application/view/application/customer/settings.phtml:145 62c loco:#:
 #: 5625eff714d725cc668b462c
+#: module/Application/view/application/customer/settings.phtml:148
 msgid "Текуший пароль, если вы хотите установать новый"
 msgstr "Current password, in case if you want to setup the new one"
 
 #: module/Application/view/application/business/settings.phtml:151
 #: module/Application/view/application/customer/settings.phtml:151 62d loco:#:
 #: 5625eff714d725cc668b462d
+#: module/Application/view/application/customer/settings.phtml:174
 msgid "Сохранить"
 msgstr "Update"
 
@@ -1459,12 +1514,14 @@ msgstr "And get rewards for visiting to your favorite places"
 
 #: module/Application/view/application/index/index.phtml:52 657 loco:#:
 #: 5625eff714d725cc668b4657
+#: module/Application/view/application/index/index.phtml:59
 #, php-format
 msgid "Как работает %s"
 msgstr "How %s works"
 
 #: module/Application/view/application/index/index.phtml:73 658 loco:#:
 #: 5625eff714d725cc668b4658
+#: module/Application/view/application/index/index.phtml:80
 #, php-format
 msgid ""
 "Возмите карту с QR-кодом на %s стенде или зарегестрируйтесь на нашем сайте"
@@ -1472,6 +1529,7 @@ msgstr "Take the card with QR-code on the %s stand or Sign-Up on our site"
 
 #: module/Application/view/application/index/index.phtml:89 loco:#:
 #: 5625eff714d725cc668b4659
+#: module/Application/view/application/index/index.phtml:96
 #, php-format
 msgid ""
 "Накапливайте посещения сканируя QR-код с вашей карты или QR-код из личного "
@@ -1482,17 +1540,20 @@ msgstr ""
 
 #: module/Application/view/application/index/index.phtml:103 65a loco:#:
 #: 5625eff714d725cc668b465a
+#: module/Application/view/application/index/index.phtml:110
 #, php-format
 msgid "Получайте награды за посещения в ваших любимых заведениях с %s"
 msgstr "Get rewards for visiting your favorite places with %s"
 
 #: module/Application/view/application/index/index.phtml:124 65b loco:#:
 #: 5625eff714d725cc668b465b
+#: module/Application/view/application/index/index.phtml:131
 msgid "Открыть карту"
 msgstr "Open the map"
 
 #: module/Application/view/application/index/index.phtml:128 65c loco:#:
 #: 5625eff714d725cc668b465c
+#: module/Application/view/application/index/index.phtml:135
 #, php-format
 msgid "Найдите заведения в которых работает %s"
 msgstr "Find places with %s"
@@ -1503,7 +1564,7 @@ msgstr "Find places with %s"
 #: module/Application/view/layout/menu/customer.phtml:29
 #: module/Application/view/layout/menu/guest.phtml:43
 #: module/Application/view/layout/menu/owner.phtml:22 65d loco:#:
-#: 5625eff714d725cc668b465d
+#: 5625eff714d725cc668b465d module/Application/view/layout/layout.phtml:266
 msgid "Поддержка"
 msgstr "Support"
 
@@ -1930,8 +1991,8 @@ msgid ""
 "Отлично! Вы только что отметились в %s и стали еще на один шаг ближе к "
 "получению бесплатной награды ..."
 msgstr ""
-"Excellent! You've just checked in at %s and became one step closer to getting "
-"free rewards ..."
+"Excellent! You've just checked in at %s and became one step closer to "
+"getting free rewards ..."
 
 #: module/Application/view/email/check-in.phtml:8
 #: module/Application/view/email/check-in.phtml:18
@@ -2027,12 +2088,14 @@ msgstr "Best regards!"
 #: module/Application/view/layout/email.phtml:205
 #: module/Application/view/layout/email.phtml:200
 #: loco:5625eff714d725cc668b46a6
+#: module/Application/view/layout/email.phtml:202
 msgid "Надоели наши назойливые письма?"
 msgstr "Tired of our annoying emails?"
 
 #: module/Application/view/layout/email.phtml:205
 #: module/Application/view/layout/email.phtml:200
 #: loco:5625eff714d725cc668b46a7
+#: module/Application/view/layout/email.phtml:202
 msgid "Отписаться"
 msgstr "Unsubscribe"
 
@@ -2043,51 +2106,61 @@ msgstr "Free loyalty system"
 
 #: module/Application/view/layout/layout.phtml:174
 #: loco:5625eff714d725cc668b46a9
+#: module/Application/view/layout/layout.phtml:173
 msgid "Будте с нами"
 msgstr "Subscription"
 
 #: module/Application/view/layout/layout.phtml:176
 #: loco:5625eff714d725cc668b46aa
+#: module/Application/view/layout/layout.phtml:175
 msgid "Подпишитесь на нашу рассылку и будте в курсе того что мы делаем"
 msgstr "Subscribe to our newsletter"
 
 #: module/Application/view/layout/layout.phtml:183
 #: loco:5625eff714d725cc668b46ab
+#: module/Application/view/layout/layout.phtml:182
 msgid "Подписка оформлена. Спасибо!"
 msgstr "Subscription created. Thank you!"
 
 #: module/Application/view/layout/layout.phtml:192
 #: loco:5625eff714d725cc668b46ac
+#: module/Application/view/layout/layout.phtml:191
 msgid "Подписка успешно оформлена. Спасибо!"
 msgstr "Subscription created successfully. Thank you!"
 
 #: module/Application/view/layout/layout.phtml:207
 #: loco:5625eff714d725cc668b46ad
+#: module/Application/view/layout/layout.phtml:206
 msgid "Подписаться"
 msgstr "Subscribe"
 
 #: module/Application/view/layout/layout.phtml:222
 #: loco:5625eff714d725cc668b46ae
+#: module/Application/view/layout/layout.phtml:221
 msgid "Присоединяйтесь к нам"
 msgstr "Follow us"
 
 #: module/Application/view/layout/layout.phtml:245
 #: loco:5625eff714d725cc668b46af
+#: module/Application/view/layout/layout.phtml:244
 msgid "Наш номер"
 msgstr "Our phone"
 
 #: module/Application/view/layout/layout.phtml:308
 #: loco:5625eff714d725cc668b46b0
+#: module/Application/view/layout/layout.phtml:307
 msgid "Ваш QR-код"
 msgstr "Your QR-code"
 
 #: module/Application/view/layout/layout.phtml:319
 #: loco:5625eff714d725cc668b46b1
+#: module/Application/view/layout/layout.phtml:318
 msgid "Осканируйте QR-код на планшете"
 msgstr "Scan the QR-code on the tablet"
 
 #: module/Application/view/layout/layout.phtml:324
 #: loco:5625eff714d725cc668b46b2
+#: module/Application/view/layout/layout.phtml:323
 msgid "Закрыть"
 msgstr "Close"
 
@@ -2175,8 +2248,8 @@ msgid ""
 "Отлично! Вы только что отметились в %s и стали еще на один шаг ближе к "
 "получению бесплатной награды в этом заведении."
 msgstr ""
-"Excellent! You've just checked in at %s and became one step closer to redeeming "
-"free rewards in this place."
+"Excellent! You've just checked in at %s and became one step closer to "
+"redeeming free rewards in this place."
 
 #: module/Application/view/email/greeting.phtml:13
 #: loco:562e729614d725410d8b456e
@@ -2199,6 +2272,7 @@ msgstr "View rewards"
 #: module/Application/src/Application/Service/Email.php:278
 #: module/Application/src/Application/Service/Email.php:267
 #: module/Application/view/email/greeting.phtml:20
+#: module/Application/src/Application/Service/Email.php:293
 #, php-format
 msgid "Регистрация в %s"
 msgstr "Sign-Up at %s"
@@ -2244,32 +2318,38 @@ msgstr "Last redeems"
 
 #: module/Application/src/Application/Service/Email.php:86
 #: module/Application/src/Application/Service/Email.php:84
+#: module/Application/src/Application/Service/Email.php:99
 #, php-format
 msgid "Добро пожаловать в %s"
 msgstr "Welcome to %s"
 
 #: module/Application/src/Application/Service/Email.php:155
 #: module/Application/src/Application/Service/Email.php:151
+#: module/Application/src/Application/Service/Email.php:169
 msgid "Сообщение от пользователей"
 msgstr "Message from users"
 
 #: module/Application/src/Application/Service/Email.php:216
 #: module/Application/src/Application/Service/Email.php:208
+#: module/Application/src/Application/Service/Email.php:230
 #, php-format
 msgid "Отметка в %s"
 msgstr "Check-in at %s"
 
 #: module/Application/src/Application/Service/Email.php:345
 #: module/Application/src/Application/Service/Email.php:337
+#: module/Application/src/Application/Service/Email.php:374
 #, php-format
 msgid "Новая награда в %s"
 msgstr "New reward at %s"
 
 #: module/Application/view/layout/layout.phtml:270
+#: module/Application/view/layout/layout.phtml:269
 msgid "Условия использования"
 msgstr "Terms of Service"
 
 #: module/Application/view/layout/layout.phtml:273
+#: module/Application/view/layout/layout.phtml:272
 msgid "Политика конфеденциальности"
 msgstr "Privacy policy"
 
@@ -2287,6 +2367,21 @@ msgid "Последние награды клиента будут тут"
 msgstr "Recent client rewards will be here"
 
 #: module/Application/view/email/greeting.phtml:31
-msgid ""
-"Hint! Now you can use the QR-code in your account."
+msgid "Hint! Now you can use the QR-code in your account."
 msgstr "Tip! Nu kunt u de QR-code te gebruiken in uw account."
+
+#: module/Application/view/application/customer/settings.phtml:164
+msgid "Получать уведомления по e-mail об активности"
+msgstr "Get notified by e-mail about your activity"
+
+#: module/Application/view/application/index/index.phtml:53
+msgid ""
+"Вы были отписаны от уведомлений о вашей активности. Приносим свои извенения "
+"за нашу назойливость."
+msgstr "You have been unsubscribed from notifications of your activities. We present our apologies for our molestation."
+
+#: module/Application/view/email/greeting.phtml:31
+msgid ""
+"Подсказка! Теперь вы можете использовать не только карту с QR-кодом для "
+"отметок и получения наград, но и QR-код из личного кабинета."
+msgstr "Hint! Now you can use the QR-code in your account."

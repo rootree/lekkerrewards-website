@@ -220,4 +220,56 @@ class Customer
 
         return $customersList;
     }
+
+    /**
+     * @param $unSubscribeHash
+     * @return bool
+     * @throws \Doctrine\DBAL\DBALException
+     */
+    public function unSubscribeByUnSubscribeHash($unSubscribeHash)
+    {
+        $sql = sprintf(
+            "UPDATE customer SET is_subscribed = 0 WHERE MD5(CONCAT(e_mail, '%s')) = :unSubscribeHash;",
+            EmailService::UN_SUBSCRIBE_HASH_WORD
+        );
+
+        $conn = $this->entityManager->getConnection();
+        $stmt = $conn->prepare($sql);
+
+        $stmt->bindValue('unSubscribeHash', $unSubscribeHash);
+        $stmt->execute();
+
+        return boolval($stmt->rowCount());
+    }
+
+    /**
+     * @param \DateTime $dateTime
+     * @return CustomerEntity[]
+     */
+    public function getUpdatedCustomers($dateTime)
+    {
+        $qb = $this->entityManager->createQueryBuilder();
+        $qb->select('c')
+            ->from('\Application\Model\Entity\Customer', 'c')
+            ->andWhere('c.updatedAt >= :updatedAt');
+
+        $qb->setParameters(array(
+            'updatedAt' => $dateTime
+        ));
+
+        $customersList = $qb->getQuery()->getResult();
+
+        $newCustomers = [];
+
+        /** @var CustomerEntity $customerEntity */
+        foreach ($customersList as $customerEntity) {
+            $newCustomers[$customerEntity->getEMail()] = [
+                'name' => $customerEntity->getName(),
+                'eMail' => $customerEntity->getEMail(),
+                'qr' => $customerEntity->getActiveQRCode()->getCode(),
+            ];
+        }
+
+        return $newCustomers;
+    }
 }

@@ -186,6 +186,8 @@
 </table>
 <!-- /body -->
 
+<?php if (isset($unsubscribeHash)): ?>
+
 <!-- footer -->
 <table class="footer-wrap">
     <tr>
@@ -197,7 +199,7 @@
                 <table>
                     <tr>
                         <td align="center">
-                            <p><?= $this->translate('Надоели наши назойливые письма?')?> <a href="<?= $company['baseHost'] ?>?unsubscribe"><unsubscribe><?= $this->translate('Отписаться')?></unsubscribe></a>.
+                            <p><?= $this->translate('Надоели наши назойливые письма?')?> <a href="<?= $company['baseHost'] ?>?unsubscribe=<?= ($unsubscribeHash)?>"><unsubscribe><?= $this->translate('Отписаться')?></unsubscribe></a>.
                             </p>
                         </td>
                     </tr>
@@ -209,6 +211,8 @@
     </tr>
 </table>
 <!-- /footer -->
+
+<?php endif ?>
 
 </body>
 </html>

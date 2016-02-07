@@ -9,6 +9,8 @@ use Zend\Mime\Message as MimeMessage;
 
 class Email
 {
+    const UN_SUBSCRIBE_HASH_WORD = '~P3jyp9TbN>X}^b[';
+
     /**
      * @var \Zend\I18n\Translator\Translator
      */
@@ -31,6 +33,14 @@ class Email
         $this->viewRenderer = $viewRenderer;
     }
 
+    /**
+     * @param CustomerEntity $customerEntity
+     * @return string
+     */
+    protected function generateUnSubscribeHash($customerEntity)
+    {
+        return md5($customerEntity->getEMail() . Email::UN_SUBSCRIBE_HASH_WORD);
+    }
 
     /**
      * @param CustomerEntity $customerEntity
@@ -41,7 +51,7 @@ class Email
     public function sendGreetingMessage($customerEntity, $merchantBranchEntity, $openPassword)
     {
 
-        if ($this->isSilent()) {
+        if ($this->isSilent() || !$customerEntity->getIsSubscribed()) {
             return;
         }
 
@@ -58,6 +68,7 @@ class Email
         $content = $this->viewRenderer->render(
             'layout/email',
             [
+                'unsubscribeHash' => $this->generateUnSubscribeHash($customerEntity),
                 'content' => $checkInContent,
                 'company' => $this->config['company'],
             ]
@@ -172,9 +183,10 @@ class Email
      */
     public function sendCheckInMessage($isFirstTime, $merchantBranchEntity, $points, $customerEntity)
     {
-        if ($this->isSilent()) {
+        if ($this->isSilent() || !$customerEntity->getIsSubscribed()) {
             return;
         }
+
         $checkInContent = $this->viewRenderer->render(
             'email/check-in',
             [
@@ -188,6 +200,7 @@ class Email
         $content = $this->viewRenderer->render(
             'layout/email',
             [
+                'unsubscribeHash' => $this->generateUnSubscribeHash($customerEntity),
                 'content' => $checkInContent,
                 'company' => $this->config['company'],
             ]
@@ -246,6 +259,7 @@ class Email
         $content = $this->viewRenderer->render(
             'layout/email',
             [
+                'unsubscribeHash' => $this->generateUnSubscribeHash($customerEntity),
                 'content' => $checkInContent,
                 'company' => $this->config['company'],
             ]
@@ -308,7 +322,7 @@ class Email
      */
     public function sendRedeemMessage($customerEntity, $merchantBranchEntity, $rewardHistory)
     {
-        if ($this->isSilent()) {
+        if ($this->isSilent() || !$customerEntity->getIsSubscribed()) {
             return;
         }
 
@@ -329,6 +343,7 @@ class Email
         $content = $this->viewRenderer->render(
             'layout/email',
             [
+                'unsubscribeHash' => $this->generateUnSubscribeHash($customerEntity),
                 'content' => $checkInContent,
                 'company' => $this->config['company'],
             ]
