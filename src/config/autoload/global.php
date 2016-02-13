@@ -26,9 +26,9 @@ return array(
         ),
     ),
     'logic' => array(
-        'canTakeNewCardAfter' => '23', // Hours
-        'pointsPerVisit' => '1',
-        'pointsForFirstVisit' => '1',
-        'coolDown' => '0',
+        'canTakeNewCardAfter' => '23', // Default 23 Hours
+        'pointsPerVisit' => '1', // Default 1
+        'pointsForFirstVisit' => '1',// Default 1
+        'coolDown' => '6',// Default 6 Hours for new check-in
     ),
 );

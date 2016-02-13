@@ -372,16 +372,25 @@ class ApiController extends AbstractApiController
 
             $visitsOnWeb = $merchantService->getCountOfVisits($this->merchantBranchEntity);
             if ($redeemRequest->visits != $visitsOnWeb) {
-                /** @var \Application\Service\ErrorHandling $service */
-                $service = $this->serviceLocator->get('ApplicationServiceErrorHandling');
-                $service->logData(
+
+                $logMessage =
                     sprintf(
                         "Merchant #%d has different count of visits on the tablet (%d) and on the website (%d)",
                         $this->merchantBranchEntity->getId(),
                         $redeemRequest->visits,
                         $visitsOnWeb
-                    )
-                );
+                    );
+
+                /** @var \Application\Service\ErrorHandling $service */
+                $service = $this->serviceLocator->get('ApplicationServiceErrorHandling');
+                $service->logData($logMessage);
+
+
+                /** @var \Application\Service\Email $emailService */
+                $emailService = $this->serviceLocator->get('Application\Service\Email');
+                $emailService->sendFeedbackMessage(new \Zend\Stdlib\Parameters([
+                    'error' => $logMessage
+                ]));
             }
 
             return new JsonModel([
