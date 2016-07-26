@@ -39,7 +39,7 @@ Introduction
     chmod -R 777 /var/websites/lekkerrewards.nl/data/.
     chmod -R 777 /var/websites/lekkerrewards.nl/logs/.
     
-# Access (9NAa28nb)
+# Access
 
     ssh webmaster@37.200.70.94
     cd /var/websites/lekkerrewards.nl/
